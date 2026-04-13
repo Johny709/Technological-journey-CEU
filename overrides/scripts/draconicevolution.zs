@@ -258,7 +258,7 @@ recipes.remove(<draconicevolution:wyvern_energy_core>);
 
 
     assembly_line.recipeBuilder()
-    .inputs(<gregtech:meta_item_1:13518> * 8, <gregtech:meta_item_1:12733> * 8, <appliedenergistics2:dense_energy_cell> * 64,<gregtech:cable:744> * 32, <ore:circuitSuperconductor> * 2)
+    .inputs(<gregtech:meta_item_1:13518> * 7, <gregtech:meta_item_1:12733> * 8, <appliedenergistics2:dense_energy_cell> * 64,<gregtech:cable:744> * 32, <ore:circuitSuperconductor> * 2)
     .fluidInputs(<liquid:tritanium> * 720,<liquid:soldering_alloy> * 1296)
     .outputs(<appliedenergistics2:creative_energy_cell>)
     .duration(1000)
