@@ -146,29 +146,30 @@ largeMix.recipeBuilder()
 // crystals fix
 
 //fluix
-autoclave.recipeBuilder()
-.inputs(<appliedenergistics2:crystal_seed:1200>)
-.fluidInputs([<liquid:water> * 1000])
-.outputs(<appliedenergistics2:material:12>)
+engraver.recipeBuilder()
+.inputs(<ore:dustFluix> * 1)
+.notConsumable(<ore:craftingLensWhite>)
+.outputs(<appliedenergistics2:material:12> * 2)
 .duration(120)
 .EUt(30)
 .buildAndRegister();
 //nether
-autoclave.recipeBuilder()
-.inputs(<appliedenergistics2:crystal_seed:600>)
-.fluidInputs([<liquid:water> * 1000])
-.outputs(<appliedenergistics2:material:11>)
+engraver.recipeBuilder()
+.inputs(<ore:dustNetherQuartz> * 1)
+.notConsumable(<ore:craftingLensWhite>)
+.outputs(<appliedenergistics2:material:11> * 2)
 .duration(120)
 .EUt(30)
 .buildAndRegister();
 //certus quartz
-autoclave.recipeBuilder()
-.inputs(<appliedenergistics2:crystal_seed>)
-.fluidInputs([<liquid:water> * 1000])
-.outputs(<appliedenergistics2:material:10>)
+engraver.recipeBuilder()
+.inputs(<ore:dustCertusQuartz> * 1)
+.notConsumable(<ore:craftingLensWhite>)
+.outputs(<appliedenergistics2:material:10> * 2)
 .duration(120)
 .EUt(30)
 .buildAndRegister();
+
 
     recipes.remove(<threng:material:1>);
     recipes.addShaped(<threng:material:1>,[[<appliedenergistics2:material:8>,<appliedenergistics2:material:8>,<gregtech:meta_item_1:2106>],[<gregtech:meta_item_1:2106>,<gregtech:meta_item_1:10061>,null],[null,null,null]]);
@@ -860,7 +861,7 @@ recipes.addShapeless(<nae2:material:4>, [<extracells:storage.component:3>]);
 recipes.addShapeless(<nae2:storage_crafting_256k>, [<extracpus:crafting_storage_256k>]);
 recipes.addShapeless(<nae2:storage_crafting_1024k>, [<extracpus:crafting_storage_1024k>]);
 recipes.addShapeless(<nae2:storage_crafting_4096k>, [<extracpus:crafting_storage_4096k>]);
-recipes.addShapeless(<nae2:storage_crafting_16384k>, [<extracpus:crafting_storage_16384k>]);
+recipes.addShapeless(<nae2:storage_crafting_16384k>, [<extracpus:crafting_storage_16384k>]); 
 
 //ME fluid asembler
 recipes.addShapeless(<ae2fc:fluid_assembler>, [<extracells:fluidcrafter>]);
@@ -870,10 +871,15 @@ recipes.remove(<extracells:fluidcrafter>);
 val ae4 as IMod = loadedMods["extracells"];
 val ae4Items as IItemStack[] = ae4.items;
 for item in ae4Items {
-    item.addTooltip("§4DEPRECIATED WILL BE REMOVED NEXT UPDATE");
     
-        if(item.displayName has "Storage Cell") {
+        if(item.displayName has "ME Block Container - Empty" || item.displayName has "Storage Cell") {
+            if(item.displayName has "Storage Cell") {
             item.addTooltip("§buse a ME I/O port to dump contents into new cells. Then you can shift right with the empty cell in your hand to get back the part for conversion");
     }
+        }
+        else{
+                item.addTooltip("§4Please Migrate to NE AE2 Equivalent");
+            h(item);
+        }
 
 }
