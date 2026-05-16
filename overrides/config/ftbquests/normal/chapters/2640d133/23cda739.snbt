@@ -31,5 +31,10 @@
 		uid: "43856de1",
 		type: "item",
 		item: "minecraft:iron_block"
+	},
+	{
+		uid: "e714ffe8",
+		type: "item",
+		item: "gregtech:meta_block_compressed_6 1 5"
 	}]
 }

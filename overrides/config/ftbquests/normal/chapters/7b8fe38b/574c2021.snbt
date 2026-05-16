@@ -1,11 +1,11 @@
 {
-	x: 8.0d,
+	x: 6.5d,
 	y: -7.0d,
 	shape: "gear",
 	text: [
 		"Fluid and item detectors read the contents of the inventory they are attached to, and emit a corresponding redstone signal. This is useful for turning off machines when buffers fill without needing level emitters or AE subnets. "
 	],
-	optional: true,
+	optional: 1b,
 	tasks: [{
 		uid: "eff28484",
 		type: "item",

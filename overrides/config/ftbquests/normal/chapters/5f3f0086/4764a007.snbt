@@ -52,7 +52,7 @@
 				}
 			}
 		}],
-		consume_items: false,
+		consume_items: 0b,
 		ignore_nbt: 1b
 	},
 	{
@@ -120,5 +120,18 @@
 		type: "item",
 		item: "gregtech:meta_item_1 1 12033",
 		count: 10
+	},
+	{
+		uid: "0bc7e300",
+		type: "item",
+		item: {
+			id: "gregtech:meta_tool",
+			Damage: 13s,
+			tag: {
+				GT.ToolStats: {
+					Material: "iron"
+				}
+			}
+		}
 	}]
 }

@@ -1,0 +1,18 @@
+{
+	title: "Tired of mining by hand?",
+	x: -4.5d,
+	y: -4.0d,
+	text: [
+		"The basic chunk miner can mine in the chunk it's placed. It will start at the Y level where the block is placed and work its way down. It is quite slow, but when paired with the solar panel from the previous quest and a time in a bottle, it can mine down to Y 0 in a flash. Better put a crate down, or it will skip over ore."
+	],
+	dependencies: [
+		"d17c87b7"
+	],
+	tasks: [{
+		uid: "4a2f834e",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2221"
+		}]
+	}]
+}

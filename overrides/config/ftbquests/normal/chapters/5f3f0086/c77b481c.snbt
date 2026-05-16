@@ -8,7 +8,7 @@
 	dependencies: [
 		"4764a007"
 	],
-	optional: true,
+	optional: 1b,
 	tasks: [{
 		uid: "293059df",
 		type: "checkmark",

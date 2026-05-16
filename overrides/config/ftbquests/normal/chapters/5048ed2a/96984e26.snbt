@@ -8,7 +8,7 @@
 	dependencies: [
 		"1239a98c"
 	],
-	optional: true,
+	optional: 1b,
 	tasks: [{
 		uid: "ed998292",
 		type: "item",

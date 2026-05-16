@@ -1,6 +1,9 @@
 {
 	x: 13.5d,
 	y: -4.0d,
+	text: [
+		"Now that you have the LV assembler, you can start on the next hurdle before you can enter MV, the electric blast furnace."
+	],
 	dependencies: [
 		"3ac4401a"
 	],

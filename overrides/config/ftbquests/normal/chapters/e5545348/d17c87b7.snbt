@@ -1,5 +1,5 @@
 {
-	x: -3.5d,
+	x: -2.5d,
 	y: -4.0d,
 	text: [
 		"The solar sample is required to find out what fluid is in a given chunk. To use, place down with a solar panel on top and place the data stick inside."
@@ -7,7 +7,7 @@
 	dependencies: [
 		"714944d8"
 	],
-	optional: true,
+	optional: 1b,
 	tasks: [{
 		uid: "90cf1256",
 		type: "item",
@@ -29,7 +29,7 @@
 			item: "gregtech:metal_casing 1 4"
 		}],
 		count: 8L,
-		consume_items: false
+		consume_items: 0b
 	},
 	{
 		uid: "dc66e257",

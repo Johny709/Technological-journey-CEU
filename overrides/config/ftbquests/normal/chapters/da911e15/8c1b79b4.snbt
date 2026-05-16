@@ -27,6 +27,6 @@
 			item: "gregtech:meta_item_2 1 32458"
 		}],
 		count: 16L,
-		consume_items: false
+		consume_items: 0b
 	}]
 }

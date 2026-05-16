@@ -1,17 +1,17 @@
 {
 	title: "Mars",
-	disable_toast: true,
+	disable_toast: 1b,
 	x: -9.5d,
 	y: 7.5d,
 	text: [
 		""
 	],
-	can_repeat: true,
+	can_repeat: 1b,
 	dependencies: [
 		"08bd4448"
 	],
-	hide: true,
-	optional: true,
+	hide: 1b,
+	optional: 1b,
 	tasks: [{
 		uid: "6fdd5bfe",
 		type: "item",

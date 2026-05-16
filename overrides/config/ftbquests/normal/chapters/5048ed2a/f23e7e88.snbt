@@ -45,7 +45,7 @@
 		items: [{
 			item: "gregtech:wire_coil"
 		}],
-		consume_items: false,
+		consume_items: 0b,
 		ignore_nbt: 2b
 	}],
 	rewards: [{

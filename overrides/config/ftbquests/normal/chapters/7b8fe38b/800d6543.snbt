@@ -1,0 +1,17 @@
+{
+	title: "Special logic",
+	x: 0.5d,
+	y: -5.5d,
+	text: [
+		"One Important note about machines in GTCE: When a recipe starts, and there is not enough room for the output, the machines will go into a 5-second timeout. This logic was implemented to prevent lag in the late game.",
+		" ",
+		"So don’t get caught up in too much when machines keep running when full, they are not voiding"
+	],
+	dependencies: [
+		"8e3bf5bb"
+	],
+	tasks: [{
+		uid: "20a4fcf7",
+		type: "checkmark"
+	}]
+}

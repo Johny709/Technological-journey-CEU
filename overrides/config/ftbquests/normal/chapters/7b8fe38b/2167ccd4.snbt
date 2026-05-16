@@ -1,5 +1,5 @@
 {
-	x: 13.5d,
+	x: 14.5d,
 	y: -7.0d,
 	dependencies: [
 		"1219a9f2"
@@ -9,6 +9,8 @@
 		type: "item",
 		items: [{
 			item: "gregtech:meta_item_1 1 1025"
-		}]
+		}],
+		count: 4L,
+		consume_items: 0b
 	}]
 }

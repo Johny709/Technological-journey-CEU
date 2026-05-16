@@ -10,7 +10,7 @@
 		items: [{
 			item: "enderio:item_material"
 		}],
-		consume_items: true
+		consume_items: 1b
 	},
 	{
 		uid: "f490665d",
@@ -19,7 +19,7 @@
 			item: "gregtech:meta_item_1 1 5097"
 		}],
 		count: 32L,
-		consume_items: true
+		consume_items: 1b
 	}],
 	rewards: [{
 		uid: "0fcd65b4",

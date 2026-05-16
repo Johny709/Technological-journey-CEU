@@ -1,18 +1,18 @@
 {
 	title: "Mercury",
-	disable_toast: true,
+	disable_toast: 1b,
 	x: -9.5d,
 	y: 4.5d,
 	shape: "circle",
 	text: [
 		""
 	],
-	can_repeat: true,
+	can_repeat: 1b,
 	dependencies: [
 		"18413c2d"
 	],
-	hide: true,
-	optional: true,
+	hide: 1b,
+	optional: 1b,
 	tasks: [{
 		uid: "8e5ba4a7",
 		type: "item",

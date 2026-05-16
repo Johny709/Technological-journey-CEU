@@ -8,7 +8,7 @@
 			item: "gtadditions:ga_meta_item 1 32258"
 		}],
 		count: 24L,
-		consume_items: false
+		consume_items: 0b
 	},
 	{
 		uid: "4601bdfb",

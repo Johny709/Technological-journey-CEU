@@ -1,17 +1,17 @@
 {
 	title: "Pluto",
-	disable_toast: true,
+	disable_toast: 1b,
 	x: -9.5d,
 	y: 3.5d,
 	text: [
 		""
 	],
-	can_repeat: true,
+	can_repeat: 1b,
 	dependencies: [
 		"810b53fc"
 	],
-	hide: true,
-	optional: true,
+	hide: 1b,
+	optional: 1b,
 	tasks: [{
 		uid: "84e1cbf6",
 		type: "item",

@@ -3,7 +3,7 @@
 	y: -5.5d,
 	text: [
 		"Your first source of LV power."
-		],
+	],
 	dependencies: [
 		"8e3bf5bb",
 		"73a9d10d",

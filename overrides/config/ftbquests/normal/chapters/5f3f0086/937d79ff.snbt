@@ -4,10 +4,14 @@
 		id: "appliedenergistics2:creative_storage_cell",
 		tag: {}
 	},
-	x: 2.5d,
+	x: 1.0d,
 	y: -14.0d,
 	text: [
 		""
 	],
-	custom_click: "https://discord.gg/sKbWskxXdG"
+	custom_click: "https://discord.gg/sKbWskxXdG",
+	dependencies: [
+		"46dda272"
+	],
+	optional: 1b
 }

@@ -5,7 +5,7 @@
 	text: [
 		"Batch crafting is an essential skill to have before you unlock autocrafting. By making more items than you need in the present, you'll have them ready when you need them in the future."
 	],
-	optional: true,
+	optional: 1b,
 	tasks: [{
 		uid: "a5b2f1da",
 		type: "checkmark",

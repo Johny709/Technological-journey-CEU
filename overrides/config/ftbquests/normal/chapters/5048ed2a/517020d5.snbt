@@ -2,8 +2,7 @@
 	x: 2.5d,
 	y: 4.0d,
 	dependencies: [
-		"96c5fb49",
-		"5e4e0eee"
+		"96c5fb49"
 	],
 	dependency_requirement: "one_started",
 	tasks: [{

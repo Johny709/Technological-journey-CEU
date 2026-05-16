@@ -19,7 +19,7 @@
 			item: "gtadditions:ga_meta_item 1 32536"
 		}],
 		count: 32L,
-		consume_items: false
+		consume_items: 0b
 	},
 	{
 		uid: "58429a65",
@@ -28,6 +28,6 @@
 			item: "gtadditions:ga_meta_item 1 32534"
 		}],
 		count: 32L,
-		consume_items: false
+		consume_items: 0b
 	}]
 }

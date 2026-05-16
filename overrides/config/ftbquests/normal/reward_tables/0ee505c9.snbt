@@ -1,0 +1,94 @@
+{
+	title: "LV Loot",
+	loot_size: 1,
+	rewards: [{
+		item: "gregtech:machine 1 501",
+		weight: 8
+	},
+	{
+		item: "gregtech:meta_item_1 1 12184",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "gregtech:cable 1 5071",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "gregtech:meta_item_2 1 32487",
+		count: 4,
+		weight: 7
+	},
+	{
+		item: "gregtech:machine 1 511"
+	},
+	{
+		item: "gregtech:ore_copper_0",
+		count: 32,
+		weight: 10
+	},
+	{
+		item: "gregtech:ore_nickel_0",
+		count: 16,
+		weight: 10
+	},
+	{
+		item: "gregtech:machine 1 2242",
+		weight: 5
+	},
+	{
+		item: "gregtech:meta_item_2 1 18071",
+		count: 4,
+		weight: 8
+	},
+	{
+		item: "gregtech:meta_item_1 1 14297",
+		count: 8,
+		weight: 9
+	},
+	{
+		item: "gregtech:meta_item_1 1 32600",
+		count: 4,
+		weight: 7
+	},
+	{
+		item: "gregtech:meta_item_1 1 32640",
+		count: 4,
+		weight: 7
+	},
+	{
+		item: "gregtech:meta_item_1 1 32610",
+		count: 4,
+		weight: 7
+	},
+	{
+		item: "gregtech:machine 1 2196",
+		count: 4,
+		weight: 8
+	},
+	{
+		item: "gregtech:machine 1 829",
+		weight: 6
+	},
+	{
+		item: "gregtech:machine 1 827",
+		weight: 6
+	},
+	{
+		item: "actuallyadditions:block_giant_chest",
+		weight: 6
+	},
+	{
+		item: "actuallyadditions:block_giant_chest_medium",
+		weight: 6
+	},
+	{
+		item: "gregtech:machine 1 2197",
+		weight: 8
+	},
+	{
+		item: "actuallyadditions:block_giant_chest_large",
+		weight: 5
+	}]
+}

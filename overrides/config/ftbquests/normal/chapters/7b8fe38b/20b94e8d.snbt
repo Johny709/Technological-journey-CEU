@@ -1,0 +1,17 @@
+{
+	x: 9.5d,
+	y: -4.0d,
+	text: [
+		"If you want to save on redstone in LV, the polarizer is a big help. In future tiers, these will be required for magnitization."
+	],
+	dependencies: [
+		"c753c07a"
+	],
+	tasks: [{
+		uid: "800f2a6c",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 420"
+		}]
+	}]
+}

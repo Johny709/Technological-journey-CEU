@@ -9,7 +9,7 @@
 	dependencies: [
 		"682150e7"
 	],
-	optional: true,
+	optional: 1b,
 	tasks: [{
 		uid: "a3352db3",
 		type: "item",

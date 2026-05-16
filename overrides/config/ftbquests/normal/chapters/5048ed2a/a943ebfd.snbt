@@ -10,5 +10,17 @@
 		items: [{
 			item: "gregtech:meta_item_1 1 12470"
 		}]
+	}],
+	rewards: [{
+		uid: "5221e99a",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "epoxid",
+				Amount: 1000
+			}
+		},
+		count: 4
 	}]
 }

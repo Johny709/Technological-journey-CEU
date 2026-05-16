@@ -9,9 +9,9 @@
 		"d83c9621"
 	],
 	dependency_requirement: "one_started",
-	optional: true,
+	optional: 1b,
 	tasks: [{
 		uid: "0cd19a8d",
 		type: "checkmark"
-	}],
+	}]
 }

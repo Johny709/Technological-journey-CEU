@@ -1,6 +1,6 @@
 {
-	x: 7.5d,
-	y: -5.0d,
+	x: 9.5d,
+	y: -2.0d,
 	text: [
 		"Throughout the game, you will run into chem lines that have catalysts. As the name implies they are not consumed in chemical reactions and can be made only once. Items/chemicals that are catalysts have the tooltip “not consumed in process” attached when looking at the recipe in jei. ",
 		"",

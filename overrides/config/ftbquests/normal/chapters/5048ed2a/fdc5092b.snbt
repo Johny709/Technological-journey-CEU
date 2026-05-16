@@ -2,6 +2,9 @@
 	x: 14.5d,
 	y: 2.0d,
 	shape: "rsquare",
+	text: [
+		"If you are having trouble locating zirkelite this can help "
+	],
 	tasks: [{
 		uid: "35b85728",
 		type: "checkmark",

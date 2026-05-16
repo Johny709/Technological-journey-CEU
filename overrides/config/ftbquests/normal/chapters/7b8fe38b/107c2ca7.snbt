@@ -1,0 +1,20 @@
+{
+	title: "Bonus rods? Yes please!",
+	x: 8.0d,
+	y: -4.0d,
+	text: [
+		"Just like the wiremill, the lathe will allow you better ratios on your intermediates. ",
+		"",
+		"In this case, you can now make rods and screws at a 1:1 ratio. "
+	],
+	dependencies: [
+		"c753c07a"
+	],
+	tasks: [{
+		uid: "232dfd06",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 350"
+		}]
+	}]
+}

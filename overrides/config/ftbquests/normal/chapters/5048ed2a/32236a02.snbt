@@ -1,7 +1,11 @@
 {
 	x: -1.5d,
-	y: 2.0d,
+	y: 0.5d,
 	shape: "rsquare",
+	text: [
+		"EV onward is where the game really opens up. Many metals can be made before they are needed, and you are able to catch up with power storage like the battery tower."
+	],
+	size: 1.5d,
 	tasks: [{
 		uid: "5b455765",
 		type: "item",

@@ -1,6 +1,15 @@
 {
-	x: 2.0d,
-	y: -2.5d,
+	title: "Getting tired of making wirecutters?",
+	x: 5.0d,
+	y: -4.0d,
+	text: [
+		"One of the first machines you will want to craft is a wiremill. ",
+		"Not only does it remove the need for wirecutters, but you also get 2x the wires.",
+		"This benefit also chains downwards to fine wires."
+	],
+	dependencies: [
+		"3ac4401a"
+	],
 	tasks: [{
 		uid: "0568babf",
 		type: "item",

@@ -1,0 +1,22 @@
+{
+	title: "EBF time causing slowdowns?",
+	x: -7.5d,
+	y: -1.0d,
+	text: [
+		"I wonder what you can use your old coils for? ",
+		"",
+		"Perhaps more EBF’s to speed up productions?"
+	],
+	dependencies: [
+		"c3775ce8"
+	],
+	optional: 1b,
+	tasks: [{
+		uid: "767c89ad",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2534"
+		}],
+		count: 3L
+	}]
+}

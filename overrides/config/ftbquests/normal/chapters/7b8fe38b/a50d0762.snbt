@@ -1,6 +1,9 @@
 {
-	x: 16.5d,
+	x: 17.5d,
 	y: -7.0d,
+	text: [
+		"Congrats, this is your first of many primitive assemblies. With these in hand, you are on your way to better and brighter futures."
+	],
 	dependencies: [
 		"514ed367"
 	],
@@ -9,6 +12,12 @@
 		type: "item",
 		items: [{
 			item: "gtadditions:ga_meta_item 1 32200"
-		}]
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "c792643c",
+		type: "item",
+		item: "gtadditions:ga_meta_item 1 32200"
 	}]
 }

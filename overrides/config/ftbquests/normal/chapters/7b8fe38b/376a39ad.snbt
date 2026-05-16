@@ -1,13 +1,15 @@
 {
-	x: 9.5d,
-	y: -4.0d,
+	x: 10.5d,
+	y: -2.0d,
 	text: [
-		"This needs some gold. Assuming you have a wiremill, you'll need 2 gold ingots to make an electrolyzer, which means smelting 18 precious metal ingots into nuggets."
+		"This needs some gold. Assuming you have a wiremill, you'll need 2 gold ingots to make an electrolyzer, which means smelting 18 precious metal ingots into nuggets.",
+		"",
+		"Want to be an overachiever and better gold ratios? The gold line is for you, while not required until MV, you can achieve it now for more gold for your input"
 	],
 	dependencies: [
-		"3ac4401a"
+		"4abf135a"
 	],
-	or_tasks: true,
+	or_tasks: 1b,
 	tasks: [{
 		uid: "97003540",
 		type: "item",

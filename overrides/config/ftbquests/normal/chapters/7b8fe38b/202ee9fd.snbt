@@ -12,7 +12,7 @@
 		"",
 		"Remember not to try and share these between multiblocks -- everything else is fine. "
 	],
-	hide_dependency_lines: true,
+	hide_dependency_lines: 1b,
 	tasks: [{
 		uid: "36ecc656",
 		type: "checkmark"

@@ -23,7 +23,7 @@
 			}
 		}],
 		count: 16L,
-		only_from_crafting: false
+		only_from_crafting: 0b
 	}],
 	rewards: [{
 		uid: "734771b4",

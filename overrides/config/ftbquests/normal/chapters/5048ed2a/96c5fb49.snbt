@@ -3,7 +3,9 @@
 	y: 2.0d,
 	shape: "rsquare",
 	text: [
-		"Tungsten is mined from the end"
+		"Tungsten is mined from the end",
+		"",
+		"If you haven’t already, check the travel tab again for instructions on the end"
 	],
 	tasks: [{
 		uid: "524ca8ae",

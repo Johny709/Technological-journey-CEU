@@ -8,14 +8,14 @@
 	dependencies: [
 		"217132c4"
 	],
-	optional: true,
+	optional: 1b,
 	tasks: [{
 		uid: "caad0e71",
 		type: "item",
 		items: [{
 			item: "enderio:item_material"
 		}],
-		consume_items: true
+		consume_items: 1b
 	},
 	{
 		uid: "61a72897",
@@ -23,7 +23,7 @@
 		items: [{
 			item: "gregtech:meta_block_compressed_51 1 6"
 		}],
-		consume_items: true
+		consume_items: 1b
 	}],
 	rewards: [{
 		uid: "ffee1dba",

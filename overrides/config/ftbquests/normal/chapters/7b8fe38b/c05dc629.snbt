@@ -1,13 +1,13 @@
 {
-	x: 7.5d,
-	y: -1.0d,
+	x: 9.5d,
+	y: 2.0d,
 	text: [
 		"Doesn't suck your blood, unfortunately."
 	],
 	dependencies: [
 		"6828d7de"
 	],
-	optional: true,
+	optional: 1b,
 	tasks: [{
 		uid: "a9dce5af",
 		type: "checkmark",

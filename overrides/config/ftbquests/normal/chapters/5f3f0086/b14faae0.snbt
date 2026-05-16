@@ -5,12 +5,12 @@
 	text: [
 		""
 	],
-	can_repeat: true,
+	can_repeat: 1b,
 	dependencies: [
 		"3411d508"
 	],
-	hide_text_until_complete: true,
-	optional: true,
+	hide_text_until_complete: 1b,
+	optional: 1b,
 	tasks: [{
 		uid: "d8c6f974",
 		type: "checkmark",

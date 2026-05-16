@@ -2,6 +2,9 @@
 	icon: "gregtech:machine 1 2908",
 	x: 3.5d,
 	y: -4.0d,
+	text: [
+		"You are now ready to make your first machines!"
+	],
 	dependencies: [
 		"a471cbb7"
 	],

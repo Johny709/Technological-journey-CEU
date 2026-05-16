@@ -1,7 +1,7 @@
 {
 	title: "Large Bending and Forming Machine",
 	icon: "gregtech:machine 1 2510",
-	x: 3.5d,
+	x: 5.0d,
 	y: 0.5d,
 	text: [
 		""
@@ -24,7 +24,7 @@
 			item: "gregtech:metal_casing 1 6"
 		}],
 		count: 33L,
-		consume_items: false
+		consume_items: 0b
 	},
 	{
 		uid: "8413308d",

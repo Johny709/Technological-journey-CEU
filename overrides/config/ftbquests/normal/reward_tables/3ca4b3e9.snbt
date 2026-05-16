@@ -1,0 +1,168 @@
+{
+	title: "Steam Loot",
+	loot_size: 1,
+	rewards: [{
+		item: "gregtech:machine 1 1"
+	},
+	{
+		item: "gregtech:meta_item_1 1 10095",
+		count: 32,
+		weight: 5
+	},
+	{
+		item: "enderio:item_item_conduit",
+		count: 15,
+		weight: 3
+	},
+	{
+		item: "enderio:item_liquid_conduit 1 2",
+		count: 15
+	},
+	{
+		item: {
+			id: "gregtech:meta_tool",
+			Damage: 13s,
+			tag: {
+				GT.ToolStats: {
+					Material: "wrought_iron"
+				}
+			}
+		},
+		weight: 3
+	},
+	{
+		item: {
+			id: "gregtech:meta_tool",
+			Damage: 8s,
+			tag: {
+				GT.ToolStats: {
+					Material: "wrought_iron"
+				}
+			}
+		},
+		weight: 3
+	},
+	{
+		item: "gregtech:machine 1 510"
+	},
+	{
+		item: "gregtech:machine 1 700"
+	},
+	{
+		item: "gregtech:machine 1 701"
+	},
+	{
+		item: "gregtech:meta_item_1 1 10071",
+		count: 32,
+		weight: 5
+	},
+	{
+		item: "minecraft:iron_ingot",
+		count: 32,
+		weight: 5
+	},
+	{
+		item: "gregtech:meta_item_1 1 10237",
+		count: 10,
+		weight: 3
+	},
+	{
+		item: "ironfurnaces:diamond_furnace_idle",
+		weight: 2
+	},
+	{
+		item: "ironfurnaces:gold_furnace_idle",
+		weight: 3
+	},
+	{
+		item: "gregtech:machine_casing 1 10",
+		weight: 3
+	},
+	{
+		item: "gregtech:machine 1 14"
+	},
+	{
+		item: "contenttweaker:steammotor",
+		weight: 3
+	},
+	{
+		item: "contenttweaker:steampiston",
+		weight: 3
+	},
+	{
+		item: "gregtech:machine 1 1000"
+	},
+	{
+		item: "gregtech:machine 1 11"
+	},
+	{
+		item: "gregtech:meta_item_2 1 32443",
+		count: 16,
+		weight: 3
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32029",
+		count: 16,
+		weight: 2
+	},
+	{
+		item: "gregtech:meta_item_2 1 32454",
+		count: 16,
+		weight: 3
+	},
+	{
+		item: "gregtech:meta_item_2 1 32455",
+		count: 16,
+		weight: 2
+	},
+	{
+		item: "gregtech:meta_item_2 1 32450",
+		count: 16,
+		weight: 2
+	},
+	{
+		item: "gregtech:ore_copper_0",
+		count: 64,
+		weight: 4
+	},
+	{
+		item: {
+			id: "gregtech:meta_tool",
+			Damage: 3s,
+			tag: {
+				GT.ToolStats: {
+					Material: "wrought_iron"
+				}
+			}
+		},
+		weight: 3
+	},
+	{
+		item: {
+			id: "gregtech:meta_tool",
+			Damage: 6s,
+			tag: {
+				GT.ToolStats: {
+					Material: "wrought_iron"
+				}
+			}
+		},
+		weight: 3
+	},
+	{
+		item: {
+			id: "gregtech:meta_tool",
+			Damage: 9s,
+			tag: {
+				GT.ToolStats: {
+					Material: "wrought_iron"
+				}
+			}
+		},
+		weight: 3
+	},
+	{
+		item: "gregtech:machine 1 2196",
+		weight: 3
+	}]
+}

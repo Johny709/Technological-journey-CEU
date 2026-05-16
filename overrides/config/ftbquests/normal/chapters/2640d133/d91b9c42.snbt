@@ -9,7 +9,7 @@
 	dependencies: [
 		"1a5403b2"
 	],
-	optional: true,
+	optional: 1b,
 	tasks: [{
 		uid: "c13f0d80",
 		type: "item",
@@ -45,5 +45,11 @@
 			item: "gregtech:metal_casing"
 		}],
 		count: 22L
+	}],
+	rewards: [{
+		uid: "897360f1",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10095",
+		count: 32
 	}]
 }

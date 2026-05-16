@@ -1,7 +1,7 @@
 {
 	title: "Large Washing Plant",
 	icon: "gregtech:machine 1 2527",
-	x: 5.5d,
+	x: 7.0d,
 	y: 0.5d,
 	text: [
 		""

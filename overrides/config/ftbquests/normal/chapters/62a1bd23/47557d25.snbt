@@ -1,17 +1,17 @@
 {
 	title: "Deimos",
-	disable_toast: true,
+	disable_toast: 1b,
 	x: -9.5d,
 	y: 8.5d,
 	text: [
 		""
 	],
-	can_repeat: true,
+	can_repeat: 1b,
 	dependencies: [
 		"29834c10"
 	],
-	hide: true,
-	optional: true,
+	hide: 1b,
+	optional: 1b,
 	tasks: [{
 		uid: "7c863a1d",
 		type: "item",

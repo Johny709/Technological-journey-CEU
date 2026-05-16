@@ -1,6 +1,12 @@
 {
 	x: 8.5d,
 	y: -10.0d,
+	text: [
+		"In the early game, when you have to batch craft items, these are a game-changer. ",
+		"Simply place 4 crates in a + pattern and place the crafting station in the center. ",
+		"",
+		"It will be able to see all 4 crates simultaneously."
+	],
 	dependencies: [
 		"a547f04f"
 	],

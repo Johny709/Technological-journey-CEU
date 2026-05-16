@@ -1,7 +1,7 @@
 {
 	title: "Chloroauric Acid",
-	x: 7.5d,
-	y: 0.0d,
+	x: 9.5d,
+	y: 3.0d,
 	text: [
 		""
 	],
@@ -9,7 +9,7 @@
 		"c05dc629",
 		"7988dae8"
 	],
-	optional: true,
+	optional: 1b,
 	tasks: [{
 		uid: "cad0a31d",
 		type: "checkmark",

@@ -1,6 +1,14 @@
 {
-	x: 3.5d,
-	y: -2.5d,
+	x: 6.5d,
+	y: -4.0d,
+	text: [
+		"Now that you can make wires much cheaper, why not make plates cheaper as well? ",
+		"",
+		"Bending machines will let you go from that old 3:2 recipe to a crisp 1:1 on plates."
+	],
+	dependencies: [
+		"c753c07a"
+	],
 	tasks: [{
 		uid: "998505fc",
 		type: "item",

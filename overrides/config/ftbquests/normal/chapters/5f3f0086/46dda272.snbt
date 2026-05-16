@@ -1,0 +1,12 @@
+{
+	x: 2.5d,
+	y: -14.0d,
+	text: [
+		"If you get stuck somewhere, can’t figure out a line, or just want advice, the Discord is always a good place to stop by. "
+	],
+	tasks: [{
+		uid: "60cbc043",
+		type: "checkmark",
+		title: "If you get stuck or want general help"
+	}]
+}

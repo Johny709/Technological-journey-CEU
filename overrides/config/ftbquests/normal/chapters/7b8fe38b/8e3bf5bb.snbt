@@ -4,11 +4,18 @@
 	dependencies: [
 		"3d5090e0"
 	],
+	size: 1.5d,
 	tasks: [{
 		uid: "94ea28ec",
 		type: "item",
 		items: [{
 			item: "gregtech:machine 1 501"
 		}]
+	}],
+	rewards: [{
+		uid: "026e19e9",
+		type: "item",
+		item: "gregtech:meta_item_1 1 12184",
+		count: 8
 	}]
 }

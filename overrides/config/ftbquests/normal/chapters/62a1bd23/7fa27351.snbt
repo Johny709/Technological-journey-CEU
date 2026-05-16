@@ -1,17 +1,17 @@
 {
 	title: "Titan",
-	disable_toast: true,
+	disable_toast: 1b,
 	x: -9.5d,
 	y: 5.5d,
 	text: [
 		""
 	],
-	can_repeat: true,
+	can_repeat: 1b,
 	dependencies: [
 		"e671a903"
 	],
-	hide: true,
-	optional: true,
+	hide: 1b,
+	optional: 1b,
 	tasks: [{
 		uid: "94620869",
 		type: "item",

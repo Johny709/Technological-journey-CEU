@@ -1,6 +1,9 @@
 {
 	x: 19.5d,
 	y: -4.0d,
+	text: [
+		"The single most important machine in the game. The circuit assembler will let you craft circuits of the next tier."
+	],
 	dependencies: [
 		"5ba156c0",
 		"4f9d4cf3",
