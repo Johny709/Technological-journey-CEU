@@ -1,11 +1,11 @@
 {
     "images": {
         "title": {
-            "image": "textures:Logoish.png",
-            "posX": -132,
-            "posY": 82,
-            "width": 250,
-            "height": 80,
+            "image": "textures:logo.png",
+            "posX": -480,
+            "posY": 5,
+            "width" : 950,
+            "height" : 200,
             "alignment": "top_center"
         }
     },
@@ -13,8 +13,8 @@
     "buttons": {
         "singleplayer": {
             "text": "menu.singleplayer",
-            "posX": -100,
-            "posY": 48,
+            "posX": -450,
+            "posY": 60,
             "width": 200,
             "height": 20,
             "action": {
@@ -25,8 +25,8 @@
 
         "multiplayer": {
             "text": "menu.multiplayer",
-            "posX": -100,
-            "posY": 72,
+            "posX": -450,
+            "posY": 84,
             "width": 200,
             "height": 20,
             "action": {
@@ -37,8 +37,8 @@
 
         "mods": {
             "text": "fml.menu.mods",
-            "posX": -100,
-            "posY": 96,
+            "posX": -450,
+            "posY": 108,
             "width": 200,
             "height": 20,
             "action": {
@@ -48,8 +48,8 @@
         },
         "discord": {
             "text": "Join Us On Discord",
-            "posX": -100,
-            "posY": 121,
+            "posX": -450,
+            "posY": 133,
             "width": 200,
             "height": 20,
             "action": {
@@ -61,8 +61,8 @@
 
         "options": {
             "text": "menu.options",
-            "posX": -100,
-            "posY": 145,
+            "posX": -450,
+            "posY": 157,
             "width": 98,
             "height": 20,
             "action": {
@@ -73,8 +73,8 @@
 
         "quit": {
             "text": "menu.quit",
-            "posX": 2,
-            "posY": 145,
+            "posX": -350,
+            "posY": 157,
             "width": 98,
             "height": 20,
             "action": {
@@ -84,13 +84,26 @@
 
         "language": {
             "text": "",
-            "posX": -124,
-            "posY": 145,
+            "posX": -250,
+            "posY": 157,
             "width": 20,
             "height": 20,
             "action": {
                 "type": "openGui",
                 "gui": "languages"
+            }
+        },
+                "refresh":
+        {
+            "text" : "",
+            "posX" : -154,
+            "posY" : 132,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "refresh"
             }
         }
     },
@@ -161,9 +174,7 @@
                     "textures:main_menu/slideshow_36.png",
                     "textures:main_menu/slideshow_37.png",
                     "textures:main_menu/slideshow_38.png",
-                    "textures:main_menu/slideshow_39.png",
-                    "textures:main_menu/slideshow_40.png",
-                    "textures:main_menu/slideshow_41.png"
+                    "textures:main_menu/slideshow_39.png"
                 ],
                 "displayDuration": 20,
                 "fadeDuration": 35
