@@ -14,7 +14,6 @@ import mods.gregtech.recipe.CokeOvenRecipeBuilder;
 import mods.gregtech.recipe.RecipeMaps;
 //import mods.gtadditions.recipe.GARecipeMaps.ADV_FUSION_RECIPES;
 
-
 // gt coal dust 
 macerator.recipeBuilder()
 .inputs([<ore:coal>])
@@ -609,22 +608,22 @@ recipes.addShaped(<gregtech:meta_block_compressed_11:7>, [[<gregtech:meta_item_1
 recipes.remove(<actuallyadditions:block_fermenting_barrel>);
 
 fluid_extractor.recipeBuilder()
-.inputs(<actuallyadditions:item_canola_seed> * 10)
-.fluidOutputs(<liquid:canolaoil> * 1000)
+.inputs(<actuallyadditions:item_canola_seed> * 40)
+.fluidOutputs(<liquid:canolaoil> * 4000)
 .duration(150)
-.EUt(16)
+.EUt(8)
 .buildAndRegister();
 
 fluid_extractor.recipeBuilder()
-.inputs(<actuallyadditions:item_misc:13> * 5)
-.fluidOutputs(<liquid:canolaoil> * 1000)
+.inputs(<actuallyadditions:item_misc:13> * 25)
+.fluidOutputs(<liquid:canolaoil> * 5000)
 .duration(150)
-.EUt(16)
+.EUt(8)
 .buildAndRegister();
 
 fermenter.recipeBuilder()
-.fluidInputs(<liquid:canolaoil> * 10000)
-.fluidOutputs(<liquid:refinedcanolaoil> * 10000)
+.fluidInputs(<liquid:canolaoil> * 40000)
+.fluidOutputs(<liquid:refinedcanolaoil> * 40000)
 .duration(300)
 .EUt(16)
 .buildAndRegister();
@@ -646,18 +645,18 @@ chemreactor.recipeBuilder()
 
 chemreactor.recipeBuilder()
 .inputs([<gregtech:meta_item_1:373>])
-.fluidInputs( <liquid:empoweredoil> * 10000, <liquid: ethanol> * 1000)
-.fluidOutputs(<liquid: bio_diesel> * 10000, <liquid: glycerol> * 1000)
+.fluidInputs( <liquid:empoweredoil> * 20000, <liquid: ethanol> * 1000)
+.fluidOutputs(<liquid: bio_diesel> * 20000, <liquid: glycerol> * 1000)
 .duration(120)
-.EUt(30)
+.EUt(20)
 .buildAndRegister();
 
 chemreactor.recipeBuilder()
 .inputs([<gregtech:meta_item_1:373>])
-.fluidInputs( <liquid:empoweredoil>* 10000, <liquid: methanol> * 1000)
-.fluidOutputs(<liquid: bio_diesel> * 10000, <liquid: glycerol> * 1000)
+.fluidInputs( <liquid:empoweredoil>* 20000, <liquid: methanol> * 1000)
+.fluidOutputs(<liquid: bio_diesel> * 20000, <liquid: glycerol> * 1000)
 .duration(120)
-.EUt(30)
+.EUt(20)
 .buildAndRegister();
 
 recipes.remove(<enderio:block_farm_station>);
@@ -2185,18 +2184,18 @@ large_chem.recipeBuilder()
 
 large_chem.recipeBuilder()
     .inputs([<gregtech:meta_item_1:373>])
-    .fluidInputs( <liquid:creosote> * 10000, <liquid: ethanol> * 1000)
-        .fluidOutputs(<liquid: bio_diesel> * 10000, <liquid: glycerol> * 1000)
+    .fluidInputs( <liquid:creosote> * 20000, <liquid: ethanol> * 1000)
+        .fluidOutputs(<liquid: bio_diesel> * 20000, <liquid: glycerol> * 1000)
     .duration(120)
-    .EUt(30)
+    .EUt(20)
     .buildAndRegister();
 
 large_chem.recipeBuilder()
     .inputs([<gregtech:meta_item_1:373>])
-    .fluidInputs( <liquid:creosote>* 10000, <liquid: methanol> * 1000)
-    .fluidOutputs(<liquid: bio_diesel> * 10000, <liquid: glycerol> * 1000)
+    .fluidInputs( <liquid:creosote>* 20000, <liquid: methanol> * 1000)
+    .fluidOutputs(<liquid: bio_diesel> * 20000, <liquid: glycerol> * 1000)
     .duration(120)
-    .EUt(30)
+    .EUt(20)
     .buildAndRegister();
 //update vacuume tube
 recipes.remove(<gregtech:meta_item_2:32450>);
@@ -2738,7 +2737,7 @@ large_engrav.recipeBuilder()
     .EUt(18)
     .buildAndRegister();
 
-Utils.removeRecipeByOutput(forming, [<gregtech:meta_item_2:15518>], [], true);
+//Utils.removeRecipeByOutput(forming, [<gregtech:meta_item_2:15518>], [], true);
 
 assembler.recipeBuilder()
     .inputs([<minecraft:iron_bars> *3, <gregtech:meta_item_1:12033> * 6])
@@ -2748,3 +2747,36 @@ assembler.recipeBuilder()
     .buildAndRegister();
     
 recipes.remove(<gregtech:machine:2552>);
+
+recipes.remove(<vajra:vajra>);
+recipes.remove(<vajra:magnetron>);
+recipes.remove(<vajra:vajra-core>);
+
+//vajra
+
+assembler.recipeBuilder()
+    .inputs([<gtadditions:ga_meta_item:32414>, <gregtech:meta_item_1:32674> * 2, <gregtech:meta_item_2:1047> * 18, <gregtech:cable:5051> * 16])
+    .outputs(<vajra:vajra-core>)
+    .duration(90)
+    .EUt(7000)
+    .buildAndRegister();
+
+    assembler.recipeBuilder()
+    .inputs([<gregtech:meta_item_1:10741> * 10,<gregtech:meta_item_1:32674>, <ore:circuitElite> * 4, <gregtech:cable:6200> * 20])
+    .outputs(<vajra:magnetron>)
+    .duration(90)
+    .EUt(7000)
+    .buildAndRegister();
+
+    assembler.recipeBuilder()
+    .inputs([<vajra:magnetron>,<vajra:vajra-core>, <gregtech:meta_item_2:25187> * 4])
+    .outputs(<vajra:vajra>)
+    .duration(90)
+    .EUt(7000)
+    .buildAndRegister();
+
+
+    furnace.remove(<gregtech:meta_item_1:311>);
+    furnace.remove(<gregtech:meta_item_1:1311>);
+    furnace.remove(<gregtech:meta_item_1:312>);
+    furnace.remove(<gregtech:meta_item_1:1312>);

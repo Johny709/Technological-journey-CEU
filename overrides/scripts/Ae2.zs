@@ -170,6 +170,31 @@ engraver.recipeBuilder()
 .EUt(30)
 .buildAndRegister();
 
+//fluix
+large_engrav.recipeBuilder()
+.inputs(<ore:dustFluix> * 1)
+.notConsumable(<ore:craftingLensWhite>)
+.outputs(<appliedenergistics2:material:12> * 2)
+.duration(120)
+.EUt(30)
+.buildAndRegister();
+//nether
+large_engrav.recipeBuilder()
+.inputs(<ore:dustNetherQuartz> * 1)
+.notConsumable(<ore:craftingLensWhite>)
+.outputs(<appliedenergistics2:material:11> * 2)
+.duration(120)
+.EUt(30)
+.buildAndRegister();
+//certus quartz
+large_engrav.recipeBuilder()
+.inputs(<ore:dustCertusQuartz> * 1)
+.notConsumable(<ore:craftingLensWhite>)
+.outputs(<appliedenergistics2:material:10> * 2)
+.duration(120)
+.EUt(30)
+.buildAndRegister();
+
 
     recipes.remove(<threng:material:1>);
     recipes.addShaped(<threng:material:1>,[[<appliedenergistics2:material:8>,<appliedenergistics2:material:8>,<gregtech:meta_item_1:2106>],[<gregtech:meta_item_1:2106>,<gregtech:meta_item_1:10061>,null],[null,null,null]]);
@@ -561,10 +586,10 @@ h(<extracells:storage.physical:2>);
 h(<extracells:storage.physical:3>);
 h(<extracells:storage.casing>);
 h(<extracells:storage.casing:1>);
-h(<extracpus:crafting_storage_256k>);
-h(<extracpus:crafting_storage_1024k>);
-h(<extracpus:crafting_storage_4096k>);
-h(<extracpus:crafting_storage_16384k>);
+//h(<extracpus:crafting_storage_256k>);
+//h(<extracpus:crafting_storage_1024k>);
+//h(<extracpus:crafting_storage_4096k>);
+//h(<extracpus:crafting_storage_16384k>);
 h(<nae2:reconstruction_chamber>);
 
 // Written by MadMan310
@@ -858,10 +883,10 @@ recipes.addShapeless(<nae2:material:3>, [<extracells:storage.component:2>]);
 recipes.addShapeless(<nae2:material:4>, [<extracells:storage.component:3>]);
 
 //cpu to cpu
-recipes.addShapeless(<nae2:storage_crafting_256k>, [<extracpus:crafting_storage_256k>]);
-recipes.addShapeless(<nae2:storage_crafting_1024k>, [<extracpus:crafting_storage_1024k>]);
-recipes.addShapeless(<nae2:storage_crafting_4096k>, [<extracpus:crafting_storage_4096k>]);
-recipes.addShapeless(<nae2:storage_crafting_16384k>, [<extracpus:crafting_storage_16384k>]); 
+//recipes.addShapeless(<nae2:storage_crafting_256k>, [<extracpus:crafting_storage_256k>]);
+//recipes.addShapeless(<nae2:storage_crafting_1024k>, [<extracpus:crafting_storage_1024k>]);
+//recipes.addShapeless(<nae2:storage_crafting_4096k>, [<extracpus:crafting_storage_4096k>]);
+//recipes.addShapeless(<nae2:storage_crafting_16384k>, [<extracpus:crafting_storage_16384k>]); 
 
 //ME fluid asembler
 recipes.addShapeless(<ae2fc:fluid_assembler>, [<extracells:fluidcrafter>]);
