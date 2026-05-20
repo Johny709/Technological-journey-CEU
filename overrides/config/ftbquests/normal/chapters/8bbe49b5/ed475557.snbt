@@ -3,7 +3,7 @@
 	x: 3.0d,
 	y: 5.5d,
 	text: [
-		"FOR THE LOVE OF GOD HAVE A WAY TO REMOVE FALL DAMAGE"
+		"§4Due to the nature of these commands it is HIGHLY recommended you have charged ender IO boots to negate fall damage. You will spawn in at 256 256 256"
 	],
 	dependencies: [
 		"e6d4eebb"
@@ -57,17 +57,17 @@
 		item: {
 			id: "draconicevolution:dislocator",
 			tag: {
-				X: 0.5d,
-				Y: 254.64375994610788d,
-				Z: 0.5d,
-				Yaw: -104.096695f,
-				Pitch: 86.1f,
 				Dimension: 3,
 				IsSet: 1b,
-				DimentionName: "planet",
+				Z: 0.5d,
+				Pitch: 86.1f,
+				X: 0.5d,
+				Y: 254.64375994610788d,
+				Yaw: -104.096695f,
 				display: {
 					Name: "Dislocator Moon"
-				}
+				},
+				DimentionName: "planet"
 			}
 		}
 	}]

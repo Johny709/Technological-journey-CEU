@@ -1,0 +1,19 @@
+{
+	x: -8.5d,
+	y: -1.0d,
+	text: [
+		"If you ever wanted to move under a bucket of fluid"
+	],
+	tasks: [{
+		uid: "8cf08707",
+		type: "item",
+		items: [{
+			id: "tj:meta_item",
+			Damage: 992s,
+			tag: {
+				settings: {}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

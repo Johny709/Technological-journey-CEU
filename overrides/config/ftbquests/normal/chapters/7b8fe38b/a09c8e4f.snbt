@@ -5,6 +5,7 @@
 		"This can be used to pick up the ores that go everywhere when you mine with the hammer. However, you are relatively close to being finished with manual mining altogether."
 	],
 	optional: 1b,
+	or_tasks: 1b,
 	tasks: [{
 		uid: "fc42c2c3",
 		type: "item",
@@ -15,5 +16,19 @@
 			}
 		}],
 		ignore_nbt: 1b
+	},
+	{
+		uid: "81e8e0c1",
+		type: "item",
+		items: [{
+			item: "draconicevolution:magnet"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "38c7ca68",
+		type: "item",
+		item: "minecraft:experience_bottle",
+		count: 16
 	}]
 }

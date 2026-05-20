@@ -1,0 +1,16 @@
+{
+	x: -8.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "e0c2e117",
+		type: "checkmark",
+		title: "High Octane Gasoline",
+		icon: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "high_octane",
+				Amount: 1000
+			}
+		}
+	}]
+}

@@ -1,0 +1,46 @@
+{
+	title: "Void Covers",
+	x: 8.0d,
+	y: -7.0d,
+	shape: "gear",
+	text: [
+		"If you need to quickly void products from recipes. Say, for example, water"
+	],
+	optional: 1b,
+	tasks: [{
+		uid: "eb317f9b",
+		type: "item",
+		items: [{
+			item: "tj:meta_item 1 998"
+		}]
+	},
+	{
+		uid: "eb91046b",
+		type: "item",
+		items: [{
+			item: "tj:meta_item 1 997"
+		}]
+	},
+	{
+		uid: "80145fb5",
+		type: "item",
+		items: [{
+			item: "tj:meta_item 1 996"
+		}]
+	}],
+	rewards: [{
+		uid: "32cf488b",
+		type: "item",
+		item: "tj:meta_item 1 998"
+	},
+	{
+		uid: "0cb34067",
+		type: "item",
+		item: "tj:meta_item 1 997"
+	},
+	{
+		uid: "72c8cba6",
+		type: "item",
+		item: "tj:meta_item 1 996"
+	}]
+}

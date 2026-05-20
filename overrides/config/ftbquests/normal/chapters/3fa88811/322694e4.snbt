@@ -1,0 +1,17 @@
+{
+	x: -7.5d,
+	y: -6.5d,
+	text: [
+		"A level maintainer that actually works? I never thought this would happen"
+	],
+	dependencies: [
+		"f3a3850c"
+	],
+	tasks: [{
+		uid: "a9a4ec2d",
+		type: "item",
+		items: [{
+			item: "ae2powertools:better_level_maintainer"
+		}]
+	}]
+}

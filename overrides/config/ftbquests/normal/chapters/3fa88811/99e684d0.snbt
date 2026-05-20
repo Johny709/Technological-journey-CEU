@@ -1,0 +1,23 @@
+{
+	x: -6.0d,
+	y: -6.0d,
+	text: [
+		"To make AE2 recipes that use circuits much easier, it is recommended that you convert them to their universal counterparts. This will then mean that as you progress through circuits, you only have to change the one recipe for the conversion for all recipes that use that circuit to be updated."
+	],
+	dependencies: [
+		"f3a3850c"
+	],
+	tasks: [{
+		uid: "a05c8b02",
+		type: "item",
+		items: [{
+			item: "tj:meta_item 1 1008"
+		}]
+	}],
+	rewards: [{
+		uid: "106c2fe7",
+		type: "item",
+		item: "tj:meta_item 1 1008",
+		count: 4
+	}]
+}

@@ -7,7 +7,9 @@
 		"1: you want to supply both items and fluids from the same block.",
 		"2: you want to return both items and fluids to ae2 from the same block.",
 		"",
-		"They are not needed when using fluid crafting patterns. A normal interface can send both fluids and items."
+		"They are not needed when using fluid crafting patterns. A normal interface can send both fluids and items.",
+		"",
+		"These should never have patterns put into them. If you want to use them for subnets with both items and fluids, use a normal interface to push into a dual interface"
 	],
 	dependencies: [
 		"f3a3850c"

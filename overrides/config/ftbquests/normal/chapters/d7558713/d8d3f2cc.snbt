@@ -1,0 +1,24 @@
+{
+	x: -0.5d,
+	y: -4.0d,
+	text: [
+		"ME Stocking inputs are a special breed. When set to stocking, they will grab all items or fluids in the network. It's best to use these on subnets… Please don’t put on main"
+	],
+	dependencies: [
+		"add803cf"
+	],
+	tasks: [{
+		uid: "f009f6f6",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1104"
+		}]
+	},
+	{
+		uid: "11c6fd28",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1101"
+		}]
+	}]
+}

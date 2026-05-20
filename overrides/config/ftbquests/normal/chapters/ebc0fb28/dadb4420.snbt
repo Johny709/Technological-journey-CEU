@@ -1,8 +1,8 @@
 {
 	title: "Advanced Diesel Generator",
 	icon: "gregtech:machine 1 2240",
-	x: -10.0d,
-	y: 0.0d,
+	x: -9.5d,
+	y: 1.0d,
 	dependencies: [
 		"ac907828"
 	],

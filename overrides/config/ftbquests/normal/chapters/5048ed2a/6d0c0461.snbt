@@ -1,18 +1,33 @@
 {
-	x: -1.5d,
+	x: -2.5d,
 	y: 6.0d,
 	text: [
-		"Filtered output hatches are very useful for setting up LCR's."
+		"Filtered output hatches are very useful for setting up LCR's. Don’t worry, you are playing the 1.5 beta ;)"
 	],
 	dependencies: [
 		"f23e7e88"
 	],
 	optional: 1b,
+	or_tasks: 1b,
 	tasks: [{
 		uid: "82cb49e4",
 		type: "item",
 		items: [{
 			item: "gregtech:machine 1 3224"
+		}]
+	},
+	{
+		uid: "79ce4e3e",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 6087"
+		}]
+	},
+	{
+		uid: "2d8385a5",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 6072"
 		}]
 	}]
 }

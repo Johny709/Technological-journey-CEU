@@ -9,18 +9,166 @@
 	],
 	optional: 1b,
 	tasks: [{
-		uid: "70fa85d7",
+		uid: "b6ec15e4",
 		type: "item",
 		items: [{
-			id: "ironbackpacks:backpack",
-			tag: {
-				packInfo: {
-					upgrade: [],
-					type: "ironbackpacks:basic",
-					spec: "NONE"
+			id: "retro_sophisticated_backpacks:backpack_leather",
+			ForgeCaps: {
+				Parent: {
+					MemoryRespectNBT: [B;
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b
+					],
+					LockedSlots: [B;
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b
+					],
+					AccentColor: -10342886,
+					UUIDMost: 5549561443881733992L,
+					UpgradeSlotsSize: 1,
+					MemoryItems: {
+						Items: []
+					},
+					BackpackInventory: {
+						Items: []
+					},
+					MainColor: -3382982,
+					SortType: 0b,
+					BackpackInventorySize: 27,
+					UpgradeSlots: {
+						Items: []
+					},
+					UUIDLeast: -4914955467200959184L
+				},
+				"retro_sophisticated_backpacks:backpack_capability": {
+					MemoryRespectNBT: [B;
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b
+					],
+					LockedSlots: [B;
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b,
+						0b
+					],
+					AccentColor: -10342886,
+					UUIDMost: 496247330166426013L,
+					UpgradeSlotsSize: 1,
+					MemoryItems: {
+						Items: []
+					},
+					BackpackInventory: {
+						Items: []
+					},
+					MainColor: -3382982,
+					SortType: 0b,
+					BackpackInventorySize: 27,
+					UpgradeSlots: {
+						Items: []
+					},
+					UUIDLeast: -7205301199677627774L
 				}
 			}
 		}],
+		ignore_damage: 1b,
 		ignore_nbt: 1b
 	}]
 }

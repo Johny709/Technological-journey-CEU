@@ -2,7 +2,9 @@
 	x: 6.5d,
 	y: -3.0d,
 	text: [
-		"Handy bags can hold many more items than a backpack depending on the memory card used. These can be very useful when mining and don’t void excess."
+		"Handy bags can hold many more items than a backpack, depending on the memory card used. These can be very useful when mining and don’t void excess.",
+		"",
+		"Please make sure your old backpack is empty…"
 	],
 	optional: 1b,
 	tasks: [{

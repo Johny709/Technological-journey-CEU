@@ -1,11 +1,11 @@
 {
-	x: -8.5d,
+	x: -8.0d,
 	y: 2.0d,
 	text: [
-		"Diesel Engine 2! This works just like the normal diesel engine, but instead of EV power, it makes IV. 12 amps boosted, 4 amps unboosted, with the same efficiency numbers as before. "
+		"Diesel Engine 2! This works just like the normal diesel engine, but instead of EV power, it makes IV"
 	],
 	dependencies: [
-		"bee567d9",
+		"396c64bc",
 		"4c489032"
 	],
 	tasks: [{

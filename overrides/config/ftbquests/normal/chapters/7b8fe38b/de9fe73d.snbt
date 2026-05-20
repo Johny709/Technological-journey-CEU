@@ -1,0 +1,20 @@
+{
+	x: 9.5d,
+	y: -7.0d,
+	shape: "gear",
+	text: [
+		"If you need to void fluids from inputs or outputs"
+	],
+	tasks: [{
+		uid: "1fe107fd",
+		type: "item",
+		items: [{
+			id: "tj:meta_item",
+			Damage: 1004s,
+			tag: {
+				Plunger: {}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

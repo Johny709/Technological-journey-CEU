@@ -2,8 +2,8 @@
 	x: -2.0d,
 	y: 1.0d,
 	text: [
-		"The Large Rocket Engine works like the DE and EDE, except it generates LuV power (and consumes rocket fuels instead of combustables). It consumes ",
-		"liquid oxygen to boost, as well as an insane 37500mb of air per second. When boosted, this monster is capable of outputting 12 amps of LuV, enough power to be viable well into the midgame. "
+		"The Large Rocket Engine works like the DE and EDE, except it generates more power (and consumes rocket fuels instead of combustibles). It consumes ",
+		"liquid oxygen to boost, as well as an insane 37500mb of air per second. "
 	],
 	dependencies: [
 		"cd3d48d7"

@@ -25,11 +25,6 @@
 		count: 5
 	},
 	{
-		uid: "ecdd7b00",
-		type: "item",
-		item: "baubles:ring"
-	},
-	{
 		uid: "53520ee4",
 		type: "item",
 		item: {

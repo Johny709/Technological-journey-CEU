@@ -1,0 +1,15 @@
+{
+	x: -8.5d,
+	y: 0.0d,
+	text: [
+		"Getting tired of opening the maintenance GUI? Put your tools or tape into here to quickly fix maintenance issues"
+	],
+	tasks: [{
+		uid: "b673a416",
+		type: "item",
+		items: [{
+			item: "tj:meta_item 1 999"
+		}],
+		ignore_nbt: 1b
+	}]
+}

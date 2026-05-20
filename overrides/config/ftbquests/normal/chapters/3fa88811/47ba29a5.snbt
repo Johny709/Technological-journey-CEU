@@ -4,9 +4,6 @@
 	text: [
 		"To get the best out of fluid crafting you will need the fluid variants of your terminals "
 	],
-	dependencies: [
-		"16b40bc7"
-	],
 	tasks: [{
 		uid: "4d857304",
 		type: "item",

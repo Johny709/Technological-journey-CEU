@@ -1,0 +1,16 @@
+{
+	x: -8.0d,
+	y: -2.5d,
+	tasks: [{
+		uid: "f404728c",
+		type: "checkmark",
+		title: "Gasoline",
+		icon: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "gasoline",
+				Amount: 1000
+			}
+		}
+	}]
+}
