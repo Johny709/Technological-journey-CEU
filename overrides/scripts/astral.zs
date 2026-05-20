@@ -481,3 +481,25 @@ assembler.recipeBuilder()
     .duration(40)
     .EUt(122880)
     .buildAndRegister();
+
+
+    fluid_extractor.recipeBuilder()
+    .inputs(<astralsorcery:itemcraftingcomponent>)
+    .fluidOutputs(<liquid:astralsorcery.liquidstarlight> * 5000)
+    .duration(40)
+    .EUt(2780)
+    .buildAndRegister();
+
+    fluid_extractor.recipeBuilder()
+    .inputs(<astralsorcery:itemcraftingcomponent:4>)
+    .fluidOutputs(<liquid:astralsorcery.liquidstarlight> * 20000)
+    .duration(40)
+    .EUt(2780)
+    .buildAndRegister();
+
+    fluid_extractor.recipeBuilder()
+    .inputs(<randomthings:ingredient:2>)
+    .fluidOutputs(<liquid:astralsorcery.liquidstarlight> * 50000)
+    .duration(40)
+    .EUt(2780)
+    .buildAndRegister();

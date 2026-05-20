@@ -611,3 +611,18 @@ h(<compactmachines3:machine:2>);
 h(<compactmachines3:machine:4>);
 h(<compactmachines3:machine:3>);
 h(<compactmachines3:machine>);
+h(<baubles:max_verstappen>);
+h(<ae2fc:fluid_level_maintainer>);
+h(<threng:machine:4>);
+
+<ironbackpacks:backpack>.addTooltip(format.darkAqua("§4Mod no longer in use, use retro sophisticated backpacks... make sure its empty first"));
+recipes.remove(<ironbackpacks:backpack>);
+recipes.addShapeless(<retro_sophisticated_backpacks:backpack_diamond>,[<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:diamond", spec: "STORAGE"}})]);
+recipes.addShapeless(<retro_sophisticated_backpacks:backpack_gold>,[<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:gold", spec: "STORAGE"}})]);
+recipes.addShapeless(<retro_sophisticated_backpacks:backpack_iron>,[<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:iron", spec: "STORAGE"}})]);
+recipes.addShapeless(<retro_sophisticated_backpacks:backpack_leather>,[<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:basic", spec: "NONE"}})]);
+
+recipes.addShapeless(<retro_sophisticated_backpacks:backpack_diamond>,[<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:diamond", spec: "UPGRADE"}})]);
+recipes.addShapeless(<retro_sophisticated_backpacks:backpack_gold>,[<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:gold", spec: "UPGRADE"}})]);
+recipes.addShapeless(<retro_sophisticated_backpacks:backpack_iron>,[<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:iron", spec: "UPGRADE"}})]);
+//recipes.addShapeless(<retro_sophisticated_backpacks:backpack_leather>,[<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:basic", spec: "NONE"}})]);

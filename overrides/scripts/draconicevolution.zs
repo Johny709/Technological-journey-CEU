@@ -413,3 +413,12 @@ blast_furnace.recipeBuilder()
     .duration(10000)
     .EUt(536870900)
     .buildAndRegister();
+
+  recipes.remove(<draconicevolution:magnet>);
+
+  assembler.recipeBuilder()
+    .inputs(<enderio:item_alloy_ingot> * 4, <minecraft:redstone> * 2, <ore:circuitBasic> * 2)
+    .outputs(<draconicevolution:magnet>)
+    .duration(100)
+    .EUt(28)
+    .buildAndRegister();
