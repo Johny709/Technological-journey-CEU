@@ -626,3 +626,7 @@ recipes.addShapeless(<retro_sophisticated_backpacks:backpack_diamond>,[<ironback
 recipes.addShapeless(<retro_sophisticated_backpacks:backpack_gold>,[<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:gold", spec: "UPGRADE"}})]);
 recipes.addShapeless(<retro_sophisticated_backpacks:backpack_iron>,[<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:iron", spec: "UPGRADE"}})]);
 //recipes.addShapeless(<retro_sophisticated_backpacks:backpack_leather>,[<ironbackpacks:backpack>.withTag({packInfo: {upgrade: [], type: "ironbackpacks:basic", spec: "NONE"}})]);
+
+Utils.removeRecipeByOutput(compressor, [<gregtech:meta_block_compressed_22:4>], [], true);
+
+<gregtech:meta_item_1:10823>.addTooltip("smelt me again for to lose isotope?");
