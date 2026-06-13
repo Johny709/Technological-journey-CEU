@@ -12,5 +12,11 @@
 		items: [{
 			item: "gtadditions:ga_meta_item 1 32205"
 		}]
+	}],
+	rewards: [{
+		uid: "c16d3353",
+		type: "item",
+		item: "gregtech:cable 1 970",
+		count: 9
 	}]
 }

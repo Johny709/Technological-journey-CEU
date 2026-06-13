@@ -19,5 +19,10 @@
 		items: [{
 			item: "gregtech:machine 1 231"
 		}]
+	}],
+	rewards: [{
+		uid: "a9e3a136",
+		type: "item",
+		item: "minecraft:blaze_rod"
 	}]
 }

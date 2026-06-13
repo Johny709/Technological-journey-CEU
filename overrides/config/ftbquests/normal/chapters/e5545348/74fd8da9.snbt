@@ -1,4 +1,5 @@
 {
+	title: "MV Superconductor Wire",
 	x: 7.5d,
 	y: 9.5d,
 	dependencies: [
@@ -10,5 +11,11 @@
 		items: [{
 			item: "gregtech:cable 1 970"
 		}]
+	}],
+	rewards: [{
+		uid: "05434520",
+		type: "item",
+		item: "gregtech:meta_item_1 1 2976",
+		count: 8
 	}]
 }

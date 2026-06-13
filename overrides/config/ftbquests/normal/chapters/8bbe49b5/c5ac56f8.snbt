@@ -10,5 +10,10 @@
 		items: [{
 			item: "gregtech:machine 1 503"
 		}]
+	}],
+	rewards: [{
+		uid: "e77e8f26",
+		type: "item",
+		item: "gregtech:machine_casing 1 3"
 	}]
 }

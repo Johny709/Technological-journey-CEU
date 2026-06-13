@@ -1,6 +1,10 @@
 {
+	title: "Lead",
 	x: -2.0d,
 	y: -2.5d,
+	text: [
+		"This one is used much less compared to copper and tin, still a bit is needed. Luckily you won’t get lead poisoning. (or just won't be able to notice)"
+	],
 	tasks: [{
 		uid: "9d167d24",
 		type: "item",

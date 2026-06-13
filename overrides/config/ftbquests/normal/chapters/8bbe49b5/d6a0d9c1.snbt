@@ -4,7 +4,9 @@
 	y: -4.5d,
 	shape: "rsquare",
 	text: [
-		""
+		"From now on most of the ingots will come out from your EBF as hot ingots instead of the finished product, you need to use a Vacuum Freezer to safely cool them down to a usable temperature.",
+		"",
+		"Be careful with the hot ingots cause it’s very unpleasant to hold them."
 	],
 	tasks: [{
 		uid: "930fcf2a",
@@ -20,5 +22,10 @@
 		items: [{
 			item: "gregtech:machine 1 2535"
 		}]
+	}],
+	rewards: [{
+		uid: "aa4223f1",
+		type: "item",
+		item: "gregtech:meta_item_1 1 32602"
 	}]
 }

@@ -15,5 +15,18 @@
 		items: [{
 			item: "astralsorcery:blockmachine 1 1"
 		}]
+	}],
+	rewards: [{
+		uid: "3aec696b",
+		type: "item",
+		item: {
+			id: "gregtech:ore_tin_0",
+			tag: {
+				display: {
+					Name: "Grind MEEEEEEEEEEEEEEE!"
+				}
+			}
+		},
+		count: 8
 	}]
 }

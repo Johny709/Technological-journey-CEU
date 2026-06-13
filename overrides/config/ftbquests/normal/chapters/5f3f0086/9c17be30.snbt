@@ -170,5 +170,10 @@
 		}],
 		ignore_damage: 1b,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7fdce340",
+		type: "item",
+		item: "retro_sophisticated_backpacks:upgrade_base"
 	}]
 }

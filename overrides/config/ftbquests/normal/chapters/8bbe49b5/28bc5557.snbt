@@ -1,6 +1,11 @@
 {
+	title: "Nichrome Coil",
 	x: -6.0d,
 	y: 1.5d,
+	description: "New coils again?",
+	text: [
+		"Usually there’s about one coil upgrade for each voltage tier, but you didn’t work hard enough in MV so you got two this time."
+	],
 	dependencies: [
 		"c3775ce8"
 	],

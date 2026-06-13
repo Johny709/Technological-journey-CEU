@@ -1,6 +1,6 @@
 {
 	x: 0.5d,
-	y: 5.0d,
+	y: 4.5d,
 	dependencies: [
 		"e69cad91"
 	],
@@ -11,5 +11,10 @@
 		items: [{
 			item: "gregtech:meta_item_1 1 32358"
 		}]
+	}],
+	rewards: [{
+		uid: "ff60f5b9",
+		type: "item",
+		item: "gregtech:meta_item_1 1 32300"
 	}]
 }

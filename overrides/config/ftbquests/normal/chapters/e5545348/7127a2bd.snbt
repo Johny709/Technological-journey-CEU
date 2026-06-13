@@ -1,4 +1,5 @@
 {
+	title: "LV Superconductor Wire",
 	x: 3.5d,
 	y: 6.5d,
 	dependencies: [
@@ -11,5 +12,11 @@
 			item: "gregtech:cable 1 516"
 		}],
 		count: 3L
+	}],
+	rewards: [{
+		uid: "44f9c0e6",
+		type: "item",
+		item: "gregtech:meta_item_1 1 2516",
+		count: 8
 	}]
 }

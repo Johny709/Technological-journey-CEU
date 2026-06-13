@@ -3,6 +3,7 @@
 	icon: "aroma1997sdimension:miningmultitool",
 	x: 8.5d,
 	y: -4.0d,
+	description: "+4 if you want to build a proper portal",
 	text: [
 		"To make a portal to the Mining dimension, build a nether portal out of Portal Frame blocks, then use the mining multitool to light it."
 	],
@@ -20,11 +21,17 @@
 		ignore_nbt: 1b
 	},
 	{
-		uid: "4752c77b",
+		uid: "eb17039a",
 		type: "item",
 		items: [{
-			item: "minecraft:stonebrick"
+			item: "aroma1997sdimension:portalframe"
 		}],
 		count: 10L
+	}],
+	rewards: [{
+		uid: "697ca13e",
+		type: "item",
+		item: "gregtech:sapling",
+		count: 64
 	}]
 }

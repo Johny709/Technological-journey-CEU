@@ -1,7 +1,11 @@
 {
+	title: "Kanthal Dust",
 	x: -7.5d,
 	y: -4.5d,
 	shape: "rsquare",
+	text: [
+		"128 is the exact amount for a single set of coils. "
+	],
 	dependencies: [
 		"92274ac7",
 		"7ebbb4e1"

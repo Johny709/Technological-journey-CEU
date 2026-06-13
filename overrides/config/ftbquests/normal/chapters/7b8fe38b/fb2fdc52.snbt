@@ -4,9 +4,6 @@
 	x: 13.5d,
 	y: 0.0d,
 	shape: "circle",
-	text: [
-		""
-	],
 	dependencies: [
 		"217132c4"
 	],

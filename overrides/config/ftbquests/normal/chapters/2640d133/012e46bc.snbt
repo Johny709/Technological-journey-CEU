@@ -43,5 +43,11 @@
 			item: "gregtech:boiler_casing"
 		}],
 		count: 2L
+	}],
+	rewards: [{
+		uid: "aebd0c02",
+		type: "item",
+		item: "gregtech:meta_item_2 1 25357",
+		count: 10
 	}]
 }

@@ -1,14 +1,27 @@
 {
-	x: -4.0d,
-	y: -2.5d,
-	dependencies: [
-		"4a65f7e7"
+	x: -8.5d,
+	y: -7.5d,
+	description: "This is an older version of the level maintainer.",
+	text: [
+		"I don’t recommend using this, it doesn’t work the best. ",
+		"",
+		"So just use the new one."
 	],
+	dependencies: [
+		"322694e4"
+	],
+	optional: 1b,
 	tasks: [{
 		uid: "83ac637c",
 		type: "item",
 		items: [{
 			item: "threng:machine 1 4"
-		}]
+		}],
+		consume_items: 1b
+	}],
+	rewards: [{
+		uid: "235f2ec2",
+		type: "item",
+		item: "ae2powertools:better_level_maintainer"
 	}]
 }

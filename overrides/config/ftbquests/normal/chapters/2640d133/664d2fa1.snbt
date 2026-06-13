@@ -1,4 +1,5 @@
 {
+	title: "Steel",
 	x: 4.0d,
 	y: 2.0d,
 	shape: "hexagon",
@@ -14,5 +15,11 @@
 		items: [{
 			item: "gregtech:meta_item_1 1 10184"
 		}]
+	}],
+	rewards: [{
+		uid: "efe29a56",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10184",
+		count: 16
 	}]
 }

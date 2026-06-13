@@ -1,0 +1,15 @@
+{
+	title: "Tungstensteel Coil",
+	x: 5.5d,
+	y: 9.0d,
+	dependencies: [
+		"4c489032"
+	],
+	tasks: [{
+		uid: "d8baf91b",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil 1 3"
+		}]
+	}]
+}

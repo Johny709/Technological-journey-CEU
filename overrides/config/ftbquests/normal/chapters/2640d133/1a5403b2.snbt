@@ -17,5 +17,11 @@
 		items: [{
 			item: "gregtech:machine 1 9"
 		}]
+	}],
+	rewards: [{
+		uid: "8b6ccebf",
+		type: "item",
+		item: "gregtech:fluid_pipe 1 1095",
+		count: 4
 	}]
 }

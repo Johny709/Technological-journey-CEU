@@ -56,5 +56,10 @@
 		uid: "95adebb2",
 		type: "item",
 		item: "enderio:item_redstone_timer_filter"
+	},
+	{
+		uid: "bc294481",
+		type: "item",
+		item: "supersoundmuffler:sound_muffler"
 	}]
 }

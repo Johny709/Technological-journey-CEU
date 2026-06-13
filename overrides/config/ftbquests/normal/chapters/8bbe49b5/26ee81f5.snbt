@@ -10,5 +10,11 @@
 		items: [{
 			item: "advancedrocketry:oxygencharger"
 		}]
+	}],
+	rewards: [{
+		uid: "167c2680",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10183",
+		count: 4
 	}]
 }

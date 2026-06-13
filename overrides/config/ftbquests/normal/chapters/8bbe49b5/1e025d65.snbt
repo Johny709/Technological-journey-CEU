@@ -1,6 +1,9 @@
 {
 	x: -3.0d,
 	y: 0.0d,
+	text: [
+		"I wonder how are you able to melt back to liquid?"
+	],
 	dependencies: [
 		"0fd25a62"
 	],
@@ -10,5 +13,11 @@
 		items: [{
 			item: "gregtech:meta_item_1 1 12142"
 		}]
+	}],
+	rewards: [{
+		uid: "7ce4837c",
+		type: "item",
+		item: "gregtech:meta_item_1 1 12142",
+		count: 4
 	}]
 }

@@ -1,6 +1,11 @@
 {
+	title: "Kanthal Coil",
 	x: -6.0d,
 	y: -1.0d,
+	description: "Your first coil upgrade!",
+	text: [
+		"Not much to cook with this so just go for the next one."
+	],
 	dependencies: [
 		"1cacd62b"
 	],
@@ -11,5 +16,11 @@
 			item: "gregtech:wire_coil 1 1"
 		}],
 		count: 16L
+	}],
+	rewards: [{
+		uid: "e886394c",
+		type: "item",
+		item: "gtadditions:ga_meta_item 1 32027",
+		count: 8
 	}]
 }

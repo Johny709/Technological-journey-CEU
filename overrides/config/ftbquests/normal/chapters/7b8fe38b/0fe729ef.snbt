@@ -14,5 +14,11 @@
 		items: [{
 			item: "gregtech:meta_item_1 1 2159"
 		}]
+	}],
+	rewards: [{
+		uid: "607ca318",
+		type: "item",
+		item: "minecraft:glass",
+		count: 16
 	}]
 }

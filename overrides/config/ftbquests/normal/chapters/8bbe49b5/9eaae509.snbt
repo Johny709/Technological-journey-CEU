@@ -1,7 +1,11 @@
 {
+	title: "Nitrogen Dioxide",
 	x: -1.5d,
 	y: -4.5d,
 	shape: "rsquare",
+	text: [
+		"It’s only relevant if you want to go with the Naphtha route."
+	],
 	optional: 1b,
 	tasks: [{
 		uid: "dcf1e543",

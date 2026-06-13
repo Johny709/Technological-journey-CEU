@@ -1,4 +1,5 @@
 {
+	title: "Ethanol",
 	x: -2.5d,
 	y: 3.5d,
 	dependencies: [
@@ -22,10 +23,13 @@
 		uid: "f0e1d054",
 		type: "item",
 		item: {
-			id: "forge:bucketfilled",
+			id: "gregtech:meta_item_1",
+			Damage: 32762s,
 			tag: {
-				FluidName: "ethanol",
-				Amount: 1000
+				Fluid: {
+					FluidName: "ethanol",
+					Amount: 1000
+				}
 			}
 		},
 		count: 2

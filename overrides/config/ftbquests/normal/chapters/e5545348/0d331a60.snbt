@@ -1,4 +1,5 @@
 {
+	title: "Arsenic",
 	x: 3.5d,
 	y: 0.5d,
 	text: [
@@ -13,5 +14,10 @@
 		items: [{
 			item: "gregtech:meta_item_1 1 2005"
 		}]
+	}],
+	rewards: [{
+		uid: "34fdcfe0",
+		type: "item",
+		item: "gregtech:meta_item_1 1 2005"
 	}]
 }

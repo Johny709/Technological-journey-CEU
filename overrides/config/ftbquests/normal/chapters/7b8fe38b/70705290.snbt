@@ -10,5 +10,11 @@
 		items: [{
 			item: "enderio:item_alloy_ingot 1 7"
 		}]
+	}],
+	rewards: [{
+		uid: "84bcca6c",
+		type: "item",
+		item: "minecraft:gold_ingot",
+		count: 4
 	}]
 }

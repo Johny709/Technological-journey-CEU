@@ -1,6 +1,6 @@
 {
-	x: -1.0d,
-	y: -3.5d,
+	x: -0.5d,
+	y: -4.0d,
 	text: [
 		"Level emitters should be used to shut off your machines when buffers fill up. §c§lIf you do not shut off machines, you will end up with TPS issues late game. Make sure to not backstuff machines.§r ",
 		"",

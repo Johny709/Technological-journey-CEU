@@ -1,7 +1,9 @@
 {
-	x: -3.0d,
-	y: -0.5d,
+	x: -2.0d,
+	y: 1.0d,
+	hide_dependency_lines: 1b,
 	dependencies: [
+		"5de58b54",
 		"c6818406"
 	],
 	optional: 1b,

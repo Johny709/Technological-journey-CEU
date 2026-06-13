@@ -1,0 +1,41 @@
+{
+	title: "HEI Autocrafting",
+	x: 5.5d,
+	y: -4.0d,
+	shape: "diamond",
+	description: "It’s very powerful",
+	text: [
+		"HEI has the capability to do entire crafting chains with just a few clicks, it can only do crafting table recipes, so you need to prepare all the raw materials and anything that’s made in a machine.",
+		"",
+		"First step is to favorite the recipes you want to use, second step is to click the Bookmark Recipe button, and lastly you can press the Autocraft button (Shift+C) while hovering on the bracket at the left side to craft it.",
+		"",
+		"It even tells you what’s missing, multiuse tools are sometimes incorrectly listed as missing, but it works regardless."
+	],
+	size: 2.0d,
+	optional: 1b,
+	or_tasks: 1b,
+	tasks: [{
+		uid: "bd79f36f",
+		type: "checkmark",
+		title: "I tried it!",
+		icon: "actuallyadditions:item_crafter_on_a_stick"
+	},
+	{
+		uid: "4898b567",
+		type: "checkmark",
+		title: "I asked for help in DC if it didn't work",
+		icon: "actuallyadditions:item_crafter_on_a_stick"
+	}],
+	rewards: [{
+		uid: "7606141c",
+		type: "item",
+		item: {
+			id: "minecraft:tripwire_hook",
+			tag: {
+				display: {
+					Name: "THE KEY TO TRUE POWER"
+				}
+			}
+		}
+	}]
+}

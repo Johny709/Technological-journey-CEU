@@ -1,6 +1,9 @@
 {
 	x: 2.5d,
 	y: 6.5d,
+	text: [
+		"You can make it by hand, but it’s about time you start thinking about some sort of automation instead of hammering away on a crafting table."
+	],
 	dependencies: [
 		"6e86ee27"
 	],
@@ -11,5 +14,11 @@
 		items: [{
 			item: "gregtech:fluid_pipe 1 184"
 		}]
+	}],
+	rewards: [{
+		uid: "4bb83939",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10184",
+		count: 16
 	}]
 }

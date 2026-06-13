@@ -59,5 +59,11 @@
 			item: "gregtech:metal_casing 1 2"
 		}],
 		count: 10L
+	}],
+	rewards: [{
+		uid: "bc63594f",
+		type: "item",
+		item: "gregtech:meta_item_2 1 32487",
+		count: 4
 	}]
 }

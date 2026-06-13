@@ -20,5 +20,11 @@
 			item: "advancedrocketry:structuretower"
 		}],
 		count: 6L
+	}],
+	rewards: [{
+		uid: "a920896c",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10183",
+		count: 4
 	}]
 }

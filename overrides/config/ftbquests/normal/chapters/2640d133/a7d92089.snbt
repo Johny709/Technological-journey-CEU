@@ -13,5 +13,11 @@
 		items: [{
 			item: "gregtech:cable 1 5237"
 		}]
+	}],
+	rewards: [{
+		uid: "8bc6075a",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10018",
+		count: 16
 	}]
 }

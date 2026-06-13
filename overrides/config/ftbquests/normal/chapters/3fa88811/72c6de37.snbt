@@ -1,8 +1,11 @@
 {
-	x: -5.0d,
-	y: -0.5d,
+	x: -5.5d,
+	y: 2.5d,
+	text: [
+		"Same as a Charger, you can save a redstone per crystal if you really don’t want to use the mixer recipe."
+	],
 	dependencies: [
-		"e74b498c"
+		"9d29faf3"
 	],
 	tasks: [{
 		uid: "1318f3e0",

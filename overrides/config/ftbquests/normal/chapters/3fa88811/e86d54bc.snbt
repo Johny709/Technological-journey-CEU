@@ -1,5 +1,5 @@
 {
-	x: -8.5d,
+	x: -9.5d,
 	y: -3.5d,
 	text: [
 		"View cells can be used to hide the now large amount of fluid drops that are in your network. To do this configure the cell to just the drops in a cell workbench followed by an inverter card and a fuzzy card. After this place the cell in the termal. You will need to do this for all terminals you are using. "

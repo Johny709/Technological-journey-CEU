@@ -1,4 +1,5 @@
 {
+	title: "Central Processing Unit",
 	x: 5.5d,
 	y: 3.5d,
 	shape: "circle",
@@ -17,6 +18,6 @@
 		uid: "e7bc7532",
 		type: "item",
 		item: "gregtech:meta_item_2 1 32464",
-		count: 4
+		count: 2
 	}]
 }

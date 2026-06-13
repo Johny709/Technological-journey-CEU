@@ -1,7 +1,7 @@
 {
 	title: "How to use AE2 memory cards",
-	x: -4.0d,
-	y: -6.0d,
+	x: -7.5d,
+	y: -2.5d,
 	text: [
 		"In order to make more outputs shift right click the original input them right click the p2ps you want as an output.",
 		"",

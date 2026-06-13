@@ -1,4 +1,5 @@
 {
+	title: "Biomass",
 	icon: {
 		id: "forge:bucketfilled",
 		tag: {

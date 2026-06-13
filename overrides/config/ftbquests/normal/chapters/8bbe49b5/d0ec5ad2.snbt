@@ -1,7 +1,13 @@
 {
+	title: "Phenol and Aceton",
 	x: -4.5d,
 	y: -4.5d,
 	shape: "rsquare",
+	text: [
+		"You can obtain them by distilling wood tar and wood vinegar or by cumene process. For the first option you need to process charcoal products and for the second you need to set up oil processing, both will become necessary at some point, but you can choose for now. ",
+		"",
+		"You will be able to pump Charcoal Byproducts from Titan after finishing your rocket. "
+	],
 	optional: 1b,
 	tasks: [{
 		uid: "0f8cba6e",
@@ -11,18 +17,6 @@
 			id: "forge:bucketfilled",
 			tag: {
 				FluidName: "phenol",
-				Amount: 1000
-			}
-		}
-	},
-	{
-		uid: "fc177083",
-		type: "checkmark",
-		title: "Hydrochloric Acid Bucket",
-		icon: {
-			id: "forge:bucketfilled",
-			tag: {
-				FluidName: "hydrochloric_acid",
 				Amount: 1000
 			}
 		}

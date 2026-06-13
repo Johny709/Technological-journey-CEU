@@ -1,7 +1,12 @@
 {
-	x: -2.0d,
-	y: 1.5d,
+	x: -1.0d,
+	y: 3.5d,
+	text: [
+		"This one has a bonus!"
+	],
+	hide_dependency_lines: 1b,
 	dependencies: [
+		"338b9a13",
 		"c6818406"
 	],
 	optional: 1b,

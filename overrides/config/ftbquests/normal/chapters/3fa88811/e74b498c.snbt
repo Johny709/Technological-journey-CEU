@@ -1,8 +1,11 @@
 {
-	x: -5.0d,
-	y: -1.5d,
+	x: -7.0d,
+	y: 2.0d,
+	text: [
+		"Used to make pure crystals in a single step. It might be good early on but large machines can do the same job much faster."
+	],
 	dependencies: [
-		"cd58a821"
+		"9d29faf3"
 	],
 	tasks: [{
 		uid: "d15cef64",

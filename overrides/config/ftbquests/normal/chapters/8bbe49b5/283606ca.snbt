@@ -11,5 +11,11 @@
 			item: "gregtech:cable 1 969"
 		}],
 		count: 3L
+	}],
+	rewards: [{
+		uid: "66662610",
+		type: "item",
+		item: "gregtech:meta_item_1 1 2969",
+		count: 8
 	}]
 }

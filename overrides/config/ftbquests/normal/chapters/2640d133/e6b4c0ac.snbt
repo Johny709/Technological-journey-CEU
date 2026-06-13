@@ -1,9 +1,10 @@
 {
+	title: "Copper",
 	x: 1.0d,
 	y: -5.5d,
 	shape: "rsquare",
 	text: [
-		"Copper can be found in large quantities in bornite veins, alongside iron in pyrite veins, and alongside stibnite in tetrahedrite veins. Several other veins contain copper as a tertiary or sparodic ore, and can be freely mined as you see fit. You'll need lots of copper for bronze, circuit components, and wires. "
+		"Copper can be found in large quantities in bornite veins, alongside iron in pyrite veins, and alongside stibnite in tetrahedrite veins. Several other veins contain copper as a tertiary or sporadic ore, and can be freely mined as you see fit. You'll need lots of copper for bronze, circuit components, and wires. "
 	],
 	tasks: [{
 		uid: "ea6017be",
@@ -13,9 +14,9 @@
 		}]
 	}],
 	rewards: [{
-		uid: "2f814438",
+		uid: "7c8d9ab5",
 		type: "item",
-		item: "thermalfoundation:material 1 128",
+		item: "gregtech:meta_item_1 1 10018",
 		count: 16
 	}]
 }

@@ -1,4 +1,5 @@
 {
+	title: "Red Alloy",
 	x: -0.5d,
 	y: 5.0d,
 	text: [
@@ -13,5 +14,18 @@
 		items: [{
 			item: "gregtech:meta_item_1 1 10237"
 		}]
+	}],
+	rewards: [{
+		uid: "d8d6d99a",
+		type: "item",
+		item: {
+			id: "gregtech:meta_tool",
+			Damage: 13s,
+			tag: {
+				GT.ToolStats: {
+					Material: "wrought_iron"
+				}
+			}
+		}
 	}]
 }

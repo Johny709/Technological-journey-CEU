@@ -2,9 +2,6 @@
 	title: "Zombie Spawner",
 	x: 15.5d,
 	y: 0.0d,
-	text: [
-		""
-	],
 	dependencies: [
 		"217132c4"
 	],

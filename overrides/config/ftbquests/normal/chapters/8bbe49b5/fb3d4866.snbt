@@ -14,9 +14,8 @@
 		}]
 	}],
 	rewards: [{
-		uid: "ad02a4d8",
+		uid: "9e622197",
 		type: "item",
-		item: "gregtech:rich_ore_gold_0",
-		count: 8
+		item: "gregtech:meta_item_2 1 32491"
 	}]
 }

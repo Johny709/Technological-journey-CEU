@@ -16,5 +16,10 @@
 		items: [{
 			item: "gregtech:machine 1 1400"
 		}]
+	}],
+	rewards: [{
+		uid: "f3d012cb",
+		type: "item",
+		item: "enderio:item_soul_vial"
 	}]
 }

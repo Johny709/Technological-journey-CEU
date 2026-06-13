@@ -13,5 +13,11 @@
 		items: [{
 			item: "gregtech:machine 1 500"
 		}]
+	}],
+	rewards: [{
+		uid: "f10d9473",
+		type: "item",
+		item: "gregtech:cable 1 35",
+		count: 16
 	}]
 }

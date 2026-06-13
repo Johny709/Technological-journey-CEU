@@ -1,6 +1,6 @@
 {
 	x: 0.5d,
-	y: 4.0d,
+	y: 3.5d,
 	text: [
 		"The extruder can be used to make many parts faster and more cheaply. Pipes, cells, gears, etc. can all be produced in an extruder. ",
 		"",
@@ -16,5 +16,10 @@
 		items: [{
 			item: "gregtech:machine 1 271"
 		}]
+	}],
+	rewards: [{
+		uid: "d205e65e",
+		type: "item",
+		item: "gregtech:meta_item_1 1 32641"
 	}]
 }

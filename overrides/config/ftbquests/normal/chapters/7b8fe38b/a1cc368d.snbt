@@ -1,4 +1,5 @@
 {
+	title: "Skeleton Spawner",
 	x: 16.5d,
 	y: 0.0d,
 	dependencies: [

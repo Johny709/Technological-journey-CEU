@@ -1,0 +1,40 @@
+{
+	title: "Industrial Primitive Blast Furnace",
+	x: 5.5d,
+	y: 2.0d,
+	description: "How can something be both primate and industrial at the same time?",
+	text: [
+		"It’s an upgraded version of the PBF, you can extend it to make it faster. You need to get a few ingots of steel to make an LV input and output bus, only one of each is required but using separate inputs can make it easier to automate. "
+	],
+	dependencies: [
+		"664d2fa1"
+	],
+	optional: 1b,
+	tasks: [{
+		uid: "71cba8b3",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2553"
+		}]
+	},
+	{
+		uid: "2dbd46a7",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 710"
+		}]
+	},
+	{
+		uid: "98a57f21",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 711"
+		}]
+	}],
+	rewards: [{
+		uid: "dc9f7113",
+		type: "item",
+		item: "gregtech:meta_block_compressed_12 1 5",
+		count: 4
+	}]
+}

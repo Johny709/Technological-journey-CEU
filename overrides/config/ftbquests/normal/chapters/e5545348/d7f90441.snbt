@@ -1,4 +1,5 @@
 {
+	title: "Gallium",
 	x: 4.5d,
 	y: -5.5d,
 	shape: "rsquare",
@@ -8,5 +9,10 @@
 		items: [{
 			item: "gregtech:meta_item_1 1 2025"
 		}]
+	}],
+	rewards: [{
+		uid: "1204ddad",
+		type: "item",
+		item: "gregtech:meta_item_1 1 2025"
 	}]
 }

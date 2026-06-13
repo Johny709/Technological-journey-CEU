@@ -39,17 +39,18 @@
 		}]
 	}],
 	rewards: [{
-		uid: "bbc9b1d9",
+		uid: "ada03f36",
 		type: "item",
 		item: {
-			id: "gregtech:machine",
-			Damage: 813s,
+			id: "gregtech:meta_item_1",
+			Damage: 32762s,
 			tag: {
 				Fluid: {
 					FluidName: "plastic",
-					Amount: 16000
+					Amount: 1000
 				}
 			}
-		}
+		},
+		count: 18
 	}]
 }

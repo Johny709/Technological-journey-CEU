@@ -1,6 +1,10 @@
 {
+	title: "Naphtha",
 	x: -1.5d,
 	y: -3.0d,
+	text: [
+		"You’re going to need a lot of this."
+	],
 	dependencies: [
 		"9eaae509"
 	],

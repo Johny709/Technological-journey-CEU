@@ -1,7 +1,7 @@
 {
 	title: "Rocket skip if you don't want to deal with AR. more skips follow",
 	x: 3.0d,
-	y: 5.5d,
+	y: 6.0d,
 	text: [
 		"§4Due to the nature of these commands it is HIGHLY recommended you have charged ender IO boots to negate fall damage. You will spawn in at 256 256 256"
 	],

@@ -1,8 +1,10 @@
 {
-	x: -3.0d,
-	y: 0.5d,
+	x: -2.0d,
+	y: 2.0d,
+	hide_dependency_lines: 1b,
 	dependencies: [
-		"c6818406"
+		"c6818406",
+		"cf1e20b5"
 	],
 	optional: 1b,
 	tasks: [{

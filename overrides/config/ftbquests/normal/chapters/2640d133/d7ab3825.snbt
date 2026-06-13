@@ -14,5 +14,10 @@
 		items: [{
 			item: "gregtech:machine 1 14"
 		}]
+	}],
+	rewards: [{
+		uid: "2cd8c6ce",
+		type: "item",
+		item: "minecraft:anvil 1 1"
 	}]
 }

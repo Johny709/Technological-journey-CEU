@@ -11,5 +11,17 @@
 		items: [{
 			item: "simplevoidworld:portal"
 		}]
+	}],
+	rewards: [{
+		uid: "6873f91c",
+		type: "item",
+		item: {
+			id: "betterbuilderswands:wanddiamond",
+			tag: {
+				display: {
+					Name: "Building Gadget also exists"
+				}
+			}
+		}
 	}]
 }

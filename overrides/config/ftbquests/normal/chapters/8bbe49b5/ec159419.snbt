@@ -2,6 +2,9 @@
 	x: -1.5d,
 	y: 4.5d,
 	shape: "hexagon",
+	text: [
+		"This also needs some platinum, the detailed process is in the EV chapter so don’t worry about it now."
+	],
 	dependencies: [
 		"48b1f499"
 	],
@@ -11,5 +14,11 @@
 		items: [{
 			item: "gtadditions:ga_meta_item 1 32208"
 		}]
+	}],
+	rewards: [{
+		uid: "489e19d2",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10072",
+		count: 16
 	}]
 }

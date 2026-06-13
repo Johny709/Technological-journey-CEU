@@ -1,0 +1,30 @@
+{
+	title: "HEI Autocrafting Bug",
+	icon: "minecraft:crafting_table",
+	x: 7.0d,
+	y: -4.0d,
+	description: "I hope it’s fixed when you read this!",
+	text: [
+		"Currently it has an issue with modded Crafting Tables so if it doesn't work with your Crafting Station or Backpack try it with a vanilla Crafting Table."
+	],
+	hide: 1b,
+	dependency_requirement: "one_started",
+	optional: 1b,
+	tasks: [{
+		uid: "b2c5de02",
+		type: "checkmark",
+		title: "HEI Autocrafting Bug"
+	}],
+	rewards: [{
+		uid: "30284584",
+		type: "item",
+		item: {
+			id: "minecraft:crafting_table",
+			tag: {
+				display: {
+					Name: "Place Me Pleaseeee!!!"
+				}
+			}
+		}
+	}]
+}

@@ -53,5 +53,23 @@
 			item: "gregtech:metal_casing"
 		}],
 		count: 8L
+	}],
+	rewards: [{
+		uid: "f47b3880",
+		type: "item",
+		item: "gregtech:ore_copper_0",
+		count: 32
+	},
+	{
+		uid: "3e1b1c62",
+		type: "item",
+		item: "gregtech:ore_iron_0",
+		count: 32
+	},
+	{
+		uid: "46ad6b06",
+		type: "item",
+		item: "gregtech:ore_redstone_0",
+		count: 32
 	}]
 }
