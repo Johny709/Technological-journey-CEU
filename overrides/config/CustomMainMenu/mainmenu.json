@@ -13,8 +13,8 @@
     "buttons": {
         "singleplayer": {
             "text": "menu.singleplayer",
-            "posX": -450,
-            "posY": 60,
+            "posX": -100,
+            "posY": 48,
             "width": 200,
             "height": 20,
             "action": {
@@ -25,8 +25,8 @@
 
         "multiplayer": {
             "text": "menu.multiplayer",
-            "posX": -450,
-            "posY": 84,
+            "posX": -100,
+            "posY": 72,
             "width": 200,
             "height": 20,
             "action": {
@@ -37,8 +37,8 @@
 
         "mods": {
             "text": "fml.menu.mods",
-            "posX": -450,
-            "posY": 108,
+            "posX": -100,
+            "posY": 96,
             "width": 200,
             "height": 20,
             "action": {
@@ -48,8 +48,8 @@
         },
         "discord": {
             "text": "Join Us On Discord",
-            "posX": -450,
-            "posY": 133,
+            "posX": -100,
+            "posY": 121,
             "width": 200,
             "height": 20,
             "action": {
@@ -61,8 +61,8 @@
 
         "options": {
             "text": "menu.options",
-            "posX": -450,
-            "posY": 157,
+            "posX": -100,
+            "posY": 145,
             "width": 98,
             "height": 20,
             "action": {
@@ -73,8 +73,8 @@
 
         "quit": {
             "text": "menu.quit",
-            "posX": -350,
-            "posY": 157,
+            "posX": 2,
+            "posY": 145,
             "width": 98,
             "height": 20,
             "action": {
@@ -84,8 +84,8 @@
 
         "language": {
             "text": "",
-            "posX": -250,
-            "posY": 157,
+            "posX": -124,
+            "posY": 145,
             "width": 20,
             "height": 20,
             "action": {
