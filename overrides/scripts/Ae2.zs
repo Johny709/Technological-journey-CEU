@@ -544,48 +544,7 @@ recipes.addShaped(<appliedenergistics2:chest>, [[<actuallyadditions:block_giant_
 recipes.addShaped(<appliedenergistics2:drive>, [[<gregtech:machine:501>, <appliedenergistics2:material:24>, <gregtech:machine:501>],[<appliedenergistics2:part:16>,<gregtech:meta_item_1:32680>, <appliedenergistics2:part:16>], [<gregtech:machine:501>, <appliedenergistics2:material:24>, <gregtech:machine:501>]]);
 recipes.addShaped(<appliedenergistics2:molecular_assembler>, [[<minecraft:crafting_table>, <ore:circuitBasic>, <minecraft:crafting_table>],[<appliedenergistics2:material:43>, <gregtech:machine:501>, <appliedenergistics2:material:44>], [<minecraft:crafting_table>, <ore:circuitBasic>, <minecraft:crafting_table>]]);
 
-h(<extracells:part.base:10>);
-h(<extracells:part.base:11>);
-h(<extracells:part.base:9>);
-h(<extracells:part.base>);
-h(<extracells:part.base:1>);
-h(<extracells:part.base:8>);
-h(<extracells:part.base:3>);
-h(<extracells:part.base:4>);
-h(<extracells:part.base:6>);
-h(<extracells:part.base:7>);
-h(<extracells:part.base:5>);
-h(<extracells:part.base:2>);
-h(<extracells:ecbaseblock>);
-h(<extracells:fluidfiller>);
-h(<extracells:hardmedrive>);
-h(<extracells:vibrantchamberfluid>);
-h(<extracells:terminal.universal.wireless>);
-h(<extracells:terminal.fluid.wireless>);
-h(<extracells:storage.component>);
-h(<extracells:storage.component:1>);
-h(<extracells:storage.component:2>);
-h(<extracells:storage.component:3>);
-h(<extracells:storage.component:4>);
-h(<extracells:storage.component:5>);
-h(<extracells:storage.component:6>);
-h(<extracells:storage.component:7>);
-h(<extracells:storage.component:8>);
-h(<extracells:storage.component:9>);
-h(<extracells:storage.component:10>);
-h(<extracells:storage.fluid>);
-h(<extracells:storage.fluid:1>);
-h(<extracells:storage.fluid:2>);
-h(<extracells:storage.fluid:3>);
-h(<extracells:storage.fluid:4>);
-h(<extracells:storage.fluid:5>);
-h(<extracells:storage.fluid:6>);
-h(<extracells:storage.physical>);
-h(<extracells:storage.physical:1>);
-h(<extracells:storage.physical:2>);
-h(<extracells:storage.physical:3>);
-h(<extracells:storage.casing>);
-h(<extracells:storage.casing:1>);
+
 //h(<extracpus:crafting_storage_256k>);
 //h(<extracpus:crafting_storage_1024k>);
 //h(<extracpus:crafting_storage_4096k>);
@@ -606,13 +565,6 @@ for item in ae2Items {
     }
 }
 
-val ae3 as IMod = loadedMods["extracells"];
-val ae3Items as IItemStack[] = ae3.items;
-for item in ae3Items {
-    if(item.displayName has "ME Fluid Pattern") {
-            h(item);
-    }
-}
 
 assembler.recipeBuilder()
 .inputs([<gregtech:machine:503>,<appliedenergistics2:quartz_glass> * 2,<gregtech:meta_item_1:32612> *2 ])
@@ -656,9 +608,6 @@ assembler.recipeBuilder()
 .buildAndRegister();
 recipes.addShapeless(<appliedenergistics2:interface>, [<appliedenergistics2:part:440>]);
 recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
-
-recipes.remove(<extracells:part.base:12>);
-recipes.addShapeless(<extracells:part.base:12>, [<gregtech:meta_item_1:32102>,<appliedenergistics2:part:260>]);
 
 //Fix certus
 
@@ -796,7 +745,7 @@ assembler.recipeBuilder()
 .notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 2}))
 .outputs([<nae2:material:5>])
 .duration(300)
-.EUt(76800)
+.EUt(7680)
 .buildAndRegister();
 
 //1024k
@@ -874,37 +823,3 @@ assembler.recipeBuilder()
 .duration(450)
 .EUt(1920)
 .buildAndRegister();
-
-//Extracells To NAE2 Cells conversion
-recipes.addShapeless(<nae2:material:5>, [<extracells:storage.component:8>]);
-recipes.addShapeless(<nae2:material:1>, [<extracells:storage.component:0>]);
-recipes.addShapeless(<nae2:material:2>, [<extracells:storage.component:1>]);
-recipes.addShapeless(<nae2:material:3>, [<extracells:storage.component:2>]);
-recipes.addShapeless(<nae2:material:4>, [<extracells:storage.component:3>]);
-
-//cpu to cpu
-//recipes.addShapeless(<nae2:storage_crafting_256k>, [<extracpus:crafting_storage_256k>]);
-//recipes.addShapeless(<nae2:storage_crafting_1024k>, [<extracpus:crafting_storage_1024k>]);
-//recipes.addShapeless(<nae2:storage_crafting_4096k>, [<extracpus:crafting_storage_4096k>]);
-//recipes.addShapeless(<nae2:storage_crafting_16384k>, [<extracpus:crafting_storage_16384k>]); 
-
-//ME fluid asembler
-recipes.addShapeless(<ae2fc:fluid_assembler>, [<extracells:fluidcrafter>]);
-recipes.remove(<extracells:fluidcrafter>);
-
-//Mark all items a depreciated
-val ae4 as IMod = loadedMods["extracells"];
-val ae4Items as IItemStack[] = ae4.items;
-for item in ae4Items {
-    
-        if(item.displayName has "ME Block Container - Empty" || item.displayName has "Storage Cell") {
-            if(item.displayName has "Storage Cell") {
-            item.addTooltip("§buse a ME I/O port to dump contents into new cells. Then you can shift right with the empty cell in your hand to get back the part for conversion");
-    }
-        }
-        else{
-                item.addTooltip("§4Please Migrate to NE AE2 Equivalent");
-            h(item);
-        }
-
-}

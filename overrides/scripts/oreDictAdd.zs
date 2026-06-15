@@ -472,7 +472,7 @@ h(<advancedrocketry:planetselector>);
 h(<variegated:silvered_apple>);
 h(<variegated:silvered_apple:1>);
 h(<appliedenergistics2:part:260>);
-h(<extracells:part.base:12>);
+//h(<extracells:part.base:12>);
 <variegated:defiled_ground>.displayName = "Cursed Earth";
 
 
@@ -531,10 +531,10 @@ h(<danknull:dank_null_panel_4>);
 h(<danknull:dank_null_panel_5>);
 h(<danknull:danknull_dock>);
 h(<gregtech:machine:2005>);
-h(<extracells:storage.fluid:5>.withTag({fuzzyMode: "IGNORE_ALL"}));
-h(<extracells:storage.fluid:6>.withTag({fuzzyMode: "IGNORE_ALL"}));
-h(<extracells:storage.component:9>);
-h(<extracells:storage.component:10>);
+//h(<extracells:storage.fluid:5>.withTag({fuzzyMode: "IGNORE_ALL"}));
+//h(<extracells:storage.fluid:6>.withTag({fuzzyMode: "IGNORE_ALL"}));
+//h(<extracells:storage.component:9>);
+//h(<extracells:storage.component:10>);
 h(<actuallyadditions:block_atomic_reconstructor>);
 h(<mob_grinding_utils:wither_muffler>);
 h(<mob_grinding_utils:saw_upgrade:5>);
@@ -576,6 +576,7 @@ for i in 0 to 11{
 	h(megnet[i]);
 	Utils.removeRecipeByOutput(circuit_assembler, [megnet[i]], [], false);
 }
+
 h(<enderio:block_solar_panel:3>);
 h(<enderio:block_solar_panel>);
 h(<enderio:block_solar_panel:1>);
