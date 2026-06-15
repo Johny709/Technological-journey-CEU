@@ -630,3 +630,6 @@ recipes.addShapeless(<retro_sophisticated_backpacks:backpack_iron>,[<ironbackpac
 Utils.removeRecipeByOutput(compressor, [<gregtech:meta_block_compressed_22:4>], [], true);
 
 <gregtech:meta_item_1:10823>.addTooltip("smelt me again for to lose isotope?");
+
+
+	<ore:slimeball>.add(<thermalfoundation:material:833>);

@@ -2154,7 +2154,7 @@ centrifuge.findRecipe(320, [<gregtech:meta_item_1:2307>], []).remove();
 large_centrifuge.findRecipe(320, [<gregtech:meta_item_1:2307>], []).remove();
 
 Utils.removeRecipeByOutput(blast_furnace, [<gregtech:meta_item_1:10061>], [], true);
-recipes.addShaped(<minecraft:name_tag>, [[null, <minecraft:string>, <minecraft:string>],[null, <ore:slimeball>, <minecraft:string>], [<minecraft:string>, null, null]]);
+//recipes.addShaped(<minecraft:name_tag>, [[null, <minecraft:string>, <minecraft:string>],[null, <ore:slimeball>, <minecraft:string>], [<minecraft:string>, null, null]]);
 
 assembler.recipeBuilder()
     .inputs(<minecraft:chest> * 4)
@@ -2780,3 +2780,28 @@ assembler.recipeBuilder()
     furnace.remove(<gregtech:meta_item_1:1311>);
     furnace.remove(<gregtech:meta_item_1:312>);
     furnace.remove(<gregtech:meta_item_1:1312>);
+
+//emerald
+    electric_imp.recipeBuilder()
+    .inputs([<gregtech:meta_item_1:2113>* 4, <gregtech:meta_item_1:110> * 2])
+    .outputs(<minecraft:emerald>)
+    .duration(1)
+    .EUt(375000)
+    .buildAndRegister();
+//enderpearl
+    electric_imp.recipeBuilder()
+    .inputs([<gregtech:meta_item_1:2218> * 4, <gregtech:meta_item_1:110> * 2])
+    .outputs(<minecraft:ender_pearl>)
+    .duration(1)
+    .EUt(375000)
+    .buildAndRegister();
+
+
+   assembler.recipeBuilder()
+    .inputs([<minecraft:string> * 4, <ore:slimeball>, <gregtech:meta_item_1:12197>])
+    .outputs(<minecraft:name_tag>)
+    .duration(1)
+    .EUt(30)
+    .buildAndRegister();
+
+    recipes.addShapeless(<appliedenergistics2:material:61>,[<appliedenergistics2:material:25>,<ore:slimeball>]);

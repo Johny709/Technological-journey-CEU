@@ -67,3 +67,4 @@ global simple_qbit       as RecipeMap = RecipeMap.getByName("simple_qubit_genera
 global Stellar           as RecipeMap = RecipeMap.getByName("stellar_forge");
 global condenser         as RecipeMap = RecipeMap.getByName("plasma_condenser");
 global bioreactor        as RecipeMap = RecipeMap.getByName("bio_reactor");
+global electric_imp      as RecipeMap = RecipeMap.getByName("electric_implosion");
