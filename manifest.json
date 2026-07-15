@@ -8,7 +8,7 @@
     },
     "manifestType": "minecraftModpack",
     "manifestVersion": 1,
-    "name": "Technological Journey",
+    "name": "Technological Journey CEU",
     "version": "1.2.3",
     "author": "Technological Journey Dev team",
     "projectID": 422473,
@@ -20,11 +20,6 @@
         {
             "projectID": 557549,
             "fileID": 8081514,
-            "required": true
-        },
-        {
-            "projectID": 312195,
-            "fileID": 2858475,
             "required": true
         },
         {
@@ -80,11 +75,6 @@
         {
             "projectID": 1337144,
             "fileID": 7763338,
-            "required": true
-        },
-        {
-            "projectID": 386188,
-            "fileID": 3407001,
             "required": true
         },
         {
@@ -175,11 +165,6 @@
         {
             "projectID": 32274,
             "fileID": 2916002,
-            "required": true
-        },
-        {
-            "projectID": 239197,
-            "fileID": 7406648,
             "required": true
         },
         {
@@ -328,18 +313,8 @@
             "required": true
         },
         {
-            "projectID": 315391,
-            "fileID": 2678285,
-            "required": true
-        },
-        {
             "projectID": 226447,
             "fileID": 2477566,
-            "required": true
-        },
-        {
-            "projectID": 237065,
-            "fileID": 3331364,
             "required": true
         },
         {
@@ -361,11 +336,6 @@
         {
             "projectID": 224218,
             "fileID": 2707509,
-            "required": true
-        },
-        {
-            "projectID": 336569,
-            "fileID": 2929872,
             "required": true
         },
         {
@@ -489,11 +459,6 @@
             "required": true
         },
         {
-            "projectID": 220954,
-            "fileID": 3368737,
-            "required": true
-        },
-        {
             "projectID": 427469,
             "fileID": 3862324,
             "required": true
@@ -501,11 +466,6 @@
         {
             "projectID": 319227,
             "fileID": 2789273,
-            "required": true
-        },
-        {
-            "projectID": 255257,
-            "fileID": 3334690,
             "required": true
         },
         {
@@ -634,11 +594,6 @@
             "required": true
         },
         {
-            "projectID": 592190,
-            "fileID": 3686839,
-            "required": true
-        },
-        {
             "projectID": 610085,
             "fileID": 3748963,
             "required": true
@@ -710,7 +665,7 @@
         },
         {
             "projectID": 624243,
-            "fileID": 7929464,
+            "fileID": 7202582,
             "required": true
         },
         {
@@ -774,20 +729,11 @@
             "required": true
         },
         {
-            "projectID": 1553760,
-            "fileID": 8252726,
-            "required": true
-        },
-        {
-            "projectID": 607023,
-            "fileID": 8253958,
-            "required": true
-        },
-        {
-            "projectID": 597032,
-            "fileID": 8244866,
+            "projectID": 687577,
+            "fileID": 7925117,
             "required": true
         }
     ],
     "overrides": "overrides"
+}
 }
