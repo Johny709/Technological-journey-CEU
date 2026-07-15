@@ -1,4 +1,3 @@
-
 import gregtech.api.gui.GuiTextures
 import gregtech.api.metatileentity.MetaTileEntity
 import gregtech.api.metatileentity.interfaces.IGregTechTileEntity
@@ -12,7 +11,6 @@ import gregtech.api.recipes.builders.PrimitiveRecipeBuilder
 import gregtech.client.renderer.ICubeRenderer
 import gregtech.client.renderer.texture.Textures
 import gregtech.common.blocks.BlockMetalCasing
-import gregtech.common.blocks.BlockSteamCasing
 import gregtech.common.blocks.MetaBlocks
 import gregtech.core.sound.GTSoundEvents
 import groovyjarjarantlr4.v4.runtime.misc.NotNull
@@ -20,38 +18,35 @@ import net.minecraft.util.ResourceLocation
 import net.minecraftforge.fml.relauncher.Side
 import net.minecraftforge.fml.relauncher.SideOnly
 
-class MetaTileEntityPrimitiveAlloySmelter extends TJRecipeMapSteamMultiblockController {
+class MetaTileEntityTJCokeOven extends TJRecipeMapSteamMultiblockController {
 
-    public static final RecipeMap<PrimitiveRecipeBuilder> PRIMITIVE_ALLOY_SMELTER_RECIPES = new RecipeMapBuilder<>("primitive_alloy_smelter",
-            new PrimitiveRecipeBuilder())
-            .itemSlotOverlay(GuiTextures.FURNACE_OVERLAY_1, false)
+    public static final RecipeMap<PrimitiveRecipeBuilder> COKE_OVEN_RECIPES = new RecipeMapBuilder<>("coke_oven_2", new PrimitiveRecipeBuilder())
             .progressBar(GuiTextures.PROGRESS_BAR_ARROW)
-            .sound(GTSoundEvents.FURNACE)
-            .fluidInputs(1)
+            .itemInputs(1)
             .itemOutputs(1)
-            .itemInputs(2)
+            .fluidOutputs(1)
+            .sound(GTSoundEvents.FIRE)
             .build()
 
-    MetaTileEntityPrimitiveAlloySmelter(ResourceLocation metaTileEntityId) {
-        super(metaTileEntityId, PRIMITIVE_ALLOY_SMELTER_RECIPES)
+    MetaTileEntityTJCokeOven(ResourceLocation metaTileEntityId) {
+        super(metaTileEntityId, COKE_OVEN_RECIPES)
         this.recipeMapWorkable = new TJSteamMultiblockRecipeLogic(this, true)
     }
 
     @Override
     MetaTileEntity createMetaTileEntity(IGregTechTileEntity iGregTechTileEntity) {
-        return new MetaTileEntityPrimitiveAlloySmelter(this.metaTileEntityId)
+        return new MetaTileEntityTJCokeOven(this.metaTileEntityId)
     }
 
     @Override
     protected @NotNull BlockPattern createStructurePattern() {
         return FactoryBlockPattern.start()
-                .aisle("XXX", "XXX", "BBB")
-                .aisle("XXX", "X#X", "B#B")
-                .aisle("XXX", "XSX", "BBB")
+                .aisle("XXX", "XXX", "XXX")
+                .aisle("XXX", "X#X", "XXX")
+                .aisle("XXX", "XSX", "XXX")
                 .where('S' as char, this.selfPredicate())
-                .where('X' as char, states(MetaBlocks.METAL_CASING.getState(BlockMetalCasing.MetalCasingType.PRIMITIVE_BRICKS)).setMinGlobalLimited(9)
-                        .or(abilities(MultiblockAbility.IMPORT_ITEMS, MultiblockAbility.EXPORT_ITEMS, MultiblockAbility.IMPORT_FLUIDS)))
-                .where('B' as char, states(MetaBlocks.STEAM_CASING.getState(BlockSteamCasing.SteamCasingType.BRONZE_HULL)))
+                .where('X' as char, states(MetaBlocks.METAL_CASING.getState(BlockMetalCasing.MetalCasingType.COKE_BRICKS)).setMinGlobalLimited(9)
+                        .or(abilities(MultiblockAbility.IMPORT_ITEMS, MultiblockAbility.EXPORT_ITEMS, MultiblockAbility.EXPORT_FLUIDS)))
                 .where('#' as char, air())
                 .build()
     }
@@ -59,13 +54,13 @@ class MetaTileEntityPrimitiveAlloySmelter extends TJRecipeMapSteamMultiblockCont
     @Override
     @SideOnly(Side.CLIENT)
     ICubeRenderer getBaseTexture(IMultiblockPart iMultiblockPart) {
-        return Textures.PRIMITIVE_BRICKS
+        return Textures.COKE_BRICKS
     }
 
     @NotNull
     @Override
     @SideOnly(Side.CLIENT)
     protected ICubeRenderer getFrontOverlay() {
-        return Textures.ALLOY_SMELTER_OVERLAY
+        return Textures.COKE_OVEN_OVERLAY
     }
 }

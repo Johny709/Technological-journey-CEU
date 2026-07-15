@@ -13,6 +13,7 @@ tile.technological_journey.draconiccasing.name=Draconic Casing
 tile.technological_journey.eternityblock.name=Block of Eternity
 tile.technological_journey.soulcasing.name=Large Soul Manipulation Casing
 
-technological_journey.machine.primitive_alloy_smelter.name=Primitive Alloy Smelter
+technological_journey.machine.primitive_alloy_smelter.name=Primitive Alloy Smelter (PAS)
+technological_journey.machine.coke_oven.name=Coke Oven (CO)
 
 recipemap.primitive_alloy_smelter.name=Primitive Alloy Smelter
