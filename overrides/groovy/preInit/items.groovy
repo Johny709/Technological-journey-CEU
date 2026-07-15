@@ -1,5 +1,5 @@
 
-log.info('registering TJ items')
+log.info('Registering TJ Items')
 content.createItem('eternitycrystal').register()
 content.createItem('eternityingot').register()
 content.createItem('infinitycrystal').register()
