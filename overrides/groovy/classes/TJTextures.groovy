@@ -5,4 +5,5 @@ import net.minecraftforge.fml.relauncher.Side
 @EventBusSubscriber(modid = "groovyscript", value = Side.CLIENT)
 class TJTextures {
     public static final SimpleCubeRenderer DRACONIC_CASING = new SimpleCubeRenderer("blocks/draconiccasing")
+    public static final SimpleCubeRenderer CHAOS_CASING = new SimpleCubeRenderer("blocks/chaoticcasing")
 }

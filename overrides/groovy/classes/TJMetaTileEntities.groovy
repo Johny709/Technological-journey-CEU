@@ -6,4 +6,5 @@ class TJMetaTileEntities {
     public static MetaTileEntity INDUSTRIAL_PRIMITIVE_BLAST_FURNACE
     public static MetaTileEntity HEAT_EXCHANGER
     public static MetaTileEntity ARMOR_INFUSER
+    public static MetaTileEntity CHAOS_REPLICATOR
 }

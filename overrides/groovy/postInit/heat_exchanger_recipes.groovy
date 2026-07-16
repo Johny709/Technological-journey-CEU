@@ -17,6 +17,7 @@ def pahoehoeLava = content.createFluid('pahoehoe_lava') // TODO fix pahoehoe flu
         .isFinite()
         .register()
 
+// heat exchanger
 crafting.shapedBuilder()
         .row('PCP')
         .row('CBC')
@@ -26,6 +27,7 @@ crafting.shapedBuilder()
         .key('B', MetaTileEntities.LARGE_STEEL_BOILER.getStackForm())
         .output(TJMetaTileEntities.HEAT_EXCHANGER.getStackForm())
         .register()
+// steam, pahoehoe lava
 heatExchangerRecipes.recipeBuilder()
         .fluidInput(Materials.Water.getFluid(), 1000)
         .fluidInput(Materials.Lava.getFluid(), 10000)
@@ -33,6 +35,7 @@ heatExchangerRecipes.recipeBuilder()
         .fluidOutputs(pahoehoeLava, 1000)
         .duration(20)
         .buildAndRegister()
+// obsidian, sulfur dust, carbon dust
 RecipeMaps.ELECTROLYZER_RECIPES.recipeBuilder()
         .fluidInput(pahoehoeLava, 10000)
         .outputs(item('minecraft:obsidian'))
