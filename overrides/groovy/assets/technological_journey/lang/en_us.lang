@@ -21,4 +21,19 @@ technological_journey.machine.armor_infuser.name=Armor Infuser (AI)
 technological_journey.machine.chaos_replicator.name=Chaos Replicator (CR)
 technological_journey.machine.dragon_egg_replicator.name=Dragon Egg Replicator (DER)
 
+technological_journey.machine.vial_processor.lv.name=Basic Vial Processor
+technological_journey.machine.vial_processor.mv.name=Advanced Vial Processor
+technological_journey.machine.vial_processor.hv.name=Advanced Vial Processor II
+technological_journey.machine.vial_processor.ev.name=Advanced Vial Processor III
+technological_journey.machine.vial_processor.iv.name=Elite Vial Processor
+technological_journey.machine.vial_processor.luv.name=Elite Vial Processor II
+technological_journey.machine.vial_processor.zpm.name=Elite Vial Processor III
+technological_journey.machine.vial_processor.uv.name=Ultimate Vial Processor
+technological_journey.machine.vial_processor.uhv.name=Epic Vial Processor
+technological_journey.machine.vial_processor.uev.name=Epic Vial Processor II
+technological_journey.machine.vial_processor.uiv.name=Epic Vial Processor III
+technological_journey.machine.vial_processor.uxv.name=Epic Vial Processor IV
+technological_journey.machine.vial_processor.opv.name=Legendary Vial Processor
+technological_journey.machine.vial_processor.max.name=MAX Vial Processor
+
 recipemap.primitive_alloy_smelter.name=Primitive Alloy Smelter
