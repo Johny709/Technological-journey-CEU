@@ -8,6 +8,7 @@ import gregtech.api.pattern.FactoryBlockPattern
 import gregtech.api.recipes.RecipeMap
 import gregtech.api.recipes.RecipeMapBuilder
 import gregtech.api.recipes.builders.PrimitiveRecipeBuilder
+import gregtech.api.recipes.ui.impl.CokeOvenUI
 import gregtech.client.renderer.ICubeRenderer
 import gregtech.client.renderer.texture.Textures
 import gregtech.common.blocks.BlockMetalCasing
@@ -25,6 +26,7 @@ class MetaTileEntityTJCokeOven extends TJRecipeMapSteamMultiblockController {
             .itemInputs(1)
             .itemOutputs(1)
             .fluidOutputs(1)
+            .ui((recipeMap) -> new CokeOvenUI<>(recipeMap))
             .sound(GTSoundEvents.FIRE)
             .build()
 
