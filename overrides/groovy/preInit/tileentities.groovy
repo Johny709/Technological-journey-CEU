@@ -1,3 +1,4 @@
+import classes.MetaTileEntityArmorInfuser
 import classes.MetaTileEntityHeatExchanger
 import classes.MetaTileEntityIndustrialPrimitiveBlastFurnace
 import classes.MetaTileEntityPrimitiveAlloySmelter
@@ -12,6 +13,7 @@ event_manager.listen { MTEManager.MTERegistryEvent event ->
     TJMetaTileEntities.COKE_OVEN = MetaTileEntities.registerMetaTileEntity(1, new MetaTileEntityTJCokeOven(resource(getPackId(), 'coke_oven')))
     TJMetaTileEntities.INDUSTRIAL_PRIMITIVE_BLAST_FURNACE = MetaTileEntities.registerMetaTileEntity(2, new MetaTileEntityIndustrialPrimitiveBlastFurnace(resource(getPackId(), "industrial_primitive_blast_furnace")))
     TJMetaTileEntities.HEAT_EXCHANGER = MetaTileEntities.registerMetaTileEntity(3, new MetaTileEntityHeatExchanger(resource(getPackId(), "heat_exchanger")))
+    TJMetaTileEntities.ARMOR_INFUSER = MetaTileEntities.registerMetaTileEntity(4, new MetaTileEntityArmorInfuser(resource(getPackId(), "armor_infuser")))
 }
 
 

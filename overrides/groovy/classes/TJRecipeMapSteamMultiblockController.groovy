@@ -7,7 +7,6 @@ import gregtech.api.pattern.PatternMatchContext
 import gregtech.api.recipes.RecipeMap
 import groovyjarjarantlr4.v4.runtime.misc.NotNull
 import groovyjarjarantlr4.v4.runtime.misc.Nullable
-
 import net.minecraft.item.ItemStack
 import net.minecraft.util.ResourceLocation
 import net.minecraft.world.World

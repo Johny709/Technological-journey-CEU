@@ -16,9 +16,10 @@ import gregtech.client.renderer.texture.Textures
 import gregtech.common.blocks.BlockMetalCasing
 import gregtech.common.blocks.MetaBlocks
 import groovyjarjarantlr4.v4.runtime.misc.NotNull
-
 import net.minecraft.init.Blocks
 import net.minecraft.util.text.TextFormatting
+import net.minecraftforge.fml.relauncher.Side
+import net.minecraftforge.fml.relauncher.SideOnly
 
 class MetaTileEntityIndustrialPrimitiveBlastFurnace extends TJRecipeMapSteamMultiblockController {
 

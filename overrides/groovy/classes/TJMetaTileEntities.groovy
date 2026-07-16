@@ -5,4 +5,5 @@ class TJMetaTileEntities {
     public static MetaTileEntity COKE_OVEN
     public static MetaTileEntity INDUSTRIAL_PRIMITIVE_BLAST_FURNACE
     public static MetaTileEntity HEAT_EXCHANGER
+    public static MetaTileEntity ARMOR_INFUSER
 }

@@ -15,6 +15,8 @@ import gregtech.client.renderer.ICubeRenderer
 import gregtech.client.renderer.texture.Textures
 import gregtech.core.sound.GTSoundEvents
 import groovyjarjarantlr4.v4.runtime.misc.NotNull
+import net.minecraftforge.fml.relauncher.Side
+import net.minecraftforge.fml.relauncher.SideOnly
 
 class MetaTileEntityHeatExchanger extends TJRecipeMapSteamMultiblockController {
 
