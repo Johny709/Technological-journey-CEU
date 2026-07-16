@@ -7,4 +7,5 @@ class TJMetaTileEntities {
     public static MetaTileEntity HEAT_EXCHANGER
     public static MetaTileEntity ARMOR_INFUSER
     public static MetaTileEntity CHAOS_REPLICATOR
+    public static MetaTileEntity DRAGON_EGG_REPLICATOR
 }

@@ -19,5 +19,6 @@ technological_journey.machine.industrial_primitive_blast_furnace.name=Industrial
 technological_journey.machine.heat_exchanger.name=Heat Exchanger (HE)
 technological_journey.machine.armor_infuser.name=Armor Infuser (AI)
 technological_journey.machine.chaos_replicator.name=Chaos Replicator (CR)
+technological_journey.machine.dragon_egg_replicator.name=Dragon Egg Replicator (DER)
 
 recipemap.primitive_alloy_smelter.name=Primitive Alloy Smelter

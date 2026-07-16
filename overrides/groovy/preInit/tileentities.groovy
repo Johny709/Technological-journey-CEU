@@ -1,5 +1,6 @@
 import classes.MetaTileEntityArmorInfuser
 import classes.MetaTileEntityChaosReplicator
+import classes.MetaTileEntityDragonEggReplicator
 import classes.MetaTileEntityHeatExchanger
 import classes.MetaTileEntityIndustrialPrimitiveBlastFurnace
 import classes.MetaTileEntityPrimitiveAlloySmelter
@@ -16,6 +17,7 @@ event_manager.listen { MTEManager.MTERegistryEvent event ->
     TJMetaTileEntities.HEAT_EXCHANGER = MetaTileEntities.registerMetaTileEntity(3, new MetaTileEntityHeatExchanger(resource(getPackId(), "heat_exchanger")))
     TJMetaTileEntities.ARMOR_INFUSER = MetaTileEntities.registerMetaTileEntity(4, new MetaTileEntityArmorInfuser(resource(getPackId(), 'armor_infuser')))
     TJMetaTileEntities.CHAOS_REPLICATOR = MetaTileEntities.registerMetaTileEntity(5, new MetaTileEntityChaosReplicator(resource(getPackId(), 'chaos_replicator')))
+    TJMetaTileEntities.DRAGON_EGG_REPLICATOR = MetaTileEntities.registerMetaTileEntity(6, new MetaTileEntityDragonEggReplicator(resource(getPackId(), 'dragon_egg_replicator')))
 }
 
 
