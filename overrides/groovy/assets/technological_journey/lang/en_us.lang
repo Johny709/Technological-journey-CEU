@@ -16,5 +16,7 @@ tile.technological_journey.soulcasing.name=Large Soul Manipulation Casing
 technological_journey.machine.primitive_alloy_smelter.name=Primitive Alloy Smelter (PAS)
 technological_journey.machine.coke_oven.name=Coke Oven (CO)
 technological_journey.machine.industrial_primitive_blast_furnace.name=Industrial Primitive Blast Furnace (IPBF)
+technological_journey.machine.heat_exchanger.name=Heat Exchanger (HE)
 
 recipemap.primitive_alloy_smelter.name=Primitive Alloy Smelter
+recipemap.heat_exchanger.name=Heat Exchanger
