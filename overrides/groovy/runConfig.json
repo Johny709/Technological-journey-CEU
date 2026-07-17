@@ -6,6 +6,9 @@
   "debug": false,
   "loaders": {
     "preInit": [
+      "classes/TJMetaTileEntities.groovy",
+      "classes/TJRecipeMapSteamMultiblockController.groovy",
+      "classes/TJSteamMultiblockRecipeLogic.groovy",
       "classes/",
       "preInit/"
     ],
