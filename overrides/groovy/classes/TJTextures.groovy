@@ -7,4 +7,5 @@ class TJTextures {
     public static final SimpleCubeRenderer DRACONIC_CASING = new SimpleCubeRenderer('blocks/draconiccasing')
     public static final SimpleCubeRenderer CHAOS_CASING = new SimpleCubeRenderer('blocks/chaoticcasing')
     public static final SimpleCubeRenderer AWAKENED_CASING = new SimpleCubeRenderer('blocks/awakenedcasing')
+    public static final SimpleCubeRenderer SOUL_CASING = new SimpleCubeRenderer('blocks/soulcasing')
 }

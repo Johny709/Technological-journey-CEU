@@ -3,6 +3,7 @@ import classes.MetaTileEntityChaosReplicator
 import classes.MetaTileEntityDragonEggReplicator
 import classes.MetaTileEntityHeatExchanger
 import classes.MetaTileEntityIndustrialPrimitiveBlastFurnace
+import classes.MetaTileEntityLargePoweredSpawner
 import classes.MetaTileEntityPrimitiveAlloySmelter
 import classes.MetaTileEntityTJCokeOven
 import classes.MetaTileEntityVialProcessor
@@ -20,6 +21,7 @@ event_manager.listen { MTEManager.MTERegistryEvent event ->
     TJMetaTileEntities.ARMOR_INFUSER = MetaTileEntities.registerMetaTileEntity(4, new MetaTileEntityArmorInfuser(resource(getPackId(), 'armor_infuser')))
     TJMetaTileEntities.CHAOS_REPLICATOR = MetaTileEntities.registerMetaTileEntity(5, new MetaTileEntityChaosReplicator(resource(getPackId(), 'chaos_replicator')))
     TJMetaTileEntities.DRAGON_EGG_REPLICATOR = MetaTileEntities.registerMetaTileEntity(6, new MetaTileEntityDragonEggReplicator(resource(getPackId(), 'dragon_egg_replicator')))
+    TJMetaTileEntities.LARGE_POWERED_SPAWNER = MetaTileEntities.registerMetaTileEntity(7, new MetaTileEntityLargePoweredSpawner(resource(getPackId(), 'large_powered_spawner')))
 
     for (i in 0..<TJMetaTileEntities.VIAL_PROCESSORS.length) {
         TJMetaTileEntities.VIAL_PROCESSORS[i] = MetaTileEntities.registerMetaTileEntity(100 + i, new MetaTileEntityVialProcessor(resource(getPackId(), "vial_processor." + GTValues.VN[i + 1]), i + 1))
