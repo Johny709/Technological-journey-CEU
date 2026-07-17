@@ -10,4 +10,5 @@ class TJMetaTileEntities {
     public static MetaTileEntity CHAOS_REPLICATOR
     public static MetaTileEntity DRAGON_EGG_REPLICATOR
     public static MetaTileEntity LARGE_POWERED_SPAWNER
+    public static MetaTileEntity LARGE_VIAL_PROCESSOR
 }

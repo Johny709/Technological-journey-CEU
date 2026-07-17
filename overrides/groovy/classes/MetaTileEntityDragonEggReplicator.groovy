@@ -41,7 +41,7 @@ class MetaTileEntityDragonEggReplicator extends RecipeMapMultiblockController {
                 .aisle("XXX", "XXX", "XXX")
                 .aisle("XXX", "X#X", "XXX")
                 .aisle("XXX", "XSX", "XXX")
-                .where('S', this.selfPredicate())
+                .where('S' as char, this.selfPredicate())
                 .where('X' as char, states(blockstate('technologcial_journey:awakenedcasing')).setMinGlobalLimited(9)
                         .or(autoAbilities(true, true, true, true, true, true, false)))
                 .where('#' as char, air())
