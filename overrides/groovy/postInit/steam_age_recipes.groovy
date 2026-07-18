@@ -29,6 +29,8 @@ crafting.shapedBuilder()
         .key('P', OreDictUnifier.get(OrePrefix.plate, Materials.Iron))
         .output(item('technological_journey:steampiston'))
         .register()
+// hot iron ingot
+furnace.add(ore('ingotIron'), item('technological_journey:hotiron'))
 // industrial primitive blast furnace
 crafting.shapedBuilder()
         .row('BFB')
