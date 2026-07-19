@@ -1,0 +1,42 @@
+
+item.technological_journey.eternitycrystal.name=Eternity Crystal
+item.technological_journey.eternityingot.name=Eternity Ingot
+item.technological_journey.infinitycrystal.name=Infinity Crystal
+item.technological_journey.refinedchaoscrystal.name=Refined Chaos Crystal
+item.technological_journey.refinedchaosshard.name=Refined Chaos Shard
+item.technological_journey.steammotor.name=Steam Motor
+item.technological_journey.steampiston.name=Steam Piston
+item.technological_journey.hotiron.name=Hot Iron Ingot
+
+tile.technological_journey.awakenedcasing.name=Awakened Draconium Casing
+tile.technological_journey.chaoticcasing.name=Refined Chaos Casing
+tile.technological_journey.draconiccasing.name=Draconic Casing
+tile.technological_journey.eternityblock.name=Block of Eternity
+tile.technological_journey.soulcasing.name=Large Soul Manipulation Casing
+
+technological_journey.machine.primitive_alloy_smelter.name=Primitive Alloy Smelter (PAS)
+technological_journey.machine.coke_oven.name=Coke Oven (CO)
+technological_journey.machine.industrial_primitive_blast_furnace.name=Industrial Primitive Blast Furnace (IPBF)
+technological_journey.machine.heat_exchanger.name=Heat Exchanger (HE)
+technological_journey.machine.armor_infuser.name=Armor Infuser (AI)
+technological_journey.machine.chaos_replicator.name=Chaos Replicator (CR)
+technological_journey.machine.dragon_egg_replicator.name=Dragon Egg Replicator (DER)
+technological_journey.machine.large_powered_spawner.name=Large Powered Spawner (LPS)
+technological_journey.machine.large_vial_processor.name=Large Vial Processor (LVP)
+
+technological_journey.machine.vial_processor.lv.name=Basic Vial Processor
+technological_journey.machine.vial_processor.mv.name=Advanced Vial Processor
+technological_journey.machine.vial_processor.hv.name=Advanced Vial Processor II
+technological_journey.machine.vial_processor.ev.name=Advanced Vial Processor III
+technological_journey.machine.vial_processor.iv.name=Elite Vial Processor
+technological_journey.machine.vial_processor.luv.name=Elite Vial Processor II
+technological_journey.machine.vial_processor.zpm.name=Elite Vial Processor III
+technological_journey.machine.vial_processor.uv.name=Ultimate Vial Processor
+technological_journey.machine.vial_processor.uhv.name=Epic Vial Processor
+technological_journey.machine.vial_processor.uev.name=Epic Vial Processor II
+technological_journey.machine.vial_processor.uiv.name=Epic Vial Processor III
+technological_journey.machine.vial_processor.uxv.name=Epic Vial Processor IV
+technological_journey.machine.vial_processor.opv.name=Legendary Vial Processor
+technological_journey.machine.vial_processor.max.name=MAX Vial Processor
+
+recipemap.primitive_alloy_smelter.name=Primitive Alloy Smelter

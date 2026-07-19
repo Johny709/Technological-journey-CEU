@@ -1,0 +1,25 @@
+{
+  "packName": "Technological Journey",
+  "packId": "technological_journey",
+  "author": "Placeholder, author",
+  "version": "0.1",
+  "debug": false,
+  "loaders": {
+    "preInit": [
+      "classes/TJMetaTileEntities.groovy",
+      "classes/TJRecipeMapSteamMultiblockController.groovy",
+      "classes/TJSteamMultiblockRecipeLogic.groovy",
+      "classes/",
+      "preInit/"
+    ],
+    "postInit": [
+      "postInit/"
+    ]
+  },
+  "packmode": {
+    "values": [],
+    "default": "",
+    "_comment": "By default the packmode is not synced with the packmode mod. You can enable integration, but you can no longer change packmode on the fly.",
+    "integratePackmodeMod": false
+  }
+}
