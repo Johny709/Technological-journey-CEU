@@ -14,24 +14,24 @@
 		uid: "c734a701",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 4235"
+			item: "gregtech:mte 1 11064"
 		}]
 	},
 	{
 		uid: "bac4240d",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 4237"
+			item: "gregtech:mte 1 11094"
 		}]
 	}],
 	rewards: [{
 		uid: "0a019f0b",
 		type: "item",
-		item: "gregtech:machine 1 4235"
+		item: "gregtech:mte 1 11064"
 	},
 	{
 		uid: "7e9984ca",
 		type: "item",
-		item: "gregtech:machine 1 4237"
+		item: "gregtech:mte 1 11094"
 	}]
 }

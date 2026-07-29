@@ -11,13 +11,13 @@
 		uid: "e84dc5a2",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 10197"
+			item: "gregtech:meta_ingot 1 335"
 		}]
 	}],
 	rewards: [{
 		uid: "fc52d15d",
 		type: "item",
-		item: "gtadditions:ga_meta_item 1 32037",
+		item: "technological_journey:hotiron",
 		count: 8
 	}]
 }

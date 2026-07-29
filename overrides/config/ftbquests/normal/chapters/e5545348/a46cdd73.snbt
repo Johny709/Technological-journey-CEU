@@ -16,12 +16,12 @@
 		uid: "8322e0c9",
 		type: "item",
 		items: [{
-			item: "gtadditions:ga_meta_item 1 32203"
+			item: "gcyl:gcyl_meta_item 1 203"
 		}]
 	}],
 	rewards: [{
 		uid: "272aeaf4",
 		type: "item",
-		item: "gtadditions:ga_meta_item 1 32203"
+		item: "gcyl:gcyl_meta_item 1 203"
 	}]
 }

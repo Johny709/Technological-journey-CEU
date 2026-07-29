@@ -10,13 +10,13 @@
 		uid: "34d4f02e",
 		type: "item",
 		items: [{
-			item: "gtadditions:ga_meta_item 1 32202"
+			item: "gregtech:meta_item_1 1 625"
 		}]
 	}],
 	rewards: [{
 		uid: "1b55d5f0",
 		type: "item",
-		item: "gregtech:cable 1 517",
+		item: "gcyl:wire_single 1 1143",
 		count: 9
 	}]
 }

@@ -22,7 +22,8 @@
 			Damage: 32309s,
 			tag: {
 				GT.Detrav: {}
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	}]

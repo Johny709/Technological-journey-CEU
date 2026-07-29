@@ -14,7 +14,7 @@
 	rewards: [{
 		uid: "bb900c36",
 		type: "item",
-		item: "gregtech:meta_item_1 1 10184",
+		item: "gregtech:meta_ingot 1 324",
 		count: 4
 	}]
 }

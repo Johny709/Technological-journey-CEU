@@ -1,4 +1,5 @@
 {
+	icon: "gcyl:meta_ingot 1 160",
 	x: 9.5d,
 	y: 1.0d,
 	dependencies: [

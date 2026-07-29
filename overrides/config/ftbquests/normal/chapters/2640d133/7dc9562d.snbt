@@ -11,13 +11,13 @@
 		uid: "cf64fd12",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_2 1 32455"
+			item: "gregtech:meta_item_1 1 519"
 		}]
 	}],
 	rewards: [{
 		uid: "99b77988",
 		type: "item",
-		item: "gregtech:meta_item_2 1 32455",
+		item: "gregtech:meta_item_1 1 519",
 		count: 8
 	}]
 }

@@ -20,7 +20,7 @@
 	rewards: [{
 		uid: "e886394c",
 		type: "item",
-		item: "gtadditions:ga_meta_item 1 32027",
+		item: "gcyl:gcyl_meta_item 1 27",
 		count: 8
 	}]
 }

@@ -21,12 +21,20 @@
 		uid: "e4f2656a",
 		type: "item",
 		item: {
-			id: "gregtech:meta_tool",
-			Damage: 6s,
+			id: "gregtech:hammer",
 			tag: {
-				GT.ToolStats: {
-					Material: "rose_gold"
-				}
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					AttackDamage: 3.0f,
+					ToolSpeed: 6.0f,
+					HarvestLevel: 2,
+					MaxDurability: 255,
+					AttackSpeed: -2.8f,
+					Material: "gregtech:rose_gold",
+					Durability: 0
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
 			}
 		},
 		only_one: 1b

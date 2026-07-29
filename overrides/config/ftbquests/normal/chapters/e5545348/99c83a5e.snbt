@@ -8,12 +8,12 @@
 		uid: "29f8ca23",
 		type: "item",
 		items: [{
-			item: "gtadditions:ga_meta_item 1 32204"
+			item: "gcyl:gcyl_meta_item 1 204"
 		}]
 	}],
 	rewards: [{
 		uid: "29483952",
 		type: "item",
-		item: "gtadditions:ga_meta_item 1 32204"
+		item: "gcyl:gcyl_meta_item 1 204"
 	}]
 }

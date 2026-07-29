@@ -11,13 +11,13 @@
 		uid: "46edbb2a",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 500"
+			item: "gregtech:mte 1 985"
 		}]
 	}],
 	rewards: [{
 		uid: "f10d9473",
 		type: "item",
-		item: "gregtech:cable 1 35",
+		item: "gregtech:wire_single 1 55",
 		count: 16
 	}]
 }

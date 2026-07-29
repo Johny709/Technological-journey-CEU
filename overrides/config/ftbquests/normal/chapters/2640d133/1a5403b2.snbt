@@ -15,13 +15,13 @@
 		uid: "6f5634f4",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 9"
+			item: "gregtech:mte 1 9"
 		}]
 	}],
 	rewards: [{
 		uid: "8b6ccebf",
 		type: "item",
-		item: "gregtech:fluid_pipe 1 1095",
+		item: "gregtech:fluid_pipe_small 1 260",
 		count: 4
 	}]
 }

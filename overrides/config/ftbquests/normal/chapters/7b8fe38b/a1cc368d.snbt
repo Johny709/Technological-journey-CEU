@@ -17,7 +17,7 @@
 		uid: "f490665d",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 5097"
+			item: "gregtech:meta_crushed 1 262"
 		}],
 		count: 32L,
 		consume_items: 1b

@@ -14,12 +14,12 @@
 		uid: "fe28fd32",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 271"
+			item: "gregtech:mte 1 321"
 		}]
 	}],
 	rewards: [{
 		uid: "d205e65e",
 		type: "item",
-		item: "gregtech:meta_item_1 1 32641"
+		item: "gregtech:meta_item_1 1 173"
 	}]
 }

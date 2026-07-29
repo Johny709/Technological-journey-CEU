@@ -30,7 +30,8 @@
 			Damage: 7s,
 			tag: {
 				Charge: 1843200000L
-			}
+			},
+			Count: 1b
 		}
 	},
 	{
@@ -41,7 +42,8 @@
 			Damage: 7s,
 			tag: {
 				Charge: 1843200000L
-			}
+			},
+			Count: 1b
 		}
 	}]
 }

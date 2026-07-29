@@ -1,5 +1,25 @@
 {
 	title: "GregTech Axe",
+	icon: {
+		id: "gregtech:axe",
+		tag: {
+			DisallowContainerItem: 0b,
+			GT.Tool: {
+				AttackDamage: 7.0f,
+				ToolSpeed: 4.0f,
+				HarvestLevel: 2,
+				MaxDurability: 255,
+				AttackSpeed: -3.2f,
+				Material: "gregtech:iron",
+				Durability: 0
+			},
+			HideFlags: 2,
+			GT.Behaviours: {
+				DisableShields: 1b,
+				TreeFelling: 1b
+			}
+		}
+	},
 	x: 4.5d,
 	y: -6.0d,
 	text: [
@@ -19,13 +39,14 @@
 				GT.ToolStats: {
 					Material: "darmstadtium"
 				}
-			}
+			},
+			Count: 1b
 		}
 	}],
 	rewards: [{
 		uid: "71e1b501",
 		type: "item",
-		item: "gregtech:log",
+		item: "gregtech:rubber_log",
 		count: 8
 	}]
 }

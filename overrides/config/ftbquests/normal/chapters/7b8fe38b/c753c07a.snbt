@@ -14,12 +14,12 @@
 		uid: "0568babf",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 470"
+			item: "gregtech:mte 1 620"
 		}]
 	}],
 	rewards: [{
 		uid: "bcdabcd3",
 		type: "item",
-		item: "gregtech:meta_item_1 1 32600"
+		item: "gregtech:meta_item_1 1 127"
 	}]
 }

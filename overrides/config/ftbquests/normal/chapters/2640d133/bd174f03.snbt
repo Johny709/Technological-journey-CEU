@@ -1,5 +1,22 @@
 {
 	title: "Batch crafting?",
+	icon: {
+		id: "gregtech:hammer",
+		tag: {
+			DisallowContainerItem: 0b,
+			GT.Tool: {
+				AttackDamage: 3.0f,
+				ToolSpeed: 6.0f,
+				HarvestLevel: 2,
+				MaxDurability: 255,
+				AttackSpeed: -2.8f,
+				Material: "gregtech:iron",
+				Durability: 0
+			},
+			HideFlags: 2,
+			GT.Behaviours: {}
+		}
+	},
 	x: -0.5d,
 	y: -4.0d,
 	text: [
@@ -16,19 +33,26 @@
 				GT.ToolStats: {
 					Material: "darmstadtium"
 				}
-			}
+			},
+			Count: 1b
 		}
 	}],
 	rewards: [{
 		uid: "efb603b6",
 		type: "item",
 		item: {
-			id: "gregtech:meta_tool",
-			Damage: 12s,
+			id: "gregtech:mortar",
 			tag: {
-				GT.ToolStats: {
-					Material: "wrought_iron"
-				}
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					Material: "gregtech:iron",
+					MaxDurability: 255,
+					Durability: 0,
+					AttackDamage: 0.0f,
+					AttackSpeed: -2.4f
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
 			}
 		},
 		count: 2

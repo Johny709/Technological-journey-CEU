@@ -14,28 +14,28 @@
 		uid: "c13f0d80",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 4178"
+			item: "gregtech:mte 1 10025"
 		}]
 	},
 	{
 		uid: "0a5893ce",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 4175"
+			item: "gregtech:mte 1 11509"
 		}]
 	},
 	{
 		uid: "f303c51d",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 4176"
+			item: "gregtech:mte 1 11508"
 		}]
 	},
 	{
 		uid: "936566fb",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 4177"
+			item: "gregtech:mte 1 11507"
 		}]
 	},
 	{
@@ -49,7 +49,7 @@
 	rewards: [{
 		uid: "897360f1",
 		type: "item",
-		item: "gregtech:meta_item_1 1 10095",
+		item: "gregtech:meta_ingot 1 260",
 		count: 32
 	}]
 }

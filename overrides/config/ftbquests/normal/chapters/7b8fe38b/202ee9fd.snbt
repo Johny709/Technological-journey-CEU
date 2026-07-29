@@ -1,6 +1,6 @@
 {
 	title: "Maintenance Hatch",
-	icon: "gregtech:machine 1 4213",
+	icon: "gregtech:mte 1 11480",
 	x: 17.5d,
 	y: -1.0d,
 	text: [
@@ -20,6 +20,6 @@
 	rewards: [{
 		uid: "47dd75e4",
 		type: "item",
-		item: "gtadditions:ga_meta_item 1 32307"
+		item: "gregtech:meta_item_1 1 502"
 	}]
 }

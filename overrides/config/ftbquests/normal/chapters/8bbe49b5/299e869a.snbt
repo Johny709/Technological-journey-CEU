@@ -12,7 +12,8 @@
 			Damage: 992s,
 			tag: {
 				settings: {}
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	}]

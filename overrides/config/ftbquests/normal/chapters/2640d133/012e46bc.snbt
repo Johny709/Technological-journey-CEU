@@ -17,7 +17,7 @@
 		uid: "3f84002f",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 521"
+			item: "gregtech:mte 1 10013"
 		}]
 	},
 	{
@@ -47,7 +47,7 @@
 	rewards: [{
 		uid: "aebd0c02",
 		type: "item",
-		item: "gregtech:meta_item_2 1 25357",
+		item: "gregtech:meta_gem_exquisite 1 271",
 		count: 10
 	}]
 }

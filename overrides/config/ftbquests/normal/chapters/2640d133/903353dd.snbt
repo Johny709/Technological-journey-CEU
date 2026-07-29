@@ -12,19 +12,27 @@
 		uid: "8dc7966b",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 10237"
+			item: "gregtech:meta_ingot 1 2517"
 		}]
 	}],
 	rewards: [{
 		uid: "d8d6d99a",
 		type: "item",
 		item: {
-			id: "gregtech:meta_tool",
-			Damage: 13s,
+			id: "gregtech:wire_cutter",
 			tag: {
-				GT.ToolStats: {
-					Material: "wrought_iron"
-				}
+				DisallowContainerItem: 0b,
+				GT.Tool: {
+					AttackDamage: 1.0f,
+					ToolSpeed: 6.0f,
+					HarvestLevel: 2,
+					MaxDurability: 255,
+					AttackSpeed: -2.4f,
+					Material: "gregtech:iron",
+					Durability: 0
+				},
+				HideFlags: 2,
+				GT.Behaviours: {}
 			}
 		}
 	}]

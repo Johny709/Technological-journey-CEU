@@ -14,27 +14,27 @@
 		uid: "71cba8b3",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 2553"
+			item: "technological_journey:mte 1 2"
 		}]
 	},
 	{
 		uid: "2dbd46a7",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 710"
+			item: "gregtech:mte 1 11001"
 		}]
 	},
 	{
 		uid: "98a57f21",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 711"
+			item: "gregtech:mte 1 11016"
 		}]
 	}],
 	rewards: [{
 		uid: "dc9f7113",
 		type: "item",
-		item: "gregtech:meta_block_compressed_12 1 5",
+		item: "gregtech:meta_block_compressed_20 1 15",
 		count: 4
 	}]
 }
