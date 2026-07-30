@@ -1,0 +1,40 @@
+{
+    "url": [
+        {
+            "url": "https://github.com/Johny709/GregTechCeu/releases/download/tj-v2.9.0/gregtech-1.12.2-2.9.0-beta.jar",
+            "installationPolicy": {
+                "continueOnFailedDownload": false,
+                "selectedByDefault": true,
+                "name": "GregTechCeu",
+                "description": "With v2.9.0 of GregTechCeu still work in progress and no official release, this pack uses a forked version built from source."
+            }
+        },
+        {
+            "url": "https://github.com/Johny709/GCYL-CEu/releases/download/tj-v0.1/gcyl-1.12.2-0.1.0-beta.jar",
+            "installationPolicy": {
+                "continueOnFailedDownload": false,
+                "selectedByDefault": true,
+                "name": "GCYL CEu",
+                "description": "Addon for GregTechCeu with support for v2.9.0, this pack uses a forked version built from source."
+            }
+        },
+        {
+            "url": "https://github.com/Johny709/gregicality-multiblocks/releases/download/tj-v1.3/gcym-1.12.2-1.3.jar",
+            "installationPolicy": {
+                "continueOnFailedDownload": false,
+                "selectedByDefault": true,
+                "name": "gregicality multiblocks",
+                "description": "Addon for GregTechCeu with support for v2.9.0, this pack uses a forked version built from source."
+            }
+        },
+        {
+            "url": "https://github.com/Johny709/TJ-Additions-CEU/releases/download/v0.1/tja-1.0.jar",
+            "installationPolicy": {
+                "continueOnFailedDownload": false,
+                "selectedByDefault": true,
+                "name": "TJ Additions",
+                "description": "Addon for GregTechCeu with support for v2.9.0, this pack uses a forked version built from source."
+            }
+        }
+    ]
+}
