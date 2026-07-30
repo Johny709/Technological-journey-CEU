@@ -2,11 +2,14 @@
     "url": [
         {
             "url": "https://github.com/Johny709/GregTechCeu/releases/download/tj-v2.9.0/gregtech-1.12.2-2.9.0-beta.jar",
+            "options": {
+                "launchwrapperTweakerForceNext": true
+            },
             "installationPolicy": {
                 "continueOnFailedDownload": false,
                 "selectedByDefault": true,
                 "name": "GregTech Ceu",
-                "description": "With v2.9.0 of GregTech Ceu still work in progress and no official release, this pack uses a forked version built from source."
+                "description": "Please relaunch after downloading with this. The mod loader won't be able to detect this mod at this stage."
             }
         },
         {
@@ -15,7 +18,7 @@
                 "continueOnFailedDownload": false,
                 "selectedByDefault": true,
                 "name": "GCYL CEu",
-                "description": "Addon for GregTech Ceu with support for v2.9.0, this pack uses a forked version built from source."
+                "description": "Please relaunch after downloading with this. The mod loader won't be able to detect this mod at this stage."
             }
         },
         {
@@ -24,7 +27,7 @@
                 "continueOnFailedDownload": false,
                 "selectedByDefault": true,
                 "name": "Gregicality Multiblocks",
-                "description": "Addon for GregTech Ceu with support for v2.9.0, this pack uses a forked version built from source."
+                "description": "Please relaunch after downloading with this. The mod loader won't able to detect this mod at this stage."
             }
         },
         {
@@ -33,7 +36,7 @@
                 "continueOnFailedDownload": false,
                 "selectedByDefault": true,
                 "name": "TJ Additions",
-                "description": "Addon for GregTechCeu with support for v2.9.0, this pack uses a forked version built from source."
+                "description": "Please relaunch after downloading with this. The mod loader won't able to detect this mod at this stage."
             }
         }
     ]
