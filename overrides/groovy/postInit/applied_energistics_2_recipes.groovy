@@ -1,6 +1,8 @@
 import appeng.api.util.AEColor
 import appeng.core.Api
 import appeng.core.ApiDefinitions
+import classes.TJMaterials
+import com.fulltrix.gcyl.materials.GCYLNuclearMaterials
 import gregtech.api.GTValues
 import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.OreDictUnifier
@@ -449,7 +451,19 @@ RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
         .EUt(1920).duration(300)
         .buildAndRegister()
 // quantum link card
-
+crafting.shapedBuilder()
+        .row('DWD')
+        .row('SFE')
+        .row('DCD')
+        .key('D', OreDictUnifier.get(OrePrefix.plateDouble, TJMaterials.StarMetalAlloy))
+        .key('W', definitions.materials().wirelessReceiver().maybeStack(1).get())
+        .key('S', MetaItems.SENSOR_IV.getStackForm())
+        .key('F', MetaItems.FIELD_GENERATOR_IV.getStackForm())
+        .key('E', MetaItems.EMITTER_IV.getStackForm())
+        .key('C', OreDictUnifier.get(OrePrefix.plate, GCYLNuclearMaterials.Curium247))
+        .output(definitions.materials().cardQuantumLink().maybeStack(1).get())
+        .replace()
+        .register()
 // quartz fiber
 crafting.removeByOutput(definitions.parts().quartzFiber().maybeStack(1).get())
 RecipeMaps.WIREMILL_RECIPES.recipeBuilder()
