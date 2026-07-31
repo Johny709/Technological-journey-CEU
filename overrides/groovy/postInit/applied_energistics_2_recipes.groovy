@@ -5,7 +5,6 @@ import gregtech.api.GTValues
 import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.OreDictUnifier
 import gregtech.api.unification.material.MarkerMaterials
-import gregtech.api.unification.material.Material
 import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
 import gregtech.common.items.MetaItems
