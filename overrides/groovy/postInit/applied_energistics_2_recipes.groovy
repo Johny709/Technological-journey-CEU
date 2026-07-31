@@ -2,11 +2,13 @@ import appeng.api.util.AEColor
 import appeng.core.Api
 import appeng.core.ApiDefinitions
 import classes.TJMaterials
+import com.fulltrix.gcyl.materials.GCYLMaterials
 import com.fulltrix.gcyl.materials.GCYLNuclearMaterials
 import gregtech.api.GTValues
 import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.OreDictUnifier
 import gregtech.api.unification.material.MarkerMaterials
+import gregtech.api.unification.material.Material
 import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
 import gregtech.common.items.MetaItems
@@ -506,6 +508,49 @@ for (i in 0..<Materials.CHEMICAL_DYES.length) {
             .EUt(7).duration(200)
             .buildAndRegister()
 }
+crafting.removeByOutput(definitions.parts().cableCovered().stack(AEColor.TRANSPARENT, 1))
+RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
+        .inputs(definitions.parts().cableGlass().stack(AEColor.TRANSPARENT, 1))
+        .input(OrePrefix.foil, Materials.Rubber, 4)
+        .outputs(definitions.parts().cableCovered().stack(AEColor.TRANSPARENT, 4))
+        .EUt(30).duration(160)
+        .buildAndRegister()
+RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
+        .inputs(definitions.parts().cableGlass().stack(AEColor.TRANSPARENT, 1))
+        .input(OrePrefix.foil, Materials.Polyethylene, 2)
+        .outputs(definitions.parts().cableCovered().stack(AEColor.TRANSPARENT, 4))
+        .EUt(30).duration(160)
+        .buildAndRegister()
+RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
+        .inputs(definitions.parts().cableGlass().stack(AEColor.TRANSPARENT, 1))
+        .input(OrePrefix.foil, Materials.PolyphenyleneSulfide)
+        .outputs(definitions.parts().cableCovered().stack(AEColor.TRANSPARENT, 4))
+        .EUt(30).duration(160)
+        .buildAndRegister()
+RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
+        .inputs(definitions.parts().cableGlass().stack(AEColor.TRANSPARENT, 1))
+        .input(OrePrefix.foil, Materials.Polybenzimidazole)
+        .outputs(definitions.parts().cableCovered().stack(AEColor.TRANSPARENT, 6))
+        .EUt(30).duration(160)
+        .buildAndRegister()
+RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
+        .inputs(definitions.parts().cableGlass().stack(AEColor.TRANSPARENT, 1))
+        .input(OrePrefix.foil, GCYLMaterials.Polyetheretherketone)
+        .outputs(definitions.parts().cableCovered().stack(AEColor.TRANSPARENT, 8))
+        .EUt(30).duration(160)
+        .buildAndRegister()
+RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
+        .inputs(definitions.parts().cableGlass().stack(AEColor.TRANSPARENT, 1))
+        .input(OrePrefix.foil, GCYLMaterials.Zylon)
+        .outputs(definitions.parts().cableCovered().stack(AEColor.TRANSPARENT, 16))
+        .EUt(30).duration(160)
+        .buildAndRegister()
+RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
+        .inputs(definitions.parts().cableGlass().stack(AEColor.TRANSPARENT, 1))
+        .input(OrePrefix.foil, GCYLMaterials.FullerenePolymerMatrix)
+        .outputs(definitions.parts().cableCovered().stack(AEColor.TRANSPARENT, 32))
+        .EUt(30).duration(160)
+        .buildAndRegister()
 // me smart cable
 for (i in 0..<Materials.CHEMICAL_DYES.length) {
     RecipeMaps.CHEMICAL_BATH_RECIPES.recipeBuilder()
