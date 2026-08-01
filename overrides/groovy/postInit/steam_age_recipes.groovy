@@ -428,6 +428,18 @@ crafting.shapedBuilder()
         .output(item('enderutilities:sound_block'))
         .replace()
         .register()
+// extract speed upgrade
+crafting.shapedBuilder()
+        .row('III')
+        .row('BNB')
+        .row('BRB')
+        .key('I', OreDictUnifier.get(OrePrefix.ingot, Materials.Iron))
+        .key('B', OreDictUnifier.get(OrePrefix.ingot, Materials.Bronze))
+        .key('N', item('minecraft:piston'))
+        .key('R', OreDictUnifier.get(OrePrefix.dust, Materials.Redstone))
+        .output(item('enderio:item_extract_speed_upgrade'))
+        .replace()
+        .register()
 // enderio alloy smelter
 mods.enderio.alloy_smelter.removeAll()
 // enderio sag mill
