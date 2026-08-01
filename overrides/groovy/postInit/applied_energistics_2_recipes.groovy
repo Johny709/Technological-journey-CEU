@@ -2,6 +2,7 @@ import appeng.api.util.AEColor
 import appeng.core.Api
 import appeng.core.ApiDefinitions
 import classes.TJMaterials
+import com.fulltrix.gcyl.item.GCYLCoreItems
 import com.fulltrix.gcyl.materials.GCYLMaterials
 import com.fulltrix.gcyl.materials.GCYLNuclearMaterials
 import gregtech.api.GTValues
@@ -408,6 +409,24 @@ RecipeMaps.MACERATOR_RECIPES.recipeBuilder()
         .inputs(definitions.blocks().skyStoneBlock().maybeStack(1).get())
         .outputs(definitions.materials().skyDust().maybeStack(1).get())
         .EUt(28).duration(160)
+        .buildAndRegister()
+// blank pattern
+crafting.removeByOutput(definitions.materials().blankPattern().maybeStack(1).get())
+RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
+        .inputs(definitions.blocks().quartzBlock().maybeStack(4).get())
+        .input(OrePrefix.plate, Materials.Steel, 2)
+        .input(OrePrefix.circuit, MarkerMaterials.Tier.LV)
+        .fluidInputs(Materials.Polyethylene.getFluid(144))
+        .outputs(definitions.materials().blankPattern().maybeStack(8).get())
+        .EUt(30).duration(160)
+        .buildAndRegister()
+RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
+        .inputs(definitions.blocks().quartzBlock().maybeStack(8).get())
+        .input(OrePrefix.plate, Materials.Steel, 4)
+        .input(GCYLCoreItems.MICRO_PROCESSOR)
+        .fluidInputs(Materials.Polyethylene.getFluid(288))
+        .outputs(definitions.materials().blankPattern().maybeStack(16).get())
+        .EUt(120).duration(160)
         .buildAndRegister()
 // 1k me fluid storage component
 crafting.removeByOutput(definitions.materials().fluidCell1kPart().maybeStack(1).get())
