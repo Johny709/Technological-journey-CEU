@@ -1,0 +1,23 @@
+import gregtech.common.metatileentities.MetaTileEntities
+
+// memory chest (extended)
+crafting.shapedBuilder()
+        .row(' C ')
+        .row(' H ')
+        .row(' C ')
+        .key('C', ore('circuitZpm'))
+        .key('H', item('enderutilities:storage_0', 5))
+        .output(item('enderutilities:storage_0', 6))
+        .replace()
+        .register()
+// memory card (items) 12 B
+crafting.shapedBuilder()
+        .row('   ')
+        .row('PCP')
+        .row('PHP')
+        .key('P', item('enderio:item_alloy_ingot', 5))
+        .key('C', ore('circuitZpm'))
+        .key('H', MetaTileEntities.QUANTUM_CHEST[1].getStackForm())
+        .output(item('enderutilities:enderpart', 54))
+        .replace()
+        .register()
