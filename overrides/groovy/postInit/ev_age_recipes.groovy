@@ -1,4 +1,5 @@
 import gregtech.api.GTValues
+import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.OreDictUnifier
 import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
@@ -189,3 +190,10 @@ crafting.shapedBuilder()
         .output(item('enderutilities:msu'))
         .replace()
         .register()
+// end steel ingot
+RecipeMaps.ALLOY_SMELTER_RECIPES.recipeBuilder()
+        .inputs(item('enderio:item_alloy_ingot'))
+        .input(OrePrefix.gem, Materials.EnderEye)
+        .outputs(item('enderio:item_alloy_ingot', 8))
+        .EUt(1024).duration(160)
+        .buildAndRegister()

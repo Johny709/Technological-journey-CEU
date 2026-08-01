@@ -75,3 +75,7 @@ crafting.shapedBuilder()
         .output(item('enderutilities:handybag', 1))
         .replace()
         .register()
+// pyrotheum dust
+crafting.removeByOutput(item('thermalfoundation:material', 1024))
+// cryotheum dust
+crafting.removeByOutput(item('thermalfoundation:material', 1025))

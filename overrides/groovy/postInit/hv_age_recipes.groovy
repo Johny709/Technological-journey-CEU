@@ -236,6 +236,50 @@ RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
     .outputs(item('enderio:block_tele_pad') * 9)
     .EUt(480).duration(180)
     .buildAndRegister()
+// electrum blend
+crafting.removeByOutput(item('thermalfoundation:material', 97))
+// invar blend
+crafting.removeByOutput(item('thermalfoundation:material', 98))
+// bronze blend
+crafting.removeByOutput(item('thermalfoundation:material', 99))
+// constantan blend
+crafting.removeByOutput(item('thermalfoundation:material', 100))
+// signalum blend
+crafting.removeByOutput(item('thermalfoundation:material', 101))
+RecipeMaps.MIXER_RECIPES.recipeBuilder()
+        .input(OrePrefix.dust, Materials.Copper, 3)
+        .input(OrePrefix.dust, Materials.Tin)
+        .fluidInputs(Materials.Redstone.getFluid(1000))
+        .outputs(item('thermalfoundation:material', 101) * 4)
+        .EUt(500).duration(240)
+        .buildAndRegister()
+// lumium blend
+crafting.removeByOutput(item('thermalfoundation:material', 102))
+RecipeMaps.MIXER_RECIPES.recipeBuilder()
+        .input(OrePrefix.dust, Materials.Tin, 3)
+        .input(OrePrefix.dust, Materials.Silver)
+        .fluidInputs(Materials.Glowstone.getFluid(1000))
+        .outputs(item('thermalfoundation:material', 102) * 4)
+        .EUt(500).duration(240)
+        .buildAndRegister()
+// enderium blend
+crafting.removeByOutput(item('thermalfoundation:material', 103))
+// signalum ingot
+furnace.removeByOutput(item('thermalfoundation:material', 165))
+RecipeMaps.BLAST_RECIPES.recipeBuilder()
+        .blastFurnaceTemp(4500)
+        .inputs(item('thermalfoundation:material', 101))
+        .outputs(item('thermalfoundation:material', 165))
+        .EUt(1920).duration(1530)
+        .buildAndRegister()
+// lumium ingot
+furnace.removeByOutput(item('thermalfoundation:material', 166))
+RecipeMaps.BLAST_RECIPES.recipeBuilder()
+        .blastFurnaceTemp(4500)
+        .inputs(item('thermalfoundation:material', 102))
+        .outputs(item('thermalfoundation:material', 166))
+        .EUt(1920).duration(1530)
+        .buildAndRegister()
 // centrifuge
 mods.advancedrocketry.centrifuge.removeAll()
 // chemical reactor

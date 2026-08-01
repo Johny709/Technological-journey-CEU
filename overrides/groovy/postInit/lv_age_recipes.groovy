@@ -241,13 +241,6 @@ RecipeMaps.ALLOY_SMELTER_RECIPES.recipeBuilder()
         .outputs(item('enderio:item_alloy_ingot', 7))
         .EUt(30).duration(160)
         .buildAndRegister()
-// end steel ingot
-RecipeMaps.ALLOY_SMELTER_RECIPES.recipeBuilder()
-        .inputs(item('enderio:item_alloy_ingot'))
-        .input(OrePrefix.gem, Materials.EnderEye)
-        .outputs(item('enderio:item_alloy_ingot', 8))
-        .EUt(1024).duration(160)
-        .buildAndRegister()
 // grains of infinity
 RecipeMaps.ARC_FURNACE_RECIPES.recipeBuilder()
         .input(OrePrefix.dust, Materials.Coke, 64)
