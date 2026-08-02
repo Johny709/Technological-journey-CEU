@@ -5,4 +5,5 @@ class TJMaterials {
     public static Material StarMetalAlloy
     public static Material RawChaos
     public static Material DraconicStemCell
+    public static Material EternityPreparation
 }
