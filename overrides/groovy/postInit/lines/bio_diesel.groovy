@@ -1,4 +1,4 @@
-package lines
+package postInit.lines
 
 import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.material.MarkerMaterials

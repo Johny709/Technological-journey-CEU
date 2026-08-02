@@ -1,4 +1,4 @@
-package multiblock_recipes
+package postInit.multiblock_recipes
 
 import classes.MetaTileEntityVialProcessor
 import classes.TJMetaTileEntities
