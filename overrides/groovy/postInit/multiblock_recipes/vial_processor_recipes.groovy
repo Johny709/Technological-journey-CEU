@@ -1,3 +1,5 @@
+package multiblock_recipes
+
 import classes.MetaTileEntityVialProcessor
 import classes.TJMetaTileEntities
 import com.fulltrix.gcyl.materials.GCYLMaterials

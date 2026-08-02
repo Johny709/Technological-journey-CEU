@@ -1,3 +1,5 @@
+package multiblock_recipes
+
 import classes.MetaTileEntityDragonEggReplicator
 import classes.TJMetaTileEntities
 import com.fulltrix.gcyl.item.GCYLCoreItems

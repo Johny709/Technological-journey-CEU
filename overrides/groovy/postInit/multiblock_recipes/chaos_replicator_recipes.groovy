@@ -1,8 +1,9 @@
+package multiblock_recipes
+
 import classes.MetaTileEntityChaosReplicator
 import classes.TJMetaTileEntities
 import com.fulltrix.gcyl.item.GCYLCoreItems
 import com.fulltrix.gcyl.materials.GCYLMaterials
-import com.fulltrix.gcyl.materials.GCYLNuclearMaterials
 import gregtech.api.GTValues
 import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.material.MarkerMaterials

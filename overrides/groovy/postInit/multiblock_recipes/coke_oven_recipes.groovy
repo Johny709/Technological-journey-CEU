@@ -1,3 +1,4 @@
+package multiblock_recipes
 
 import classes.MetaTileEntityTJCokeOven
 import classes.TJMetaTileEntities

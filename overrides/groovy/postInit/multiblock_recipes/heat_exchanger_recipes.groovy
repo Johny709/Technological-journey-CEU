@@ -1,3 +1,4 @@
+package multiblock_recipes
 
 import classes.MetaTileEntityHeatExchanger
 import classes.TJMaterials

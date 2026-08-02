@@ -1,3 +1,4 @@
+package multiblock_recipes
 
 import classes.MetaTileEntityPrimitiveAlloySmelter
 import classes.TJMetaTileEntities

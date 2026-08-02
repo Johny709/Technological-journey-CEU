@@ -1,3 +1,5 @@
+package multiblock_recipes
+
 import classes.MetaTileEntityArmorInfuser
 import classes.TJMetaTileEntities
 import com.fulltrix.gcyl.materials.GCYLMaterials
