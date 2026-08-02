@@ -1,4 +1,5 @@
 import classes.TJMaterials
+import com.fulltrix.gcyl.materials.GCYLMaterials
 import gregtech.api.fluids.FluidBuilder
 import gregtech.api.fluids.FluidState
 import gregtech.api.fluids.store.FluidStorageKeys
@@ -25,5 +26,11 @@ event_manager.listen { MaterialEvent event ->
                     .blastStats(8000, 1716)
                     .vacuumStats(8000, 438))
             .build()
+    TJMaterials.RawChaos = Material.builder(10002, resource(getPackId(), "raw_chaos"))
+            .color(0x000000)
+            .liquid()
+            .build()
     Materials.Protactinium.addFlags(MaterialFlags.GENERATE_FRAME)
+    Materials.NeodymiumMagnetic.addFlags(MaterialFlags.GENERATE_GEAR)
+    GCYLMaterials.Draconium.addFlags(MaterialFlags.GENERATE_DOUBLE_PLATE)
 }
