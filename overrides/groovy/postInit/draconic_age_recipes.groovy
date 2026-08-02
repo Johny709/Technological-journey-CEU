@@ -239,7 +239,7 @@ RecipeMaps.ASSEMBLY_LINE_RECIPES.recipeBuilder()
         .input(OrePrefix.plate, GCYLMaterials.Quantum, 64)
         .input(OrePrefix.plate, GCYLMaterials.Zylon, 64)
         .inputs(item('draconicevolution:chaotic_core') * 4, item('draconicadditions:chaotic_energy_core') * 4)
-        .input(GCYLCoreItems.SENSOR_MAX, 2)
+        .input(GCYLCoreItems.EMITTER_MAX, 2)
         .inputs(item('thermalfoundation:upgrade'), item('thermalfoundation:upgrade', 1), item('draconicevolution:draconium_capacitor', 1),
                 TJAMetaBlocks.BATTERY_CELL.getItemVariant(BlockBatteryCell.CasingType.CELL_MAX))
         .fluidInputs(Materials.SolderingAlloy.getFluid(1440), GCYLMaterials.ChaosAlloy.getFluid(1440))
