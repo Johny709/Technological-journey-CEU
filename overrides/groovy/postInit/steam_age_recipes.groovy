@@ -1,3 +1,4 @@
+import appeng.core.Api
 import classes.TJMetaTileEntities
 import gregtech.api.unification.OreDictUnifier
 import gregtech.api.unification.material.Materials
@@ -50,6 +51,36 @@ crafting.shapedBuilder()
         .key('I', item('minecraft:diamond'))
         .key('P', item('minecraft:iron_pickaxe'))
         .output(item('simplevoidworld:portal'))
+        .replace()
+        .register()
+// transparant conduit facade
+crafting.shapedBuilder()
+        .row('   ')
+        .row(' FV')
+        .row('   ')
+        .key('F', item('enderio:item_conduit_facade'))
+        .key('V', Api.INSTANCE.definitions().blocks().quartzVibrantGlass().maybeStack(1).get())
+        .output(item('enderio:item_conduit_facade', 2))
+        .replace()
+        .register()
+crafting.shapedBuilder()
+        .row('BBB')
+        .row('BVB')
+        .row('BBB')
+        .key('B', item('enderio:item_material', 4))
+        .key('V', Api.INSTANCE.definitions().blocks().quartzVibrantGlass().maybeStack(1).get())
+        .output(item('enderio:item_conduit_facade', 2))
+        .register()
+// invisible block (decoration block)
+crafting.replaceShapeless(item('enderio:block_decoration1', 15), [item('enderio:item_conduit_facade', 2)])
+// yeta wrench
+crafting.shapedBuilder()
+        .row(' I ')
+        .row(' T ')
+        .row('I I')
+        .key('I', OreDictUnifier.get(OrePrefix.ingot, Materials.Iron))
+        .key('T', OreDictUnifier.get(OrePrefix.ingot, Materials.Tin))
+        .output(item('enderio:item_yeta_wrench'))
         .replace()
         .register()
 // ender fluid conduit
@@ -440,6 +471,10 @@ crafting.shapedBuilder()
         .output(item('enderio:item_extract_speed_upgrade'))
         .replace()
         .register()
+// steam alloy smelter
+crafting.removeByOutput(item('gregtech:mte', 17))
+// high pressure steam alloy smelter
+crafting.removeByOutput(item('gregtech:mte', 18))
 // enderio alloy smelter
 mods.enderio.alloy_smelter.removeAll()
 // enderio sag mill

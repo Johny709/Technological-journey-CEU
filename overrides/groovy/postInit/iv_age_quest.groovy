@@ -1,4 +1,6 @@
+import classes.TJMaterials
 import com.fulltrix.gcyl.materials.GCYLMaterials
+import gregicality.multiblocks.api.recipes.GCYMRecipeMaps
 import gregtech.api.GTValues
 import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.OreDictUnifier
@@ -49,4 +51,20 @@ RecipeMaps.ASSEMBLY_LINE_RECIPES.recipeBuilder()
         .fluidInputs(GCYLMaterials.Draconium.getFluid(576))
         .outputs(item('draconicevolution:dislocator_advanced'))
         .EUt(GTValues.V[GTValues.LuV]).duration(200)
+        .buildAndRegister()
+// molten stellar alloy
+GCYMRecipeMaps.ALLOY_BLAST_RECIPES.recipeBuilder()
+        .blastFurnaceTemp(8100)
+        .input(OrePrefix.dust, TJMaterials.StarMetalAlloy, 5)
+        .input(OrePrefix.dust, Materials.Americium, 4)
+        .input(OrePrefix.dust, Materials.NetherStar)
+        .fluidOutputs(TJMaterials.StellarAlloy.getFluid(1440))
+        .EUt(2430).duration(420)
+        .buildAndRegister()
+// stellar alloy ingot
+RecipeMaps.FLUID_SOLIDFICATION_RECIPES.recipeBuilder()
+        .notConsumable(MetaItems.SHAPE_MOLD_INGOT)
+        .fluidInputs(TJMaterials.StellarAlloy.getFluid(144))
+        .outputs(item('enderio:item_alloy_endergy_ingot', 3))
+        .EUt(8).duration(20)
         .buildAndRegister()
