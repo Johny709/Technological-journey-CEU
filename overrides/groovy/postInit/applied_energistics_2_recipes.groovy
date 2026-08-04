@@ -570,6 +570,17 @@ RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
         .outputs(definitions.parts().cableCovered().stack(AEColor.TRANSPARENT, 32))
         .EUt(30).duration(160)
         .buildAndRegister()
+// creative energy cell
+RecipeMaps.ASSEMBLY_LINE_RECIPES.recipeBuilder()
+        .inputs(item('appliedenergistics2:dense_energy_cell') * 64)
+        .input(OrePrefix.wireGtSingle, GCYLMaterials.UVSuperconductor, 32)
+        .input(OrePrefix.plate, GCYLMaterials.EnrichedNaquadahAlloy, 8)
+        .input(OrePrefix.plateDense, GCYLMaterials.Draconium, 7)
+        .input(OrePrefix.circuit, MarkerMaterials.Tier.UV, 2)
+        .fluidInputs(Materials.Tritanium.getFluid(720), Materials.SolderingAlloy.getFluid(1296))
+        .outputs(definitions.blocks().energyCellCreative().maybeStack(1).get())
+        .EUt(GTValues.V[GTValues.UV]).duration(1000)
+        .buildAndRegister()
 // me smart cable
 for (i in 0..<Materials.CHEMICAL_DYES.length) {
     RecipeMaps.CHEMICAL_BATH_RECIPES.recipeBuilder()
