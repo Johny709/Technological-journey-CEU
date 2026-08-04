@@ -1,4 +1,6 @@
 import classes.TJMaterials
+import com.fulltrix.gcyl.materials.GCYLMaterials
+import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.OreDictUnifier
 import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
@@ -17,3 +19,10 @@ crafting.shapedBuilder()
         .output(item('draconicevolution:celestial_manipulator'))
         .replace()
         .register()
+// stardust
+RecipeMaps.CHEMICAL_BATH_RECIPES.recipeBuilder()
+        .input(OrePrefix.dust, GCYLMaterials.BrightSteel, 2)
+        .fluidInputs(fluid('astralsorcery.liquidstarlight') * 1000)
+        .outputs(item('astralsorcery:itemcraftingcomponent', 2) * 2)
+        .EUt(131072).duration(100)
+        .buildAndRegister()
