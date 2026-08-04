@@ -527,6 +527,16 @@ crafting.shapedBuilder()
         .output(item('enderio:item_extract_speed_upgrade'))
         .replace()
         .register()
+// station light
+crafting.shapedBuilder()
+        .row(' P ')
+        .row('PGP')
+        .row(' P ')
+        .key('P', OreDictUnifier.get(OrePrefix.plate, Materials.Iron))
+        .key('G', OreDictUnifier.get(OrePrefix.block, Materials.Glowstone))
+        .output(item('advancedrocketry:circlelight'))
+        .replace()
+        .register()
 // steam alloy smelter
 crafting.removeByOutput(item('gregtech:mte', 17))
 // high pressure steam alloy smelter

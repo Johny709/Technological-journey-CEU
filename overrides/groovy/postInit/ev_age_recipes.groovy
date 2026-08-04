@@ -1,4 +1,3 @@
-import com.fulltrix.gcyl.materials.GCYLMaterials
 import gregtech.api.GTValues
 import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.OreDictUnifier
@@ -20,6 +19,31 @@ crafting.shapedBuilder()
         .output(item('enderutilities:enderpart', 53))
         .replace()
         .register()
+// warp core
+crafting.shapedBuilder()
+        .row('TCT')
+        .row('THT')
+        .row('TCT')
+        .key('T', OreDictUnifier.get(OrePrefix.plate, Materials.Titanium))
+        .key('C', ore('circuitEv'))
+        .key('H', MetaTileEntities.HULL[GTValues.EV].getStackForm())
+        .output(item('advancedrocketry:warpcore'))
+        .replace()
+        .register()
+// super high pressure tank
+RecipeMaps.EXTRUDER_RECIPES.recipeBuilder()
+        .notConsumable(MetaItems.SHAPE_MOLD_CYLINDER)
+        .input(OrePrefix.ingot, Materials.Titanium, 16)
+        .outputs(item('advancedrocketry:pressuretank', 3))
+        .EUt(1048).duration(600)
+        .buildAndRegister()
+// reinforced glass
+RecipeMaps.ALLOY_SMELTER_RECIPES.recipeBuilder()
+        .inputs(item('advancedrocketry:hotturf') * 10)
+        .input(OrePrefix.block, Materials.Glass)
+        .outputs(MetaBlocks.TRANSPARENT_CASING.getItemVariant(BlockGlassCasing.CasingType.LAMINATED_GLASS)) // TODO replace with reinforced glass
+        .EUt(2040).duration(300)
+        .buildAndRegister()
 // ender capacitor (advanced)
 crafting.shapedBuilder()
         .row(' E ')
