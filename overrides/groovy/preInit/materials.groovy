@@ -83,5 +83,7 @@ event_manager.listen { MaterialEvent event ->
             .build()
     Materials.Protactinium.addFlags(MaterialFlags.GENERATE_FRAME)
     Materials.NeodymiumMagnetic.addFlags(MaterialFlags.GENERATE_GEAR)
+    Materials.Osmium.addFlags(MaterialFlags.GENERATE_DENSE)
+    Materials.Ruthenium.addFlags(MaterialFlags.GENERATE_DENSE)
     GCYLMaterials.Draconium.addFlags(MaterialFlags.GENERATE_DOUBLE_PLATE)
 }
