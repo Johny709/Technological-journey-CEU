@@ -20,7 +20,7 @@ import net.minecraftforge.fml.relauncher.SideOnly
 
 class MetaTileEntityHeatExchanger extends TJRecipeMapSteamMultiblockController {
 
-    public static final RecipeMap<PrimitiveRecipeBuilder> HEAT_EXCHANGER_RECIPES = new RecipeMapBuilder<>("heat_exchanger",
+    public static final RecipeMap<PrimitiveRecipeBuilder> HEAT_EXCHANGER_RECIPES = new RecipeMapBuilder<>("tj_heat_exchanger",
             new PrimitiveRecipeBuilder())
             .progressBar(GuiTextures.PROGRESS_BAR_ARROW)
             .fluidInputs(2)

@@ -40,6 +40,7 @@ technological_journey.machine.vial_processor.opv.name=Legendary Vial Processor
 technological_journey.machine.vial_processor.max.name=MAX Vial Processor
 
 recipemap.primitive_alloy_smelter.name=Primitive Alloy Smelter
+recipemap.tj_heat_exchanger.name=Heat Exchanger
 
 technological_journey.material.pahoehoe_lava=Pahoehoe Lava
 technological_journey.material.star_metal_alloy=Starmetal Alloy
