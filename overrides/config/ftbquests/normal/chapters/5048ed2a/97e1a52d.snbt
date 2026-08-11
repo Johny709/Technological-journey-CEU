@@ -1,5 +1,11 @@
 {
-	icon: "gcyl:meta_dust 1 1240",
+	icon: {
+		id: "forge:bucketfilled",
+		tag: {
+			FluidName: "mree_nitrate_solution",
+			Amount: 1000
+		}
+	},
 	x: 14.5d,
 	y: 6.0d,
 	dependencies: [
@@ -9,8 +15,19 @@
 	tasks: [{
 		uid: "5a44f4e1",
 		type: "item",
+		icon: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "mree_nitrate_solution",
+				Amount: 1000
+			}
+		},
 		items: [{
-			item: "gcyl:meta_dust 1 1240"
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "mree_nitrate_solution",
+				Amount: 1000
+			}
 		}]
 	},
 	{

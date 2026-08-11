@@ -1,5 +1,5 @@
 {
-	icon: "gcyl:meta_dust 1 1200",
+	icon: "gcyl:meta_dust 1 1201",
 	x: -9.5d,
 	y: 12.0d,
 	dependencies: [
@@ -10,7 +10,7 @@
 		uid: "6a49d45e",
 		type: "item",
 		items: [{
-			item: "gcyl:meta_dust 1 1200"
+			item: "gcyl:meta_dust 1 1201"
 		}]
 	},
 	{

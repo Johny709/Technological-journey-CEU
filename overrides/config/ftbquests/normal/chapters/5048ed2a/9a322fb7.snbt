@@ -7,8 +7,8 @@
 		uid: "cfea2d77",
 		type: "item",
 		items: [{
-			item: "gcyl:meta_dust 1 1211"
+			item: "gregtech:meta_dust 1 2060"
 		}],
-		count: 14L
+		count: 12L
 	}]
 }
