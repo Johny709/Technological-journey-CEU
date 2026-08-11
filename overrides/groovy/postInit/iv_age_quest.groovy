@@ -11,6 +11,16 @@ import gregtech.common.blocks.MetaBlocks
 import gregtech.common.items.MetaItems
 import gregtech.common.metatileentities.MetaTileEntities
 
+// hopping bonsai pot
+crafting.shapedBuilder()
+        .row('PBP')
+        .row('P P')
+        .row('P P')
+        .key('P', OreDictUnifier.get(OrePrefix.plateDouble, Materials.RhodiumPlatedPalladium))
+        .key('B', item('bonsaitrees:bonsaipot'))
+        .output(item('bonsaitrees:bonsaipot', 1))
+        .replace()
+        .register()
 // memory chest (extended)
 crafting.shapedBuilder()
         .row(' C ')

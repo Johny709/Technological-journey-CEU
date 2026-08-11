@@ -8,6 +8,15 @@ import gregtech.common.blocks.MetaBlocks
 import gregtech.common.items.MetaItems
 import gregtech.common.metatileentities.MetaTileEntities
 
+// bonsai pot
+crafting.shapedBuilder()
+        .row('   ')
+        .row('P P')
+        .row('PPP')
+        .key('P', OreDictUnifier.get(OrePrefix.plateDouble, Materials.TungstenSteel))
+        .output(item('bonsaitrees:bonsaipot'))
+        .replace()
+        .register()
 // memory card (items) 10 B
 crafting.shapedBuilder()
         .row('   ')

@@ -1,5 +1,6 @@
 import appeng.core.Api
 import classes.TJMetaTileEntities
+import gregtech.api.recipes.ModHandler
 import gregtech.api.unification.OreDictUnifier
 import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
@@ -32,6 +33,8 @@ crafting.shapedBuilder()
         .register()
 // hot iron ingot
 furnace.add(ore('ingotIron'), item('technological_journey:hotiron'))
+// wrought iron
+crafting.addShapeless(OreDictUnifier.get(OrePrefix.ingot, Materials.WroughtIron), [ore('toolHammer'), item('technological_journey:hotiron')])
 // industrial primitive blast furnace
 crafting.shapedBuilder()
         .row('BFB')
