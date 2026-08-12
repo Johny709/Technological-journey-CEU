@@ -17,15 +17,19 @@ import com.cleanroommc.modularui.widgets.slot.ItemSlot
 import com.cleanroommc.modularui.widgets.slot.ModularSlot
 import com.cleanroommc.modularui.widgets.slot.SlotGroup
 import gregtech.api.capability.impl.FluidTankList
+import gregtech.api.capability.impl.GhostCircuitItemStackHandler
+import gregtech.api.capability.impl.ItemHandlerList
 import gregtech.api.capability.impl.NotifiableItemStackHandler
 import gregtech.api.metatileentity.MetaTileEntity
 import gregtech.api.metatileentity.SteamMetaTileEntity
 import gregtech.api.metatileentity.interfaces.IGregTechTileEntity
 import gregtech.api.mui.GTGuiTextures
 import gregtech.api.mui.GTGuiTheme
+import gregtech.api.mui.widget.GhostCircuitSlotWidget
 import gregtech.api.recipes.RecipeMaps
 import gregtech.client.particle.VanillaParticleEffects
 import gregtech.client.renderer.texture.Textures
+import net.minecraft.nbt.NBTTagCompound
 import net.minecraft.util.EnumParticleTypes
 import net.minecraft.util.ResourceLocation
 import net.minecraftforge.fluids.FluidTank
@@ -36,8 +40,12 @@ import net.minecraftforge.items.IItemHandlerModifiable
 
 class MetaTileEntitySteamMixer extends SteamMetaTileEntity {
 
+    private final GhostCircuitItemStackHandler circuitSlot = new GhostCircuitItemStackHandler(this)
+    private final IItemHandlerModifiable combinedInventory
+
     MetaTileEntitySteamMixer(ResourceLocation metaTileEntityId, boolean isHighPressure) {
         super(metaTileEntityId, RecipeMaps.MIXER_RECIPES, Textures.MIXER_OVERLAY, isHighPressure)
+        this.combinedInventory = new ItemHandlerList(Arrays.asList(this.circuitSlot, this.importItems))
     }
 
     @Override
@@ -58,12 +66,12 @@ class MetaTileEntitySteamMixer extends SteamMetaTileEntity {
     @Override
     FluidTankList createImportFluidHandler() {
         super.createImportFluidHandler() // initialize steam tank
-        return new FluidTankList(true, this.steamFluidTank, new FluidTank(64000), new FluidTank(64000))
+        return new FluidTankList(false, this.steamFluidTank, new FluidTank(64000), new FluidTank(64000))
     }
 
     @Override
     protected FluidTankList createExportFluidHandler() {
-        return new FluidTankList(true, new FluidTank(64000))
+        return new FluidTankList(false, new FluidTank(64000))
     }
 
     @Override
@@ -81,6 +89,10 @@ class MetaTileEntitySteamMixer extends SteamMetaTileEntity {
         return ModularPanel.defaultPanel("steam_mixer.gui", 176, 166)
                 .child(new TextWidget(IKey.lang(this.getMetaFullName()))
                         .pos(6, 6) as IWidget)
+                .child(new GhostCircuitSlotWidget()
+                        .pos(13, 61)
+                        .background(GuiTextures.SLOT_ITEM, GTGuiTextures.INT_CIRCUIT_OVERLAY)
+                        .slot(this.circuitSlot, 0))
                 .child(new Grid()
                         .pos(13, 25)
                         .size(54, 36)
@@ -114,6 +126,19 @@ class MetaTileEntitySteamMixer extends SteamMetaTileEntity {
                         .syncHandler("progress"))
                 .themeOverride(this.getUITheme().id)
                 .bindPlayerInventory()
+    }
+
+    @Override
+    NBTTagCompound writeToNBT(NBTTagCompound data) {
+        super.writeToNBT(data)
+        data.setTag("circuitSlot", this.circuitSlot.serializeNBT())
+        return data
+    }
+
+    @Override
+    void readFromNBT(NBTTagCompound data) {
+        super.readFromNBT(data)
+        this.circuitSlot.deserializeNBT(data.getCompoundTag("circuitSlot"))
     }
 
     @Override
