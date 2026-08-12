@@ -23,6 +23,8 @@ technological_journey.machine.chaos_replicator.name=Chaos Replicator (CR)
 technological_journey.machine.dragon_egg_replicator.name=Dragon Egg Replicator (DER)
 technological_journey.machine.large_powered_spawner.name=Large Powered Spawner (LPS)
 technological_journey.machine.large_vial_processor.name=Large Vial Processor (LVP)
+technological_journey.machine.steam_mixer_bronze.name=Steam Mixer
+technological_journey.machine.steam_mixer_steel.name=High Pressure Steam Mixer
 
 technological_journey.machine.vial_processor.lv.name=Basic Vial Processor
 technological_journey.machine.vial_processor.mv.name=Advanced Vial Processor
