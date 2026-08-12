@@ -15,4 +15,5 @@ class TJMaterials {
     public static Material ExplosiveHydrazineMixture
     public static Material StarlightRocketFuel
     public static Material StellarAlloy
+    public static Material UnfiredClay
 }

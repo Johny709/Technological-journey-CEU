@@ -1,11 +1,12 @@
 import appeng.core.Api
+import classes.TJMaterials
 import classes.TJMetaTileEntities
-import gregtech.api.recipes.ModHandler
 import gregtech.api.unification.OreDictUnifier
 import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
 import gregtech.common.blocks.BlockMetalCasing
 import gregtech.common.blocks.MetaBlocks
+import gregtech.common.items.MetaItems
 import gregtech.common.metatileentities.MetaTileEntities
 
 // steam motor
@@ -35,6 +36,19 @@ crafting.shapedBuilder()
 furnace.add(ore('ingotIron'), item('technological_journey:hotiron'))
 // wrought iron
 crafting.addShapeless(OreDictUnifier.get(OrePrefix.ingot, Materials.WroughtIron), [ore('toolHammer'), item('technological_journey:hotiron')])
+// unfired clay brick
+crafting.addShapeless(OreDictUnifier.get(OrePrefix.dust, TJMaterials.UnfiredClay), [OreDictUnifier.get(OrePrefix.ingot, Materials.Clay), MetaItems.WOODEN_FORM_BRICK.getStackForm()])
+crafting.shapedBuilder()
+        .row('CCC')
+        .row('CBC')
+        .row('CCC')
+        .key('C', OreDictUnifier.get(OrePrefix.ingot, Materials.Clay))
+        .key('B', MetaItems.WOODEN_FORM_BRICK.getStackForm())
+        .output(OreDictUnifier.get(OrePrefix.dust, TJMaterials.UnfiredClay, 8))
+        .register()
+// brick
+furnace.removeByOutput(item('minecraft:brick'))
+furnace.add(OreDictUnifier.get(OrePrefix.dust, TJMaterials.UnfiredClay), item('minecraft:brick'))
 // industrial primitive blast furnace
 crafting.shapedBuilder()
         .row('BFB')
