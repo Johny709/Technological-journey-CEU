@@ -20,6 +20,7 @@ import gregtech.api.capability.impl.FluidTankList
 import gregtech.api.capability.impl.GhostCircuitItemStackHandler
 import gregtech.api.capability.impl.ItemHandlerList
 import gregtech.api.capability.impl.NotifiableItemStackHandler
+import gregtech.api.capability.impl.RecipeLogicSteam
 import gregtech.api.metatileentity.MetaTileEntity
 import gregtech.api.metatileentity.SteamMetaTileEntity
 import gregtech.api.metatileentity.interfaces.IGregTechTileEntity
@@ -36,6 +37,7 @@ import net.minecraftforge.fluids.FluidTank
 import net.minecraftforge.fml.relauncher.Side
 import net.minecraftforge.fml.relauncher.SideOnly
 import net.minecraftforge.items.IItemHandlerModifiable
+import net.minecraftforge.items.ItemStackHandler
 
 
 class MetaTileEntitySteamMixer extends SteamMetaTileEntity {
@@ -46,6 +48,12 @@ class MetaTileEntitySteamMixer extends SteamMetaTileEntity {
     MetaTileEntitySteamMixer(ResourceLocation metaTileEntityId, boolean isHighPressure) {
         super(metaTileEntityId, RecipeMaps.MIXER_RECIPES, Textures.MIXER_OVERLAY, isHighPressure)
         this.combinedInventory = new ItemHandlerList(Arrays.asList(this.circuitSlot, this.importItems))
+        this.workableHandler = new RecipeLogicSteam(this, this.workableHandler.recipeMap, isHighPressure, this.steamFluidTank, 1.0) {
+            @Override
+            protected IItemHandlerModifiable getInputInventory() {
+                return combinedInventory
+            }
+        }
     }
 
     @Override
@@ -131,14 +139,14 @@ class MetaTileEntitySteamMixer extends SteamMetaTileEntity {
     @Override
     NBTTagCompound writeToNBT(NBTTagCompound data) {
         super.writeToNBT(data)
-        data.setTag("circuitSlot", this.circuitSlot.serializeNBT())
+        this.circuitSlot.write(data)
         return data
     }
 
     @Override
     void readFromNBT(NBTTagCompound data) {
         super.readFromNBT(data)
-        this.circuitSlot.deserializeNBT(data.getCompoundTag("circuitSlot"))
+        this.circuitSlot.read(data)
     }
 
     @Override
