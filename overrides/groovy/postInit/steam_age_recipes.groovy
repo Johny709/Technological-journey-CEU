@@ -1,6 +1,7 @@
 import appeng.core.Api
 import classes.TJMaterials
 import classes.TJMetaTileEntities
+import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.OreDictUnifier
 import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
@@ -229,6 +230,12 @@ crafting.shapedBuilder()
         .key('P', item('technological_journey:steampiston'))
         .key('H', MetaBlocks.STEAM_CASING.getItemVariant(BlockSteamCasing.SteamCasingType.BRONZE_HULL))
         .key('R', OreDictUnifier.get(OrePrefix.rotor, Materials.Bronze))
+// rubber sheet
+RecipeMaps.COMPRESSOR_RECIPES.recipeBuilder()
+        .input(MetaItems.STICKY_RESIN, 4)
+        .output(OrePrefix.plate, Materials.Rubber)
+        .EUt(16).duration(200)
+        .buildAndRegister()
 // nether quartz dust
 mods.astralsorcery.grindstone.recipeBuilder()
         .input(ore('oreNetherQuartz'))
