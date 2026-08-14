@@ -40,21 +40,23 @@ def getWireOreDict = { OrePrefix orePrefix ->
     return OrePrefix.wireGtSingle
 }
 
-def maxPolyTier = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] as int[]
+int[] maxPolyTier = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
-def polymers = [Materials.Polycaprolactam,
-                Materials.Polyethylene,
-                Materials.PolyvinylChloride,
-                Materials.PolyphenyleneSulfide,
-                Materials.PolyphenyleneSulfide,
-                Materials.Polybenzimidazole,
-                Materials.Polybenzimidazole,
-                GCYLMaterials.Polyetheretherketone,
-                GCYLMaterials.Polyetheretherketone,
-                GCYLMaterials.Zylon,
-                GCYLMaterials.Zylon,
-                GCYLMaterials.FullerenePolymerMatrix,
-                GCYLMaterials.FullerenePolymerMatrix] as Material[]
+Material[] polymers = [Materials.Rubber,
+                       Materials.Rubber,
+                       Materials.Polycaprolactam,
+                       Materials.Polyethylene,
+                       Materials.PolyvinylChloride,
+                       Materials.PolyphenyleneSulfide,
+                       Materials.PolyphenyleneSulfide,
+                       Materials.Polybenzimidazole,
+                       Materials.Polybenzimidazole,
+                       GCYLMaterials.Polyetheretherketone,
+                       GCYLMaterials.Polyetheretherketone,
+                       GCYLMaterials.Zylon,
+                       GCYLMaterials.Zylon,
+                       GCYLMaterials.FullerenePolymerMatrix,
+                       GCYLMaterials.FullerenePolymerMatrix]
 
 // try to remove existing cable recipes
 RecipeMaps.ASSEMBLER_RECIPES.getRecipeList().forEach(recipe -> {
@@ -79,41 +81,32 @@ for (BlockCable[] blockCables : MetaBlocks.CABLES.values()) {
                 OrePrefix orePrefix = OreDictUnifier.getPrefix(cableOutput)
                 OrePrefix wireOrePrefix = getWireOreDict(orePrefix)
                 int tier = wireProperties.getVoltage() == Integer.MIN_VALUE ? 14 : GTUtility.getTierByVoltage(wireProperties.getVoltage())
-                // cable with rubber
-                if (tier < GTValues.MV) {
-                    double multiplier = getCableQuantity(orePrefix)
-                    RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
-                            .circuitMeta(24)
-                            .input(wireOrePrefix, material)
-                            .input(OrePrefix.foil, Materials.Rubber, 4 * multiplier as int)
-                            .outputs(cableOutput)
-                            .EUt(8).duration(150)
-                            .buildAndRegister()
-                    RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
-                            .circuitMeta(24)
-                            .input(wireOrePrefix, material)
-                            .fluidInputs(Materials.Rubber.getFluid(144 * multiplier as int))
-                            .outputs(cableOutput)
-                            .EUt(8).duration(150)
-                            .buildAndRegister()
-
-                    List<?> ingredients = [OreDictUnifier.get(wireOrePrefix, material), ore('string')]
-                    int amount = getCableQuantity(orePrefix)
-                    for (j in 0..<amount) {
-                        ingredients.add(OreDictUnifier.get(OrePrefix.plate, Materials.Rubber))
-                    }
-                    crafting.removeByOutput(cableOutput)
-                    if (ingredients.size() < 10)
-                        crafting.addShapeless(cableOutput, ingredients)
-                }
                 for (int j = 0; j < polymers.length; j++) {
                     if (tier < maxPolyTier[j]) {
+                        if (tier < GTValues.MV) {
+                            List<?> ingredients = [OreDictUnifier.get(wireOrePrefix, material), ore('string')]
+                            int amount = getCableQuantity(orePrefix)
+                            for (k in 0..<amount) {
+                                ingredients.add(OreDictUnifier.get(OrePrefix.plate, Materials.Rubber))
+                            }
+                            if (amount == 8) {
+                                ingredients = [ingredients.get(0), ingredients.get(1), OreDictUnifier.get(OrePrefix.plateDense, Materials.Rubber)]
+                            } else if (amount == 16) {
+                                ItemStack denseRubber = OreDictUnifier.get(OrePrefix.plateDense, Materials.Rubber)
+                                ingredients = [ingredients.get(0), ingredients.get(1), denseRubber, denseRubber]
+                            }
+                            crafting.shapelessBuilder()
+                                    .input(ingredients)
+                                    .output(cableOutput)
+                                    .replace()
+                                    .register()
+                        }
                         boolean duplicate = j < polymers.length - 1 && polymers[j] === polymers[j + 1]
                         if (duplicate) {
                             tier++
                             j++
                         }
-                        double multiplier = getCableQuantity(orePrefix) / Math.pow(2, j - tier)
+                        double multiplier = getCableQuantity(orePrefix) / Math.pow(2, j - tier) * 4
                         SimpleRecipeBuilder recipe1 = RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
                                 .circuitMeta(24)
                                 .input(wireOrePrefix, material)
