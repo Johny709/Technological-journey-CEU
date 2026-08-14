@@ -106,7 +106,7 @@ for (BlockCable[] blockCables : MetaBlocks.CABLES.values()) {
                     if (ingredients.size() < 10)
                         crafting.addShapeless(cableOutput, ingredients)
                 }
-                for (j in 0..<polymers.length) {
+                for (int j = 0; j < polymers.length; j++) {
                     if (tier < maxPolyTier[j]) {
                         boolean duplicate = j < polymers.length - 1 && polymers[j] === polymers[j + 1]
                         if (duplicate) {
