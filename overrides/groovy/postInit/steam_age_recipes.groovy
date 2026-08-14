@@ -1,6 +1,8 @@
 import appeng.core.Api
 import classes.TJMaterials
 import classes.TJMetaTileEntities
+import gregtech.api.GTValues
+import gregtech.api.items.toolitem.ToolHelper
 import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.OreDictUnifier
 import gregtech.api.unification.material.Materials
@@ -10,6 +12,13 @@ import gregtech.common.blocks.BlockSteamCasing
 import gregtech.common.blocks.MetaBlocks
 import gregtech.common.items.MetaItems
 import gregtech.common.metatileentities.MetaTileEntities
+import net.minecraft.item.ItemStack
+
+// use to damage GT tools in crafting
+def toolTransform = { ItemStack stack ->
+    ToolHelper.damageItem(stack, null)
+    return stack // don't forgot to return the item or it'll be consumed
+}
 
 // steam motor
 crafting.shapedBuilder()
@@ -236,6 +245,46 @@ RecipeMaps.COMPRESSOR_RECIPES.recipeBuilder()
         .output(OrePrefix.plate, Materials.Rubber)
         .EUt(16).duration(200)
         .buildAndRegister()
+// ulv input bus
+crafting.shapedBuilder()
+        .row(' C ')
+        .row('sHh')
+        .key('C', MetaTileEntities.BRONZE_CRATE.getStackForm())
+        .key('s', ore('craftingToolScrewdriver').transform(toolTransform))
+        .key('H', MetaTileEntities.HULL[GTValues.ULV].getStackForm())
+        .key('h', ore('craftingToolHardHammer').transform(toolTransform))
+        .output(MetaTileEntities.ITEM_IMPORT_BUS[GTValues.ULV].getStackForm())
+        .register()
+// ulv output bus
+crafting.shapedBuilder()
+        .row('sHh')
+        .row(' C ')
+        .key('C', MetaTileEntities.BRONZE_CRATE.getStackForm())
+        .key('s', ore('craftingToolScrewdriver').transform(toolTransform))
+        .key('H', MetaTileEntities.HULL[GTValues.ULV].getStackForm())
+        .key('h', ore('craftingToolHardHammer').transform(toolTransform))
+        .output(MetaTileEntities.ITEM_EXPORT_BUS[GTValues.ULV].getStackForm())
+        .register()
+// ulv input hatch
+crafting.shapedBuilder()
+        .row(' T ')
+        .row('sHh')
+        .key('T', MetaTileEntities.BRONZE_DRUM.getStackForm())
+        .key('s', ore('craftingToolScrewdriver').transform(toolTransform))
+        .key('H', MetaTileEntities.HULL[GTValues.ULV].getStackForm())
+        .key('h', ore('craftingToolHardHammer').transform(toolTransform))
+        .output(MetaTileEntities.FLUID_IMPORT_HATCH[GTValues.ULV].getStackForm())
+        .register()
+// ulv output hatch
+crafting.shapedBuilder()
+        .row('sHh')
+        .row(' T ')
+        .key('T', MetaTileEntities.BRONZE_DRUM.getStackForm())
+        .key('s', ore('craftingToolScrewdriver').transform(toolTransform))
+        .key('H', MetaTileEntities.HULL[GTValues.ULV].getStackForm())
+        .key('h', ore('craftingToolHardHammer').transform(toolTransform))
+        .output(MetaTileEntities.FLUID_EXPORT_HATCH[GTValues.ULV].getStackForm())
+        .register()
 // nether quartz dust
 mods.astralsorcery.grindstone.recipeBuilder()
         .input(ore('oreNetherQuartz'))
