@@ -7,6 +7,7 @@ import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.OreDictUnifier
 import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
+import gregtech.common.blocks.BlockMachineCasing
 import gregtech.common.blocks.BlockMetalCasing
 import gregtech.common.blocks.BlockSteamCasing
 import gregtech.common.blocks.MetaBlocks
@@ -245,6 +246,16 @@ RecipeMaps.COMPRESSOR_RECIPES.recipeBuilder()
         .output(OrePrefix.plate, Materials.Rubber)
         .EUt(16).duration(200)
         .buildAndRegister()
+// ulv machine hull
+crafting.shapedBuilder()
+        .row('WWW')
+        .row('CHC')
+        .key('W', OreDictUnifier.get(OrePrefix.plate, Materials.WroughtIron))
+        .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, Materials.Lead))
+        .key('H', MetaBlocks.MACHINE_CASING.getItemVariant(BlockMachineCasing.MachineCasingType.ULV))
+        .output(MetaTileEntities.HULL[GTValues.ULV].getStackForm())
+        .replace()
+        .register()
 // ulv input bus
 crafting.shapedBuilder()
         .row(' C ')
