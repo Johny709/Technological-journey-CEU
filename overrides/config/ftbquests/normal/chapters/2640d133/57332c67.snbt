@@ -13,13 +13,13 @@
 		uid: "aec55489",
 		type: "item",
 		items: [{
-			item: "gregtech:cable 1 5035"
+			item: "gregtech:cable_single 1 55"
 		}]
 	}],
 	rewards: [{
 		uid: "10067dff",
 		type: "item",
-		item: "gregtech:meta_item_1 1 12035",
+		item: "gregtech:meta_plate 1 55",
 		count: 8
 	}]
 }

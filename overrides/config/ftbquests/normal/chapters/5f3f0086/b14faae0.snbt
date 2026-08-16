@@ -1,5 +1,12 @@
 {
-	title: "MV Prospector",
+	title: "LV Prospector",
+	icon: {
+		id: "gregtech:meta_item_1",
+		Damage: 466s,
+		tag: {
+			Charge: 100000L
+		}
+	},
 	x: 9.5d,
 	y: -13.0d,
 	text: [
@@ -19,17 +26,18 @@
 			Damage: 100s,
 			tag: {
 				Charge: 1L
-			}
+			},
+			Count: 1b
 		}
 	}],
 	rewards: [{
 		uid: "791adb05",
 		type: "item",
 		item: {
-			id: "gtadditions:ga_meta_item2",
-			Damage: 100s,
+			id: "gregtech:meta_item_1",
+			Damage: 466s,
 			tag: {
-				Charge: 1L
+				Charge: 100000L
 			}
 		}
 	}]

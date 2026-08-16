@@ -1,6 +1,6 @@
 {
 	title: "Progression",
-	icon: "contenttweaker:certificate_of_being_a_noob",
+	icon: "gregtech:meta_item_1 1 1000",
 	always_invisible: 0b,
 	group: 0,
 	default_quest_shape: ""

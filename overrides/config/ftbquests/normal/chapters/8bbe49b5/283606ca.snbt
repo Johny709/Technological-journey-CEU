@@ -8,14 +8,14 @@
 		uid: "1184d406",
 		type: "item",
 		items: [{
-			item: "gregtech:cable 1 969"
+			item: "gcyl:wire_single 1 1158"
 		}],
 		count: 3L
 	}],
 	rewards: [{
 		uid: "66662610",
 		type: "item",
-		item: "gregtech:meta_item_1 1 2969",
+		item: "gcyl:meta_dust 1 1158",
 		count: 8
 	}]
 }

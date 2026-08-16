@@ -12,13 +12,13 @@
 		uid: "61ffed9c",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 100"
+			item: "gregtech:mte 1 110"
 		}]
 	}],
 	rewards: [{
 		uid: "fb250f52",
 		type: "item",
-		item: "gregtech:meta_item_1 1 32600",
+		item: "gregtech:meta_item_1 1 127",
 		count: 2
 	}]
 }

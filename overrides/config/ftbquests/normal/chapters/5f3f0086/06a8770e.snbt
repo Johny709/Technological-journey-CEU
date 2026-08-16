@@ -1,0 +1,19 @@
+{
+	x: 8.5d,
+	y: -8.0d,
+	dependencies: [
+		"a547f04f"
+	],
+	tasks: [{
+		uid: "ac84c919",
+		type: "item",
+		items: [{
+			item: "gregtech:mte 1 5647"
+		}]
+	}],
+	rewards: [{
+		uid: "181635bd",
+		type: "item",
+		item: "actuallyadditions:block_giant_chest"
+	}]
+}

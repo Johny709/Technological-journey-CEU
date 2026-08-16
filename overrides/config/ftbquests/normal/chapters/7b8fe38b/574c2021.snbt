@@ -10,24 +10,24 @@
 		uid: "eff28484",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 32733"
+			item: "gregtech:meta_item_1 1 305"
 		}]
 	},
 	{
 		uid: "528f583b",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 32732"
+			item: "gregtech:meta_item_1 1 304"
 		}]
 	}],
 	rewards: [{
 		uid: "73a091d9",
 		type: "item",
-		item: "gregtech:meta_item_1 1 32732"
+		item: "gregtech:meta_item_1 1 305"
 	},
 	{
 		uid: "2f2af231",
 		type: "item",
-		item: "gregtech:meta_item_1 1 32733"
+		item: "gregtech:meta_item_1 1 304"
 	}]
 }

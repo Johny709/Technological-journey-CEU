@@ -10,14 +10,14 @@
 		uid: "39a24fc6",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_2 1 32478"
+			item: "gregtech:meta_item_1 1 591"
 		}],
 		count: 8L
 	}],
 	rewards: [{
 		uid: "e7bc7532",
 		type: "item",
-		item: "gregtech:meta_item_2 1 32464",
+		item: "gregtech:meta_item_1 1 566",
 		count: 2
 	}]
 }

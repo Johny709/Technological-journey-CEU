@@ -12,14 +12,14 @@
 		uid: "90cf1256",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 4239"
+			item: "gregtech:mte 1 10032"
 		}]
 	},
 	{
 		uid: "629a2620",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 713"
+			item: "gregtech:mte 1 11046"
 		}]
 	},
 	{
@@ -35,7 +35,7 @@
 		uid: "dc66e257",
 		type: "item",
 		items: [{
-			item: "gregtech:frame_steel"
+			item: "gregtech:meta_block_frame_20 1 4"
 		}],
 		count: 15L
 	},
@@ -43,7 +43,7 @@
 		uid: "3417ea40",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 714"
+			item: "gregtech:mte 1 11121"
 		}],
 		count: 2L
 	},

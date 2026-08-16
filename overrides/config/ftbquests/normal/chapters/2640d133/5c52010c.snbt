@@ -11,13 +11,13 @@
 		uid: "2d1f003e",
 		type: "item",
 		items: [{
-			item: "gtadditions:ga_meta_item 1 32029"
+			item: "gregtech:meta_item_1 1 401"
 		}]
 	}],
 	rewards: [{
 		uid: "11c61158",
 		type: "item",
-		item: "gregtech:meta_item_1 1 12197",
+		item: "gregtech:meta_plate 1 335",
 		count: 16
 	}]
 }

@@ -13,12 +13,12 @@
 		uid: "08eb2af5",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 2242"
+			item: "gregtech:mte 1 950"
 		}]
 	}],
 	rewards: [{
 		uid: "11ca892f",
 		type: "item",
-		item: "gregtech:machine 1 2242"
+		item: "gregtech:mte 1 950"
 	}]
 }

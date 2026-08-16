@@ -1,0 +1,15 @@
+{
+	x: 18.5d,
+	y: -4.0d,
+	text: [
+		"Cluster Mill has been removed in CEU. All their recipes have been transfered to bending machine."
+	],
+	dependencies: [
+		"5da2ad33"
+	],
+	tasks: [{
+		uid: "7b40091f",
+		type: "checkmark",
+		title: "No More Cluster Mill"
+	}]
+}

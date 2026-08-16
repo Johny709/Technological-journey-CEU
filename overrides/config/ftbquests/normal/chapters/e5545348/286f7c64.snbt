@@ -10,14 +10,14 @@
 		uid: "6af0529c",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 230"
+			item: "gregtech:mte 1 260"
 		}]
 	},
 	{
 		uid: "f4e96f66",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 231"
+			item: "gregtech:mte 1 261"
 		}]
 	}],
 	rewards: [{

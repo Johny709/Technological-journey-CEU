@@ -9,12 +9,12 @@
 		uid: "eecf76d5",
 		type: "item",
 		items: [{
-			item: "gtadditions:ga_meta_item 1 32206"
+			item: "gcyl:gcyl_meta_item 1 206"
 		}]
 	}],
 	rewards: [{
 		uid: "28084c9e",
 		type: "item",
-		item: "gregtech:meta_item_2 1 32439"
+		item: "gregtech:meta_item_1 1 361"
 	}]
 }

@@ -16,28 +16,28 @@
 		uid: "25ee2ffd",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 1000"
+			item: "technological_journey:mte 1 1"
 		}]
 	},
 	{
 		uid: "c30d1ee5",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 700"
+			item: "gregtech:mte 1 11000"
 		}]
 	},
 	{
 		uid: "c319bd51",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 701"
+			item: "gregtech:mte 1 11015"
 		}]
 	},
 	{
 		uid: "b49fcb12",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 703"
+			item: "gregtech:mte 1 11045"
 		}]
 	},
 	{
@@ -51,7 +51,7 @@
 	rewards: [{
 		uid: "9dee2aff",
 		type: "item",
-		item: "gregtech:meta_item_2 1 25357",
+		item: "gregtech:meta_gem_exquisite 1 271",
 		count: 10
 	}]
 }

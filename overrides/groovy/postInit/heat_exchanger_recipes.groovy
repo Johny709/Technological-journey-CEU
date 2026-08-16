@@ -1,5 +1,6 @@
 
 import classes.MetaTileEntityHeatExchanger
+import classes.TJMaterials
 import classes.TJMetaTileEntities
 import com.fulltrix.gcyl.materials.GCYLNuclearMaterials
 import gregicality.multiblocks.common.block.GCYMMetaBlocks
@@ -11,11 +12,6 @@ import gregtech.api.unification.ore.OrePrefix
 import gregtech.common.metatileentities.MetaTileEntities
 
 def heatExchangerRecipes = MetaTileEntityHeatExchanger.HEAT_EXCHANGER_RECIPES
-def pahoehoeLava = content.createFluid('pahoehoe_lava') // TODO fix pahoehoe fluid texture
-        .setColor(0x964B00)
-        .setDefaultTexture()
-        .isFinite()
-        .register()
 
 // heat exchanger
 crafting.shapedBuilder()
@@ -29,15 +25,15 @@ crafting.shapedBuilder()
         .register()
 // steam, pahoehoe lava
 heatExchangerRecipes.recipeBuilder()
-        .fluidInput(Materials.Water.getFluid(), 1000)
-        .fluidInput(Materials.Lava.getFluid(), 10000)
-        .fluidOutputs(Materials.Steam.getFluid(), 172800)
-        .fluidOutputs(pahoehoeLava, 1000)
+        .fluidInputs(Materials.Water.getFluid(1000))
+        .fluidInputs(Materials.Lava.getFluid(10000))
+        .fluidOutputs(Materials.Steam.getFluid(172800))
+        .fluidOutputs(TJMaterials.PahoehoeLava.getFluid(1000))
         .duration(20)
         .buildAndRegister()
 // obsidian, sulfur dust, carbon dust
 RecipeMaps.ELECTROLYZER_RECIPES.recipeBuilder()
-        .fluidInput(pahoehoeLava, 10000)
+        .fluidInputs(TJMaterials.PahoehoeLava.getFluid(10000))
         .outputs(item('minecraft:obsidian'))
         .output(OrePrefix.dust, Materials.Sulfur)
         .output(OrePrefix.dust, Materials.Carbon)

@@ -8,20 +8,17 @@
 		uid: "76d307ff",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 221"
+			item: "gregtech:mte 1 246"
 		}]
 	}],
 	rewards: [{
 		uid: "967d7781",
 		type: "item",
 		item: {
-			id: "gregtech:meta_item_1",
-			Damage: 32762s,
+			id: "forge:bucketfilled",
 			tag: {
-				Fluid: {
-					FluidName: "lubricant",
-					Amount: 1000
-				}
+				FluidName: "lubricant",
+				Amount: 1000
 			}
 		}
 	}]

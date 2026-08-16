@@ -12,12 +12,12 @@
 		uid: "e8f4a82b",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 2005"
+			item: "gregtech:meta_dust 1 6"
 		}]
 	}],
 	rewards: [{
 		uid: "34fdcfe0",
 		type: "item",
-		item: "gregtech:meta_item_1 1 2005"
+		item: "gregtech:meta_dust 1 6"
 	}]
 }

@@ -18,14 +18,14 @@
 		uid: "70b4fa6e",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 1002"
+			item: "technological_journey:mte"
 		}]
 	},
 	{
 		uid: "36ddf28d",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 700"
+			item: "gregtech:mte 1 11000"
 		}],
 		count: 2L
 	},
@@ -33,14 +33,14 @@
 		uid: "71a5eeb4",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 702"
+			item: "gregtech:mte 1 11030"
 		}]
 	},
 	{
 		uid: "d050af60",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 701"
+			item: "gregtech:mte 1 11015"
 		}]
 	},
 	{
@@ -55,7 +55,7 @@
 		uid: "2b799f63",
 		type: "item",
 		items: [{
-			item: "gregtech:machine_casing 1 10"
+			item: "gregtech:steam_casing"
 		}],
 		count: 8L
 	}]

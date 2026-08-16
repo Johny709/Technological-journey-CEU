@@ -16,7 +16,7 @@
 		uid: "a85e15d2",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 510"
+			item: "gregtech:mte 1 10000"
 		}]
 	},
 	{
@@ -35,6 +35,6 @@
 	{
 		uid: "e714ffe8",
 		type: "item",
-		item: "gregtech:meta_block_compressed_6 1 5"
+		item: "gregtech:meta_block_compressed_16 1 10"
 	}]
 }

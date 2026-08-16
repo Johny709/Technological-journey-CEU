@@ -13,7 +13,8 @@
 			Damage: 1004s,
 			tag: {
 				Plunger: {}
-			}
+			},
+			Count: 1b
 		}],
 		ignore_nbt: 1b
 	}]

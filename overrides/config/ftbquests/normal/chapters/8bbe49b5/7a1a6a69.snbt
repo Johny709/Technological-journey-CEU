@@ -12,12 +12,12 @@
 		uid: "094fb8d7",
 		type: "item",
 		items: [{
-			item: "gtadditions:ga_meta_item 1 32207"
+			item: "gcyl:gcyl_meta_item 1 207"
 		}]
 	}],
 	rewards: [{
 		uid: "043fc383",
 		type: "item",
-		item: "gtadditions:ga_meta_item 1 32207"
+		item: "gcyl:gcyl_meta_item 1 207"
 	}]
 }

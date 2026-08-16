@@ -8,13 +8,13 @@
 		uid: "6ce3b27c",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 10975"
+			item: "gcyl:meta_ingot 1 1145"
 		}]
 	}],
 	rewards: [{
 		uid: "055ed3d5",
 		type: "item",
-		item: "gregtech:meta_item_1 1 2006",
+		item: "gregtech:meta_dust 1 8",
 		count: 8
 	}]
 }

@@ -13,13 +13,13 @@
 		uid: "744383eb",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_2 1 32443"
+			item: "gregtech:meta_item_1 1 381"
 		}]
 	}],
 	rewards: [{
 		uid: "ca9b2a61",
 		type: "item",
-		item: "gregtech:meta_item_1 1 12018",
+		item: "gregtech:meta_plate 1 25",
 		count: 16
 	}]
 }

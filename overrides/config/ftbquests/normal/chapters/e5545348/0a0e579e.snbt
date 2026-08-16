@@ -1,5 +1,4 @@
 {
-	icon: "gregtech:machine 1 2539",
 	x: 6.5d,
 	y: 7.5d,
 	dependencies: [
@@ -10,7 +9,7 @@
 		uid: "c3adf52e",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 2539"
+			item: "gregtech:mte 1 10006"
 		}]
 	},
 	{
@@ -33,13 +32,13 @@
 		uid: "867c72c1",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 4213"
+			item: "gregtech:mte 1 11480"
 		}]
 	}],
 	rewards: [{
 		uid: "4d5a1171",
 		type: "item",
-		item: "gregtech:meta_item_1 1 10126",
+		item: "gregtech:meta_ingot 1 287",
 		count: 32
 	}]
 }

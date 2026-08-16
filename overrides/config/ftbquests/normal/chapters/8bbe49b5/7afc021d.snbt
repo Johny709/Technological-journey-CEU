@@ -15,14 +15,14 @@
 		uid: "767c89ad",
 		type: "item",
 		items: [{
-			item: "gregtech:machine 1 2534"
+			item: "gregtech:mte 1 10001"
 		}],
 		count: 3L
 	}],
 	rewards: [{
 		uid: "97a18428",
 		type: "item",
-		item: "gregtech:meta_item_1 1 10126",
+		item: "gregtech:meta_ingot 1 287",
 		count: 32
 	}]
 }

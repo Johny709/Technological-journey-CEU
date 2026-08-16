@@ -7,12 +7,12 @@
 		uid: "e0d363fc",
 		type: "item",
 		items: [{
-			item: "gregtech:meta_item_1 1 2025"
+			item: "gregtech:meta_dust 1 39"
 		}]
 	}],
 	rewards: [{
 		uid: "1204ddad",
 		type: "item",
-		item: "gregtech:meta_item_1 1 2025"
+		item: "gregtech:meta_dust 1 39"
 	}]
 }

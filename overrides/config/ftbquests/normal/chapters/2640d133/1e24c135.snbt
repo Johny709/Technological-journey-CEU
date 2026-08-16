@@ -1,5 +1,6 @@
 {
 	title: "Scan For Uranium",
+	icon: "gregtech:ore_uranium_238_0",
 	x: 2.5d,
 	y: 6.5d,
 	text: [
