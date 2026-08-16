@@ -12,6 +12,7 @@ import gregtech.common.blocks.BlockMetalCasing
 import gregtech.common.blocks.BlockSteamCasing
 import gregtech.common.blocks.MetaBlocks
 import gregtech.common.items.MetaItems
+import gregtech.common.items.ToolItems
 import gregtech.common.metatileentities.MetaTileEntities
 import net.minecraft.item.ItemStack
 
@@ -722,6 +723,17 @@ crafting.shapedBuilder()
         .key('P', OreDictUnifier.get(OrePrefix.plate, Materials.Iron))
         .key('G', OreDictUnifier.get(OrePrefix.block, Materials.Glowstone))
         .output(item('advancedrocketry:circlelight'))
+        .replace()
+        .register()
+// iron hook
+crafting.shapedBuilder()
+        .row('PPH')
+        .row(' IP')
+        .row('I P')
+        .key('P', OreDictUnifier.get(OrePrefix.plateDouble, Materials.Iron))
+        .key('H', ToolItems.PICKAXE.get(Materials.Iron))
+        .key('I', item('hooked:microcrafting', 3))\
+        .output(item('hooked:hook', 1))
         .replace()
         .register()
 // steam alloy smelter

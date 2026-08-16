@@ -6,6 +6,12 @@ import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
 import gregtech.common.metatileentities.MetaTileEntities
 
+// dense rubber sheet
+RecipeMaps.FORGE_HAMMER_RECIPES.recipeBuilder()
+        .input(OrePrefix.plate, Materials.Rubber, 9)
+        .output(OrePrefix.plateDense, Materials.Rubber)
+        .EUt(16).duration(200)
+        .buildAndRegister()
 // farming station
 crafting.removeByOutput(item('enderio:block_farm_station'))
 RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
@@ -16,7 +22,6 @@ RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
         .outputs(item('enderio:block_farm_station'))
         .EUt(30).duration(160)
         .buildAndRegister()
-
 // tool casing
 crafting.addShapeless(item('thermalfoundation:material', 640), [item('actuallyadditions:item_misc', 16)])
 // item dislocator
@@ -460,3 +465,24 @@ RecipeMaps.LASER_ENGRAVER_RECIPES.recipeBuilder()
         .outputs(item('minecraft:soul_sand'))
         .EUt(8).duration(20)
         .buildAndRegister()
+// diamond hook
+crafting.shapedBuilder()
+        .row(' PP')
+        .row(' HP')
+        .row('P  ')
+        .key('P', OreDictUnifier.get(OrePrefix.plate, Materials.Diamond))
+        .key('H', item('hooked:hook', 1))
+        .output(item('hooked:hook', 2))
+        .replace()
+        .register()
+// red hook
+crafting.shapedBuilder()
+        .row('PPB')
+        .row(' HP')
+        .row('P P')
+        .key('P', OreDictUnifier.get(OrePrefix.plate, Materials.Redstone))
+        .key('B', item('actuallyadditions:block_crystal'))
+        .key('H', item('hooked:hook', 2))
+        .output(item('hooked:hook', 3))
+        .replace()
+        .register()
