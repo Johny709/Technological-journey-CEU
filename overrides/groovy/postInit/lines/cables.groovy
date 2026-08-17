@@ -1,4 +1,4 @@
-package lines
+package postInit.lines
 
 import com.fulltrix.gcyl.item.GCYLCoreItems
 import com.fulltrix.gcyl.materials.GCYLMaterials
