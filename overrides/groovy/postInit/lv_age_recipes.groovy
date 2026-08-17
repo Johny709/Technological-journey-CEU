@@ -4,13 +4,23 @@ import gregtech.api.unification.OreDictUnifier
 import gregtech.api.unification.material.MarkerMaterials
 import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
+import gregtech.common.items.MetaItems
 import gregtech.common.metatileentities.MetaTileEntities
 
-// dense rubber sheet
-RecipeMaps.FORGE_HAMMER_RECIPES.recipeBuilder()
-        .input(OrePrefix.plate, Materials.Rubber, 9)
-        .output(OrePrefix.plateDense, Materials.Rubber)
-        .EUt(16).duration(200)
+// basic fluid drilling rig
+mods.gregtech.assembler.removeByInput(120,
+        [metaitem('hull.mv'), metaitem('frameSteel') * 4, metaitem('circuit.good_electronic') * 4, metaitem('electric.motor.mv') * 4,
+         metaitem('electric.pump.mv') * 4, metaitem('gearVanadiumSteel') * 4, metaitem('circuit.integrated').withNbt(['Configuration': 2])], null)
+RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
+        .circuitMeta(2)
+        .input(MetaItems.ELECTRIC_MOTOR_LV, 4)
+        .input(MetaItems.ELECTRIC_PUMP_LV, 4)
+        .input(OrePrefix.gear, Materials.Cobalt, 2)
+        .input(MetaTileEntities.HULL[GTValues.LV])
+        .input(OrePrefix.frameGt, Materials.Steel)
+        .input(OrePrefix.circuit, MarkerMaterials.Tier.LV)
+        .output(MetaTileEntities.BASIC_FLUID_DRILLING_RIG)
+        .EUt(30).duration(400)
         .buildAndRegister()
 // farming station
 crafting.removeByOutput(item('enderio:block_farm_station'))

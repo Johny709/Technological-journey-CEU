@@ -148,6 +148,12 @@ crafting.shapedBuilder()
         .key('M', item('technological_journey:steammotor'))
         .output(item('astralsorcery:blockmachine', 1))
         .register()
+// dense rubber sheet
+RecipeMaps.FORGE_HAMMER_RECIPES.recipeBuilder()
+        .input(OrePrefix.plate, Materials.Rubber, 9)
+        .output(OrePrefix.plateDense, Materials.Rubber)
+        .EUt(16).duration(200)
+        .buildAndRegister()
 // steam macerator
 crafting.shapedBuilder()
         .row('PBP')
