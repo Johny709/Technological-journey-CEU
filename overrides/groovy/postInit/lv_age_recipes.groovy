@@ -6,6 +6,8 @@ import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
 import gregtech.common.items.MetaItems
 import gregtech.common.metatileentities.MetaTileEntities
+import tja.blocks.BlockTieredGlass
+import tja.blocks.TJAMetaBlocks
 
 // basic fluid drilling rig
 mods.gregtech.assembler.removeByInput(120,
@@ -494,5 +496,26 @@ crafting.shapedBuilder()
         .key('B', item('actuallyadditions:block_crystal'))
         .key('H', item('hooked:hook', 2))
         .output(item('hooked:hook', 3))
+        .replace()
+        .register()
+// lapis /dank/null panel
+crafting.shapedBuilder()
+        .row('LCL')
+        .row('CGC')
+        .row('LCL')
+        .key('L', ore('blockLapis'))
+        .key('C', ore('blockFuelCoke'))
+        .key('G', TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.LV))
+        .output(item('danknull:dank_null_panel_1'))
+        .replace()
+        .register()
+// /dev/null/MK II
+crafting.shapedBuilder()
+        .row('PPP')
+        .row('PDP')
+        .row('PPP')
+        .key('P', item('danknull:dank_null_panel_1'))
+        .key('D', item('danknull:dank_null_0'))
+        .output(item('danknull:dank_null_1'))
         .replace()
         .register()

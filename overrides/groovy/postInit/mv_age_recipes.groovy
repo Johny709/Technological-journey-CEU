@@ -4,6 +4,8 @@ import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
 import gregtech.common.items.MetaItems
 import gregtech.common.metatileentities.MetaTileEntities
+import tja.blocks.BlockTieredGlass
+import tja.blocks.TJAMetaBlocks
 
 // dolly
 crafting.shapedBuilder()
@@ -188,3 +190,24 @@ RecipeMaps.ASSEMBLER_RECIPES.recipeBuilder()
         .outputs(item('actuallyadditions:block_crystal_empowered', 5))
         .EUt(120).duration(160)
         .buildAndRegister()
+// iron /dank/null panel
+crafting.shapedBuilder()
+        .row('ICI')
+        .row('CGC')
+        .row('ICI')
+        .key('I', ore('blockIron'))
+        .key('C', ore('blockFuelCoke'))
+        .key('G', TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.MV))
+        .output(item('danknull:dank_null_panel_2'))
+        .replace()
+        .register()
+// /dev/null/MK III
+crafting.shapedBuilder()
+        .row('PPP')
+        .row('PDP')
+        .row('PPP')
+        .key('P', item('danknull:dank_null_panel_2'))
+        .key('D', item('danknull:dank_null_1'))
+        .output(item('danknull:dank_null_2'))
+        .replace()
+        .register()

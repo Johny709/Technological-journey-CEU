@@ -6,6 +6,8 @@ import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
 import gregtech.common.items.MetaItems
 import gregtech.common.metatileentities.MetaTileEntities
+import tja.blocks.BlockTieredGlass
+import tja.blocks.TJAMetaBlocks
 
 // handy bag
 crafting.shapedBuilder()
@@ -502,6 +504,27 @@ RecipeMaps.BLAST_RECIPES.recipeBuilder()
         .outputs(item('thermalfoundation:material', 166))
         .EUt(1920).duration(1530)
         .buildAndRegister()
+// gold /dank/null panel
+crafting.shapedBuilder()
+        .row('BCB')
+        .row('CGC')
+        .row('BCB')
+        .key('B', ore('blockGold'))
+        .key('C', ore('blockFuelCoke'))
+        .key('G', TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.HV))
+        .output(item('danknull:dank_null_panel_3'))
+        .replace()
+        .register()
+// /dev/null/MK IV
+crafting.shapedBuilder()
+        .row('PPP')
+        .row('PDP')
+        .row('PPP')
+        .key('P', item('danknull:dank_null_panel_3'))
+        .key('D', item('danknull:dank_null_2'))
+        .output(item('danknull:dank_null_3'))
+        .replace()
+        .register()
 // centrifuge
 mods.advancedrocketry.centrifuge.removeAll()
 // chemical reactor

@@ -10,6 +10,8 @@ import gregtech.common.blocks.BlockGlassCasing
 import gregtech.common.blocks.MetaBlocks
 import gregtech.common.items.MetaItems
 import gregtech.common.metatileentities.MetaTileEntities
+import tja.blocks.BlockTieredGlass
+import tja.blocks.TJAMetaBlocks
 
 // hopping bonsai pot
 crafting.shapedBuilder()
@@ -183,4 +185,25 @@ mods.astralsorcery.starlight_altar.constellationRecipeBuilder()
         .output(item('astralsorcery:blockaltar', 3))
         .starlight(800)
         .craftTime(400)
+        .register()
+// emerald /dank/null panel
+crafting.shapedBuilder()
+        .row('ECE')
+        .row('CGC')
+        .row('ECE')
+        .key('E', ore('blockEmerald'))
+        .key('C', ore('blockFuelCoke'))
+        .key('G', TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.IV))
+        .output(item('danknull:dank_null_panel_5'))
+        .replace()
+        .register()
+// /dev/null/MK VI
+crafting.shapedBuilder()
+        .row('PPP')
+        .row('PDP')
+        .row('PPP')
+        .key('P', item('danknull:dank_null_panel_5'))
+        .key('D', item('danknull:dank_null_4'))
+        .output(item('danknull:dank_null_5'))
+        .replace()
         .register()

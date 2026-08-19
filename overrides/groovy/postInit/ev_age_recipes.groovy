@@ -7,6 +7,8 @@ import gregtech.common.blocks.BlockGlassCasing
 import gregtech.common.blocks.MetaBlocks
 import gregtech.common.items.MetaItems
 import gregtech.common.metatileentities.MetaTileEntities
+import tja.blocks.BlockTieredGlass
+import tja.blocks.TJAMetaBlocks
 
 // bonsai pot
 crafting.shapedBuilder()
@@ -352,4 +354,25 @@ mods.astralsorcery.starlight_altar.discoveryRecipeBuilder()
         .output(item('astralsorcery:itemlinkingtool'))
         .starlight(5)
         .craftTime(300)
+        .register()
+// diamond /dank/null panel
+crafting.shapedBuilder()
+        .row('DCD')
+        .row('CGC')
+        .row('DCD')
+        .key('D', ore('blockDiamond'))
+        .key('C', ore('blockFuelCoke'))
+        .key('G', TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.EV))
+        .output(item('danknull:dank_null_panel_4'))
+        .replace()
+        .register()
+// /dev/null/MK V
+crafting.shapedBuilder()
+        .row('PPP')
+        .row('PDP')
+        .row('PPP')
+        .key('P', item('danknull:dank_null_panel_4'))
+        .key('D', item('danknull:dank_null_3'))
+        .output(item('danknull:dank_null_4'))
+        .replace()
         .register()
