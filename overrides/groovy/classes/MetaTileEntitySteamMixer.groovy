@@ -1,7 +1,6 @@
 import com.cleanroommc.modularui.api.drawable.IKey
 import com.cleanroommc.modularui.api.widget.IWidget
 import com.cleanroommc.modularui.drawable.GuiTextures
-import com.cleanroommc.modularui.factory.PosGuiData
 import com.cleanroommc.modularui.screen.ModularPanel
 import com.cleanroommc.modularui.screen.UISettings
 import com.cleanroommc.modularui.value.sync.BooleanSyncValue
@@ -26,7 +25,9 @@ import gregtech.api.metatileentity.SteamMetaTileEntity
 import gregtech.api.metatileentity.interfaces.IGregTechTileEntity
 import gregtech.api.mui.GTGuiTextures
 import gregtech.api.mui.GTGuiTheme
+import gregtech.api.mui.MetaTileEntityGuiData
 import gregtech.api.mui.widget.GhostCircuitSlotWidget
+import gregtech.api.mui.widget.RecipeProgressWidget
 import gregtech.api.recipes.RecipeMaps
 import gregtech.client.particle.VanillaParticleEffects
 import gregtech.client.renderer.texture.Textures
@@ -37,7 +38,6 @@ import net.minecraftforge.fluids.FluidTank
 import net.minecraftforge.fml.relauncher.Side
 import net.minecraftforge.fml.relauncher.SideOnly
 import net.minecraftforge.items.IItemHandlerModifiable
-import net.minecraftforge.items.ItemStackHandler
 
 
 class MetaTileEntitySteamMixer extends SteamMetaTileEntity {
@@ -83,12 +83,7 @@ class MetaTileEntitySteamMixer extends SteamMetaTileEntity {
     }
 
     @Override
-    boolean usesMui2() {
-        return true
-    }
-
-    @Override
-    ModularPanel buildUI(PosGuiData guiData, PanelSyncManager panelSyncManager, UISettings settings) {
+    ModularPanel buildUI(MetaTileEntityGuiData guiData, PanelSyncManager panelSyncManager, UISettings settings) {
         BooleanSyncValue enoughEnergyValue = new BooleanSyncValue(() -> this.workableHandler.isActive() && this.workableHandler.isHasNotEnoughEnergy())
         panelSyncManager.syncValue("enough_steam", enoughEnergyValue)
         panelSyncManager.syncValue("progress", new DoubleSyncValue(() -> this.workableHandler.getProgressPercent()))
@@ -127,9 +122,11 @@ class MetaTileEntitySteamMixer extends SteamMetaTileEntity {
                         .pos(79, 51)
                         .background(this.isHighPressure ? GTGuiTextures.INDICATOR_NO_STEAM_STEEL : GTGuiTextures.INDICATOR_NO_STEAM_BRONZE)
                         .setEnabledIf(enabled -> enoughEnergyValue.getBoolValue()))
-                .child(new ProgressWidget()
+                .child(new RecipeProgressWidget()
+                        .recipeMap(this.recipeMap)
                         .pos(79, 33)
                         .size(20)
+                        .direction(ProgressWidget.Direction.CIRCULAR_CW)
                         .texture(GTGuiTextures.PROGRESS_BAR_MIXER, 20)
                         .syncHandler("progress"))
                 .themeOverride(this.getUITheme().id)
