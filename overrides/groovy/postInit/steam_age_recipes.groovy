@@ -5,6 +5,7 @@ import gregtech.api.GTValues
 import gregtech.api.items.toolitem.ToolHelper
 import gregtech.api.recipes.RecipeMaps
 import gregtech.api.unification.OreDictUnifier
+import gregtech.api.unification.material.MarkerMaterials
 import gregtech.api.unification.material.Materials
 import gregtech.api.unification.ore.OrePrefix
 import gregtech.common.blocks.BlockMachineCasing
@@ -73,7 +74,7 @@ crafting.shapedBuilder()
         .key('f', ore('craftingToolFile').transform(toolTransform))
         .key('G', ore('blockGlass'))
         .key('D', OreDictUnifier.get(OrePrefix.gem, Materials.Diamond))
-        .output(OreDictUnifier.get(OrePrefix.craftingLens, Materials.Glass))
+        .output(OreDictUnifier.get(OrePrefix.craftingLens, MarkerMaterials.Color.White))
         .register()
 // industrial primitive blast furnace
 crafting.shapedBuilder()
