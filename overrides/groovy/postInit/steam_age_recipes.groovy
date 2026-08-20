@@ -64,6 +64,17 @@ furnace.removeByOutput(item('minecraft:brick'))
 furnace.add(OreDictUnifier.get(OrePrefix.dust, TJMaterials.UnfiredClay), item('minecraft:brick'))
 // glass
 furnace.add(OreDictUnifier.get(OrePrefix.dust, Materials.QuartzSand), item('minecraft:glass'))
+// glass lens
+crafting.shapedBuilder()
+        .row('FfF')
+        .row('FGF')
+        .row('FDF')
+        .key('F', OreDictUnifier.get(OrePrefix.gem, Materials.Flint))
+        .key('f', ore('craftingToolFile').transform(toolTransform))
+        .key('G', ore('blockGlass'))
+        .key('D', OreDictUnifier.get(OrePrefix.gem, Materials.Diamond))
+        .output(OreDictUnifier.get(OrePrefix.craftingLens, Materials.Glass))
+        .register()
 // industrial primitive blast furnace
 crafting.shapedBuilder()
         .row('BFB')
