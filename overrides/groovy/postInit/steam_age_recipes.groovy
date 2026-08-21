@@ -733,6 +733,16 @@ crafting.shapedBuilder()
         .output(item('enderio:item_extract_speed_upgrade'))
         .replace()
         .register()
+// industrial machine chassis
+crafting.shapelessBuilder()
+        .input([ore('dyeBlack'), item('enderio:item_material')])
+        .output(item('enderio:item_material', 1))
+        .register()
+// soul machine chassis
+crafting.shapelessBuilder()
+        .input([ore('dyeSoulMachine'), item('enderio:item_material', 1)])
+        .output(item('enderio:item_material', 53))
+        .register()
 // station light
 crafting.shapedBuilder()
         .row(' P ')

@@ -87,7 +87,7 @@ class MetaTileEntitySteamMixer extends SteamMetaTileEntity {
         BooleanSyncValue enoughEnergyValue = new BooleanSyncValue(() -> this.workableHandler.isActive() && this.workableHandler.isHasNotEnoughEnergy())
         panelSyncManager.syncValue("enough_steam", enoughEnergyValue)
         panelSyncManager.syncValue("progress", new DoubleSyncValue(() -> this.workableHandler.getProgressPercent()))
-        panelSyncManager.registerSlotGroup(new SlotGroup("input_slots", 3, 0, true))
+        panelSyncManager.registerSlotGroup(new SlotGroup("input_slots", 3, 1, true))
 
         return ModularPanel.defaultPanel("steam_mixer.gui", 176, 166)
                 .child(new TextWidget(IKey.lang(this.getMetaFullName()))

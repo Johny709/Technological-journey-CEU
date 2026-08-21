@@ -363,6 +363,11 @@ RecipeMaps.EXTRACTOR_RECIPES.recipeBuilder()
         .fluidOutputs(fluid('xpjuice') * 10000)
         .EUt(30).duration(100)
         .buildAndRegister()
+// enhanced machine chassis
+crafting.shapelessBuilder()
+        .input([ore('ingotDarkSteel'), item('enderio:item_material', 1)])
+        .output(item('enderio:item_material', 54))
+        .register()
 // atomic reconstructor
 crafting.removeByOutput(item('actuallyadditions:block_atomic_reconstructor'))
 mods.actuallyadditions.atomic_reconstructor.removeAll()
