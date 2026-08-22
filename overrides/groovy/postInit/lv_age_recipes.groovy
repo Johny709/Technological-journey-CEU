@@ -9,6 +9,28 @@ import gregtech.common.metatileentities.MetaTileEntities
 import tja.blocks.BlockTieredGlass
 import tja.blocks.TJAMetaBlocks
 
+// super tank I
+crafting.shapedBuilder()
+        .row('CSC')
+        .row('SHS')
+        .row('CPC')
+        .key('C', ore('circuitLv'))
+        .key('S', OreDictUnifier.get(OrePrefix.plate, Materials.Steel))
+        .key('H', MetaTileEntities.HULL[GTValues.LV].getStackForm())
+        .key('P', MetaItems.ELECTRIC_PUMP_LV.getStackForm())
+        .output(MetaTileEntities.QUANTUM_TANK[0].getStackForm())
+        .replace()
+        .register()
+// diode
+crafting.shapedBuilder()
+        .row(' G ')
+        .row('CDC')
+        .row(' G ')
+        .key('G', ore('paneGlass'))
+        .key('C', OreDictUnifier.get(OrePrefix.wireFine, Materials.Copper))
+        .key('D', OreDictUnifier.get(OrePrefix.dustSmall, Materials.Gallium))
+        .output(MetaItems.DIODE.getStackForm())
+        .register()
 // basic fluid drilling rig
 mods.gregtech.assembler.removeByInput(120,
         [metaitem('hull.mv'), metaitem('frameSteel') * 4, metaitem('circuit.good_electronic') * 4, metaitem('electric.motor.mv') * 4,
