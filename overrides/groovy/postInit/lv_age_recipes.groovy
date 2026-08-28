@@ -357,7 +357,7 @@ crafting.shapedBuilder()
         .register()
 // fused quartz
 RecipeMaps.ALLOY_SMELTER_RECIPES.recipeBuilder()
-        .input(OrePrefix.gem, Materials.NetherQuartz)
+        .input(OrePrefix.gem, Materials.NetherQuartz, 4)
         .outputs(item('enderio:block_fused_quartz'))
         .EUt(30).duration(160)
         .buildAndRegister()
