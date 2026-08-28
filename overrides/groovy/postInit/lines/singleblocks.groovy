@@ -31,10 +31,15 @@ Material[] cableMaterials2 = [Materials.Lead, Materials.Copper, Materials.Cupron
                               Materials.HSSG, Materials.Naquadah, Materials.NaquadahAlloy, Materials.Europium, GCYLMaterials.Pikyonium,
                               GCYLMaterials.Cinobite, GCYLMaterials.NaquadriaticTaranium, Materials.Neutronium, GCYLMaterials.CosmicNeutronium]
 
-Material[] rotorMaterials = [null, Materials.Tin, Materials.Bronze, Materials.Steel, Materials.StainlessSteel, Materials.TungstenSteel,
+Material[] rotorMaterials = [Materials.Lead, Materials.Tin, Materials.Bronze, Materials.Steel, Materials.StainlessSteel, Materials.TungstenSteel,
                              Materials.RhodiumPlatedPalladium, Materials.NaquadahAlloy, Materials.Darmstadtium, GCYLMaterials.HastelloyX78,
                              GCYLMaterials.HastelloyK243, GCYLMaterials.ProtoAdamantium, GCYLMaterials.Vibranium, Materials.Neutronium,
                              GCYLMaterials.CosmicNeutronium]
+
+Material[] magnetMaterials = [Materials.Lead, Materials.Tin, Materials.Copper, Materials.Silver, Materials.Steel, Materials.Graphene,
+                              Materials.NiobiumNitride, Materials.VanadiumGallium, Materials.YttriumBariumCuprate, Materials.YttriumBariumCuprate,
+                              Materials.YttriumBariumCuprate, Materials.YttriumBariumCuprate, Materials.YttriumBariumCuprate,Materials.YttriumBariumCuprate,
+                              Materials.YttriumBariumCuprate]
 
 Material[] sawMaterials = [null, Materials.CobaltBrass, Materials.VanadiumSteel, Materials.RedSteel, Materials.Ultimet, Materials.TungstenCarbide,
                            GCYLMaterials.Enderium, Materials.HSSE, Materials.NaquadahAlloy, Materials.Duranium, GCYLMaterials.Draconium,
@@ -67,6 +72,14 @@ MetaItem.MetaValueItem[] pumps = [null, MetaItems.ELECTRIC_PUMP_LV, MetaItems.EL
                                   MetaItems.ELECTRIC_PUMP_IV, MetaItems.ELECTRIC_PUMP_LuV, MetaItems.ELECTRIC_PUMP_ZPM, MetaItems.ELECTRIC_PUMP_UV,
                                   MetaItems.ELECTRIC_PUMP_UHV, MetaItems.ELECTRIC_PUMP_UEV, MetaItems.ELECTRIC_PUMP_UIV, MetaItems.ELECTRIC_PUMP_UXV,
                                   MetaItems.ELECTRIC_PUMP_OpV, GCYLCoreItems.ELECTRIC_PUMP_MAX]
+
+MetaItem.MetaValueItem[] emitters = [null, MetaItems.EMITTER_LV, MetaItems.EMITTER_MV, MetaItems.EMITTER_HV, MetaItems.EMITTER_EV, MetaItems.EMITTER_IV,
+                                     MetaItems.EMITTER_LuV, MetaItems.EMITTER_ZPM, MetaItems.EMITTER_UV, MetaItems.EMITTER_UHV, MetaItems.EMITTER_UEV,
+                                     MetaItems.EMITTER_UIV, MetaItems.EMITTER_UXV, MetaItems.EMITTER_OpV, GCYLCoreItems.EMITTER_MAX]
+
+MetaItem.MetaValueItem[] sensors = [null, MetaItems.SENSOR_LV, MetaItems.SENSOR_MV, MetaItems.SENSOR_HV, MetaItems.SENSOR_EV, MetaItems.SENSOR_IV,
+                                    MetaItems.SENSOR_LuV, MetaItems.SENSOR_ZPM, MetaItems.SENSOR_UV, MetaItems.SENSOR_UHV, MetaItems.SENSOR_UEV,
+                                    MetaItems.SENSOR_UIV, MetaItems.SENSOR_UXV, MetaItems.SENSOR_OpV, GCYLCoreItems.SENSOR_MAX]
 
 // electric furnaces
 for (int i = GTValues.LV; i < MetaTileEntities.ELECTRIC_FURNACE.length; i++) {
@@ -125,20 +138,6 @@ for (int i = GTValues.LV; i < MetaTileEntities.ARC_FURNACE.length; i++) {
             .key('H', MetaTileEntities.HULL[i].getStackForm())
             .key('P', ore(new UnificationEntry(OrePrefix.plate, materials[i]).toString()))
             .output(MetaTileEntities.ARC_FURNACE[i].getStackForm())
-            .replace()
-            .register()
-}
-// wiremills
-for (int i = GTValues.LV; i < MetaTileEntities.WIREMILL.length; i++) {
-    crafting.shapedBuilder()
-            .row('MCM')
-            .row('cHc')
-            .row('MCM')
-            .key('M', motors[i].getStackForm())
-            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
-            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
-            .key('H', MetaTileEntities.HULL[i].getStackForm())
-            .output(MetaTileEntities.WIREMILL[i].getStackForm())
             .replace()
             .register()
 }
@@ -322,10 +321,342 @@ for (int i = GTValues.LV; i < MetaTileEntities.CUTTER.length; i++) {
                     i < 3 ? Materials.Silver :
                             i < 4 ? Materials.Electrum :
                                     i < 5 ? Materials.Platinum : Materials.Osmium))
+            .key('G', i < 2 ? ore('blockGlass') : TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.values()[i - 2]))
             .key('H', MetaTileEntities.HULL[i].getStackForm())
             .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
             .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
             .output(MetaTileEntities.CUTTER[i].getStackForm())
+            .replace()
+            .register()
+}
+// electromagnetic separator
+for (int i = GTValues.LV; i < MetaTileEntities.ELECTROMAGNETIC_SEPARATOR.length; i++) {
+    crafting.shapedBuilder()
+            .row('TCW')
+            .row('CHR')
+            .row('cCW')
+            .key('T', conveyors[i].getStackForm())
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('W', OreDictUnifier.get((i < 4 ? OrePrefix.wireGtDouble :
+                    i < 7 ? OrePrefix.wireGtQuadruple :
+                            i < 10 ? OrePrefix.wireGtOctal : OrePrefix.wireGtHex), magnetMaterials[i]))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('R', OreDictUnifier.get(OrePrefix.stick, i < 2 ? Materials.Iron :
+                    i < 4 ? Materials.Steel :
+                            i < 5 ? Materials.Neodymium : Materials.VanadiumGallium))
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .output(MetaTileEntities.ELECTROMAGNETIC_SEPARATOR[i].getStackForm())
+            .replace()
+            .register()
+}
+// extractors
+for (int i = GTValues.LV; i < MetaTileEntities.EXTRACTOR.length; i++) {
+    crafting.shapedBuilder()
+            .row('GcG')
+            .row('THP')
+            .row('CcC')
+            .key('G', i < 2 ? ore('blockGlass') : TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.values()[i - 2]))
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('T', pistons[i].getStackForm())
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('P', pumps[i].getStackForm())
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .output(MetaTileEntities.EXTRACTOR[i].getStackForm())
+            .replace()
+            .register()
+}
+// extruders
+for (int i = GTValues.LV; i < MetaTileEntities.EXTRUDER.length; i++) {
+    crafting.shapedBuilder()
+            .row('WWc')
+            .row('THP')
+            .row('WWc')
+            .key('W', OreDictUnifier.get(OrePrefix.wireGtQuadruple, cableMaterials2[i]))
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('T', pistons[i].getStackForm())
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('P', OreDictUnifier.get(OrePrefix.pipeNormalFluid, materials[i]))
+            .output(MetaTileEntities.EXTRUDER[i].getStackForm())
+            .replace()
+            .register()
+}
+// fermenters
+for (int i = GTValues.LV; i < MetaTileEntities.FERMENTER.length; i++) {
+    crafting.shapedBuilder()
+            .row('CPC')
+            .row('GHG')
+            .row('CcC')
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('P', pumps[i].getStackForm())
+            .key('G', i < 2 ? ore('blockGlass') : TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.values()[i - 2]))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .output(MetaTileEntities.FERMENTER[i].getStackForm())
+            .replace()
+            .register()
+}
+// fluid heaters
+for (int i = GTValues.LV; i < MetaTileEntities.FLUID_HEATER.length; i++) {
+    crafting.shapedBuilder()
+            .row('WGW')
+            .row('PHP')
+            .row('CcC')
+            .key('W', OreDictUnifier.get(OrePrefix.wireGtQuadruple, cableMaterials2[i]))
+            .key('G', i < 2 ? ore('blockGlass') : TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.values()[i - 2]))
+            .key('P', pumps[i].getStackForm())
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .output(MetaTileEntities.FLUID_HEATER[i].getStackForm())
+            .replace()
+            .register()
+}
+// fluid solidifiers
+for (int i = GTValues.LV; i < MetaTileEntities.FLUID_SOLIDIFIER.length; i++) {
+    crafting.shapedBuilder()
+            .row('PGP')
+            .row('CHC')
+            .row('cEc')
+            .key('P', pumps[i].getStackForm())
+            .key('G', i < 2 ? ore('blockGlass') : TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.values()[i - 2]))
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('E', ore('chestWood'))
+            .output(MetaTileEntities.FLUID_SOLIDIFIER[i].getStackForm())
+            .replace()
+            .register()
+}
+// forge hammers
+for (int i = GTValues.LV; i < MetaTileEntities.FORGE_HAMMER.length; i++) {
+    crafting.shapedBuilder()
+            .row('CPC')
+            .row('cHc')
+            .row('CAC')
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('P', pistons[i].getStackForm())
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('A', ore('craftingAnvil'))
+            .output(MetaTileEntities.FORGE_HAMMER[i].getStackForm())
+            .replace()
+            .register()
+}
+// forming press
+for (int i = GTValues.LV; i < MetaTileEntities.FORMING_PRESS.length; i++) {
+    crafting.shapedBuilder()
+            .row('CPC')
+            .row('cHc')
+            .row('CPC')
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('P', pistons[i].getStackForm())
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .output(MetaTileEntities.FORMING_PRESS[i].getStackForm())
+            .replace()
+            .register()
+}
+// lathe
+for (int i = GTValues.LV; i < MetaTileEntities.LATHE.length; i++) {
+    crafting.shapedBuilder()
+            .row('CcC')
+            .row('MHD')
+            .row('cCP')
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('M', motors[i].getStackForm())
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('D',  i < 3 ? OreDictUnifier.get(OrePrefix.gem, Materials.Diamond) :
+                    i < 5 ? MetaItems.COMPONENT_GRINDER_DIAMOND.getStackForm() : MetaItems.COMPONENT_GRINDER_TUNGSTEN.getStackForm())
+            .key('P', pistons[i].getStackForm())
+            .output(MetaTileEntities.LATHE[i].getStackForm())
+            .replace()
+            .register()
+}
+// scanners
+for (int i = GTValues.LV; i < MetaTileEntities.SCANNER.length; i++) {
+    crafting.shapedBuilder()
+            .row('cEc')
+            .row('CHC')
+            .row('cSc')
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('E', emitters[i].getStackForm())
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('S', sensors[i].getStackForm())
+            .output(MetaTileEntities.SCANNER[i].getStackForm())
+            .replace()
+            .register()
+}
+// mixers
+for (int i = GTValues.LV; i < MetaTileEntities.MIXER.length; i++) {
+    crafting.shapedBuilder()
+            .row('GRG')
+            .row('GMG')
+            .row('cHc')
+            .key('G', i < 2 ? ore('blockGlass') : TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.values()[i - 2]))
+            .key('R', OreDictUnifier.get(OrePrefix.rotor, rotorMaterials[i]))
+            .key('M', motors[i].getStackForm())
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .output(MetaTileEntities.MIXER[i].getStackForm())
+            .replace()
+            .register()
+}
+// ore washing plants
+for (int i = GTValues.LV; i < MetaTileEntities.ORE_WASHER.length; i++) {
+    crafting.shapedBuilder()
+            .row('RGR')
+            .row('cMc')
+            .row('CHC')
+            .key('R', OreDictUnifier.get(OrePrefix.rotor, rotorMaterials[i]))
+            .key('G', i < 2 ? ore('blockGlass') : TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.values()[i - 2]))
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('M', motors[i].getStackForm())
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .output(MetaTileEntities.ORE_WASHER[i].getStackForm())
+            .replace()
+            .register()
+}
+// packagers
+for (int i = GTValues.LV; i < MetaTileEntities.PACKER.length; i++) {
+    crafting.shapedBuilder()
+            .row('EcE')
+            .row('RHT')
+            .row('CcC')
+            .key('E', ore('chestWood'))
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('R', robotArms[i].getStackForm())
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('T', conveyors[i].getStackForm())
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .output(MetaTileEntities.PACKER[i].getStackForm())
+            .replace()
+            .register()
+}
+// gas collectors
+for (int i = GTValues.LV; i < MetaTileEntities.GAS_COLLECTOR.length; i++) {
+    crafting.shapedBuilder()
+            .row('BFB')
+            .row('PHP')
+            .row('BcB')
+            .key('B', ore('barsIron'))
+            .key('F', MetaItems.FLUID_FILTER.getStackForm())
+            .key('P', pumps[i].getStackForm())
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .output(MetaTileEntities.GAS_COLLECTOR[i].getStackForm())
+            .replace()
+            .register()
+}
+// polarizers
+for (int i = GTValues.LV; i < MetaTileEntities.POLARIZER.length; i++) {
+    crafting.shapedBuilder()
+            .row('WRW')
+            .row('CHC')
+            .row('WRW')
+            .key('W', OreDictUnifier.get((i < 4 ? OrePrefix.wireGtDouble :
+                    i < 7 ? OrePrefix.wireGtQuadruple :
+                            i < 10 ? OrePrefix.wireGtOctal : OrePrefix.wireGtHex), magnetMaterials[i]))
+            .key('R', OreDictUnifier.get(OrePrefix.stick, i < 2 ? Materials.Iron :
+                    i < 4 ? Materials.Steel :
+                            i < 5 ? Materials.Neodymium : Materials.VanadiumGallium))
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .output(MetaTileEntities.POLARIZER[i].getStackForm())
+            .replace()
+            .register()
+}
+// precision laser engravers
+for (int i = GTValues.LV; i < MetaTileEntities.LASER_ENGRAVER.length; i++) {
+    crafting.shapedBuilder()
+            .row('PEP')
+            .row('cHc')
+            .row('CcC')
+            .key('P', pistons[i].getStackForm())
+            .key('E', emitters[i].getStackForm())
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .output(MetaTileEntities.LASER_ENGRAVER[i].getStackForm())
+            .replace()
+            .register()
+}
+// sifting machines
+for (int i = GTValues.LV; i < MetaTileEntities.SIFTER.length; i++) {
+    crafting.shapedBuilder()
+            .row('CFC')
+            .row('PHP')
+            .row('cFc')
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('F', MetaItems.ITEM_FILTER.getStackForm())
+            .key('P', pistons[i].getStackForm())
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .output(MetaTileEntities.SIFTER[i].getStackForm())
+            .replace()
+            .register()
+}
+// thermal centrifuges
+for (int i = GTValues.LV; i < MetaTileEntities.THERMAL_CENTRIFUGE.length; i++) {
+    crafting.shapedBuilder()
+            .row('cMc')
+            .row('WHW')
+            .row('CMC')
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('M', motors[i].getStackForm())
+            .key('W', OreDictUnifier.get(OrePrefix.wireGtQuadruple, cableMaterials2[i]))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .output(MetaTileEntities.THERMAL_CENTRIFUGE[i].getStackForm())
+            .replace()
+            .register()
+}
+// wiremills
+for (int i = GTValues.LV; i < MetaTileEntities.WIREMILL.length; i++) {
+    crafting.shapedBuilder()
+            .row('MCM')
+            .row('cHc')
+            .row('MCM')
+            .key('M', motors[i].getStackForm())
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .output(MetaTileEntities.WIREMILL[i].getStackForm())
+            .replace()
+            .register()
+}
+// circuit assemblers
+for (int i = GTValues.LV; i < MetaTileEntities.CIRCUIT_ASSEMBLER.length; i++) {
+    crafting.shapedBuilder()
+            .row('RcE')
+            .row('THT')
+            .row('CcC')
+            .key('R', robotArms[i].getStackForm())
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('E', emitters[i].getStackForm())
+            .key('T', conveyors[i].getStackForm())
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .output(MetaTileEntities.CIRCUIT_ASSEMBLER[i].getStackForm())
+            .replace()
+            .register()
+}
+// rock breakers
+for (int i = GTValues.LV; i < MetaTileEntities.ROCK_BREAKER.length; i++) {
+    crafting.shapedBuilder()
+            .row('PMD')
+            .row('CHC')
+            .row('GGG')
+            .key('P', pistons[i].getStackForm())
+            .key('M', motors[i].getStackForm())
+            .key('D', i < 3 ? OreDictUnifier.get(OrePrefix.gem, Materials.Diamond) :
+                    i < 5 ? MetaItems.COMPONENT_GRINDER_DIAMOND.getStackForm() : MetaItems.COMPONENT_GRINDER_TUNGSTEN.getStackForm())
+            .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
+            .key('H', MetaTileEntities.HULL[i].getStackForm())
+            .key('G', i < 2 ? ore('blockGlass') : TJAMetaBlocks.TIERED_GLASS.getItemVariant(BlockTieredGlass.CasingType.values()[i - 2]))
+            .output(MetaTileEntities.ROCK_BREAKER[i].getStackForm())
             .replace()
             .register()
 }
