@@ -296,7 +296,7 @@ for (int i = GTValues.LV; i < MetaTileEntities.CUTTER.length; i++) {
             .register()
 }
 // distilleries
-for (int i = GTValues.LV; i < MetaTileEntities.CUTTER.length; i++) {
+for (int i = GTValues.LV; i < MetaTileEntities.DISTILLERY.length; i++) {
     crafting.shapedBuilder()
             .row('GSG')
             .row('cHc')
@@ -307,12 +307,12 @@ for (int i = GTValues.LV; i < MetaTileEntities.CUTTER.length; i++) {
             .key('H', MetaTileEntities.HULL[i].getStackForm())
             .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
             .key('P', pumps[i].getStackForm())
-            .output(MetaTileEntities.CUTTER[i].getStackForm())
+            .output(MetaTileEntities.DISTILLERY[i].getStackForm())
             .replace()
             .register()
 }
 // electrolyzers
-for (int i = GTValues.LV; i < MetaTileEntities.CUTTER.length; i++) {
+for (int i = GTValues.LV; i < MetaTileEntities.ELECTROLYZER.length; i++) {
     crafting.shapedBuilder()
             .row('WGW')
             .row('WHW')
@@ -325,7 +325,7 @@ for (int i = GTValues.LV; i < MetaTileEntities.CUTTER.length; i++) {
             .key('H', MetaTileEntities.HULL[i].getStackForm())
             .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
             .key('C', OreDictUnifier.get(OrePrefix.cableGtSingle, cableMaterials[i]))
-            .output(MetaTileEntities.CUTTER[i].getStackForm())
+            .output(MetaTileEntities.ELECTROLYZER[i].getStackForm())
             .replace()
             .register()
 }
