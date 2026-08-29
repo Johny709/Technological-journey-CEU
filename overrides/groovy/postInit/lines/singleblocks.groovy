@@ -634,7 +634,7 @@ for (int i = GTValues.LV; i < MetaTileEntities.CIRCUIT_ASSEMBLER.length; i++) {
             .row('THT')
             .row('CcC')
             .key('R', robotArms[i].getStackForm())
-            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i]).toString()))
+            .key('c', ore(new UnificationEntry(OrePrefix.circuit, circuitTier[i + 1]).toString()))
             .key('E', emitters[i].getStackForm())
             .key('T', conveyors[i].getStackForm())
             .key('H', MetaTileEntities.HULL[i].getStackForm())
