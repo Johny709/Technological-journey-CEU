@@ -38,15 +38,6 @@
                 "name": "Supercritical",
                 "description": "Please relaunch after downloading with this. The mod loader won't able to detect this mod at this stage."
             }
-        },
-        {
-            "url": "https://github.com/Johny709/TJ-Additions-CEU/releases/download/v0.1/tja-1.0.jar",
-            "installationPolicy": {
-                "continueOnFailedDownload": false,
-                "selectedByDefault": true,
-                "name": "TJ Additions",
-                "description": "Please relaunch after downloading with this. The mod loader won't able to detect this mod at this stage."
-            }
         }
     ]
 }
